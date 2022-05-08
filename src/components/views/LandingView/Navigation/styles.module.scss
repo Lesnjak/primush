@@ -1,0 +1,12 @@
+@import '../../../../styles/configs';
+
+.header {
+  padding: 33px;
+  display: flex;
+  transition: $anim-time;
+  justify-content: space-between;
+  align-items: center;
+  &_hide {
+    opacity: 0;
+  }
+}

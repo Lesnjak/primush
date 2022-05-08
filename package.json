@@ -8,13 +8,10 @@
     "lint": "tsc --noEmit && eslint '*/**/*.{js,ts,tsx}' --quiet --color --fix",
     "type-check": "tsc --pretty --noEmit",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,scss,md,json}' --config ./.prettierrc",
-    "test-all": "yarn lint && yarn type-check && yarn test",
-    "test": "jest",
     "analyze": "cross-env ANALYZE=true yarn build",
     "build": "next build",
     "start": "next build",
     "dev": "next dev",
-
     "prepare": "husky install"
   },
   "lint-staged": {
