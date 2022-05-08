@@ -1,0 +1,17 @@
+@import '../../../../styles/configs';
+
+.headerSection {
+  height: 100vh;
+  background: #DB0000;
+  scroll-snap-align: center;
+}
+
+
+.header {
+  padding: 40px;
+  display: flex;
+  transition: $anim-time;
+  &_hide {
+    opacity: 0;
+  }
+}

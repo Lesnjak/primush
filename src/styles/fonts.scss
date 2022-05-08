@@ -1,0 +1,104 @@
+@import '../styles/configs';
+
+@font-face {
+  font-family: Inter;
+  src: url('/fonts/Inter/Inter-Light.woff2') format('woff2'),
+  url('/fonts/Inter/Inter-Light.woff') format('woff');
+  font-weight: $font-weight-light;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url('/fonts/Inter/Inter-Regular.woff2') format('woff2'),
+  url('/fonts/Inter/Inter-Regular.woff') format('woff');
+  font-weight: $font-weight-regular;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url('/fonts/Inter/Inter-Medium.woff2') format('woff2'),
+  url('/fonts/Inter/Inter-Medium.woff') format('woff');
+  font-weight: $font-weight-medium;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url('/fonts/Inter/Inter-Bold.woff2') format('woff2'),
+  url('/fonts/Inter/Inter-Bold.woff') format('woff');
+  font-weight: $font-weight-bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: Inter;
+  src: url('/fonts/Inter/Inter-SemiBold.woff2') format('woff2'),
+  url('/fonts/Inter/Inter-SemiBold.woff') format('woff');
+  font-weight: $font-weight-semi-bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url('/fonts/Inter/Inter-ExtraBold.woff2') format('woff2'),
+  url('/fonts/Inter/Inter-ExtraBold.woff') format('woff');
+  font-weight: $font-weight-extra-bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Tajawal;
+  src: url('/fonts/Tajawal/Tajawal-Light.woff2') format('woff2'),
+  url('/fonts/Tajawal-Light.woff') format('woff');
+  font-weight: $font-weight-light;
+  font-style: normal;
+  font-display: swap;
+}
+
+//@font-face {
+//  font-family: Tajawal;
+//  src: url('/fonts/Tajawal/Tajawal-Regular.woff2') format('woff2'),
+//  url('/fonts/Tajawal-Regular.woff') format('woff');
+//  font-weight: $font-weight-regular;
+//  font-style: normal;
+//  font-display: swap;
+//}
+
+@font-face {
+  font-family: Tajawal;
+  src: url('/fonts/Tajawal/Tajawal-Medium.woff2') format('woff2'),
+  url('/fonts/Tajawal-Medium.woff') format('woff');
+  font-weight: $font-weight-regular;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Tajawal;
+  src: url('/fonts/Tajawal/Tajawal-Bold.woff2') format('woff2'),
+  url('/fonts/Tajawal-Bold.woff') format('woff');
+  font-weight: $font-weight-bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: Tajawal;
+  src: url('/fonts/Tajawal/Tajawal-ExtraBold.woff2') format('woff2'),
+  url('/fonts/Tajawal-ExtraBold.woff') format('woff');
+  font-weight: $font-weight-extra-bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
