@@ -6,4 +6,7 @@ export const ICONS = {
   logoBlackIcon: '/icons/svg/logoBlack.svg',
   burgerWhiteIcon: '/icons/svg/burgerWhite.svg',
   burgerBlackIcon: '/icons/svg/burgerBlack.svg',
+  facebookIcon: '/icons/svg/facebook.svg',
+  twitterIcon: '/icons/svg/twitter.svg',
+  instagramIcon: '/icons/svg/instagram.svg',
 };

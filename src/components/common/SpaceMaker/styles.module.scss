@@ -1,0 +1,43 @@
+@import '../../../styles/configs/index';
+@import '../../../styles/mixins';
+
+.wrapper {
+  width: 0;
+  flex-shrink: 0;
+  &__s1 {
+    width: 2px;
+  }
+  &__s2 {
+    width: 4px;
+  }
+  &__s3 {
+    width: 6px;
+  }
+  &__s4 {
+    width: 8px;
+  }
+  &__s5 {
+    width: 10px;
+  }
+  &__s6 {
+    width: 12px;
+  }
+  &__s7 {
+    width: 14px;
+  }
+  &__s8 {
+    width: 16px;
+  }
+  &__s9 {
+    width: 18px;
+  }
+  &__s10 {
+    width: 20px;
+  }
+  &__s12 {
+    width: 24px;
+  }
+  &__s20 {
+    width: 40px;
+  }
+}

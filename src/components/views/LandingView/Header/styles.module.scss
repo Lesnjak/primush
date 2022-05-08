@@ -6,6 +6,9 @@
   transition: $anim-time;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
+  width: 100%;
+  top: 0;
   &_hide {
     opacity: 0;
   }

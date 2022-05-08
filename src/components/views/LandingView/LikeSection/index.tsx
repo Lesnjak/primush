@@ -1,6 +1,7 @@
 import { FC, useEffect, useState } from 'react';
 import styles from './styles.module.scss';
 import { Header } from '../Header';
+import { Navigation } from '../Navigation';
 export const LikeSection: FC = () => {
   // const { t } = useTranslation('common');
   const [hideHeader, setHideHeader] = useState(true);
@@ -28,6 +29,12 @@ export const LikeSection: FC = () => {
   return (
     <div id="like" className={styles.like}>
       <Header black show={hideHeader} />
+      <Navigation
+        id="#like"
+        leftButtonId="#header"
+        rightButtonId="#who"
+        black
+      />
     </div>
   );
 };

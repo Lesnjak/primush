@@ -1,0 +1,162 @@
+@import '../../../styles/mixins';
+@import '../../../styles/configs/index';
+
+.typography {
+  &_display {
+    &_initial {
+      display: initial;
+    }
+
+    &_block {
+      display: block;
+    }
+
+    &_inline {
+      display: inline;
+    }
+  }
+
+  &_variant {
+    &_inherit {
+      font-weight: inherit;
+      line-height: inherit;
+      font-size: inherit;
+    }
+
+    &_body-12 {
+      font-size: 12px;
+    }
+
+    &_body-14 {
+      font-size: 14px;
+    }
+
+    &_body-15 {
+      font-size: 15px;
+    }
+
+    &_body-16 {
+      font-size: 16px;
+    }
+
+    &_body-18 {
+      font-size: 18px;
+    }
+
+    &_body-20 {
+      font-size: 20px;
+    }
+    &_body-32 {
+      font-size: 32px;
+    }
+
+
+    &_h1 {
+      line-height: 95px;
+      font-size: 108px;
+    }
+
+    &_h2 {
+      font-weight: 700;
+      line-height: 1.4;
+      font-size: 2rem;
+    }
+
+    &_h3 {
+      font-size: 24px;
+    }
+
+    &_h4 {
+      font-weight: 700;
+      line-height: 1.4;
+      font-size: 1.125rem;
+    }
+
+    &_h5 {
+      font-weight: 700;
+      line-height: 1.4;
+      font-size: 1rem;
+    }
+
+    &_h6 {
+      font-weight: 700;
+      line-height: 1.4;
+      font-size: 0.875rem;
+    }
+  }
+
+  &_font {
+    &_light {
+      font-weight: $font-weight-light;
+    }
+    &_medium {
+      font-weight: $font-weight-medium;
+    }
+    &_bold {
+      font-weight: $font-weight-bold;
+    }
+  }
+
+  &_color {
+    &_redTitle {
+      color: var(--redTitle);
+    }
+    &_white {
+      color: var(--white);
+    }
+    &_dark-60 {
+      color: var(--dark-60);
+    }
+    &_dark-40 {
+      color: var(--dark-40);
+    }
+    &_initial {
+      color: initial;
+    }
+
+    &_inherit {
+      color: inherit;
+    }
+
+    &_valid {
+      color: var(--valid);
+    }
+
+    &_error {
+      color: var(--red-100);
+    }
+  }
+
+  &_align {
+    &_left {
+      text-align: left;
+    }
+
+    &_center {
+      text-align: center;
+    }
+
+    &_right {
+      text-align: right;
+    }
+
+    &_justify {
+      text-align: justify;
+    }
+  }
+
+  &_font {
+    &_cabin {
+      font-family: Cabin;
+    }
+  }
+
+  &_uppercase {
+    text-transform: uppercase;
+  }
+
+  &_nowrap {
+    display: block;
+    @include text-ellipsis;
+  }
+}
