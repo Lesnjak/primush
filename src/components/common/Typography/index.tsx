@@ -34,9 +34,9 @@ type Props = {
     | 'h6';
   display?: 'initial' | 'block' | 'inline';
   noWrap?: boolean;
-  color?: 'redTitle' | 'inherit' | 'white' | 'error' | 'valid';
+  color?: 'redTitle' | 'greyText' | 'inherit' | 'white' | 'error' | 'valid';
   align?: 'inherit' | 'left' | 'center' | 'right' | 'justify';
-  font?: 'cabin';
+  font?: 'cabin' | 'sen';
 };
 
 export const Typography: FC<Props> = (props) => {

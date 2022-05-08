@@ -1,0 +1,32 @@
+{
+  "header": {
+    "yes": "так",
+    "no": "ні",
+    "do": "Ти",
+    "have": "Маєш",
+    "question": "питання?",
+    "book": "записатися на безкоштовний сеанс"
+  },
+  "like": {
+    "question": "Я зроблю все можливе, щоб допомогти вам знайти відповіді на всі ваші запитання.",
+    "wouldLike": "Я хочу:",
+    "startMyVenture": "розпочати мою справу",
+    "businessMentoring": "бізнес-наставництво",
+    "developMyBusiness": "розвивати свій бізнес",
+    "increaseProductivity": "підвищити продуктивність команди",
+    "leadershipCoaching": "коучинг лідерства",
+    "findInspiration": "знайти натхнення",
+    "businessCoaching": "бізнес коучинг",
+    "manageTimeEfficiently": "ефективніше керувати часом",
+    "delegateOthers": "делегувати та залучати більше інших",
+    "setClearerGoals": "ставити чіткіші цілі",
+    "solveConflictsTeam": "вирішувати конфлікти в колективі",
+    "talkUnderstand": "поговори з кимось, хто мене вислухає і зрозуміє",
+    "liveMeaningful": "жити більш змістовним життям",
+    "dealAnxiety": "впоратися зі своїм стресом і тривогою",
+    "workRelationship": "працювати над моїми стосунками",
+    "findBalance": "знайти баланс у житті",
+    "dealBurnout": "впоратися з вигоранням",
+    "becomeHappier": "стати щасливим"
+  }
+}

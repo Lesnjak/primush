@@ -1,5 +1,32 @@
 {
   "header": {
-    "title": "Contact Information"
+    "yes": "yes",
+    "no": "no",
+    "do": "Do you",
+    "have": "have",
+    "question": "a question?",
+    "book": "book a free session"
+  },
+  "like": {
+    "question": "I will do my best to help you find the answers to all your questions.",
+    "wouldLike": "I would like to:",
+    "startMyVenture": "start my venture",
+    "businessMentoring": "business mentoring",
+    "developMyBusiness": "develop my business",
+    "increaseProductivity": "increase team’s productivity",
+    "leadershipCoaching": "leadership coaching",
+    "findInspiration": "find inspiration",
+    "businessCoaching": "business coaching",
+    "manageTimeEfficiently": "manage time more efficiently",
+    "delegateOthers": "delegate and involve more others",
+    "setClearerGoals": "set clearer goals",
+    "solveConflictsTeam": "solve conflicts in the team",
+    "talkUnderstand": "talk to someone who can hear me out and understand me",
+    "liveMeaningful": "live a more meaningful life",
+    "dealAnxiety": "deal with my stress and anxiety",
+    "workRelationship": "work on my relationship",
+    "findBalance": "find balance in life",
+    "dealBurnout": "deal with burnout",
+    "becomeHappier": "become happier"
   }
 }

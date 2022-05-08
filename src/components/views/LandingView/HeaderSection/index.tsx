@@ -7,10 +7,11 @@ import { ContentLimiter } from '../../../common/ContentLimiter';
 import { Typography } from '../../../common/Typography';
 import { ReactSVG } from 'react-svg';
 import { ICONS } from '../../../../configs/icons.config';
-// import useTranslation from 'next-translate/useTranslation';
+import cn from 'classnames';
+import useTranslation from 'next-translate/useTranslation';
 
 export const HeaderSection: FC = () => {
-  // const { t } = useTranslation('common');
+  const { t } = useTranslation('common');
   const [hideHeader, setHideHeader] = useState(false);
 
   const handleScroll = () => {
@@ -53,13 +54,13 @@ export const HeaderSection: FC = () => {
             <div className={styles.headerSection_titleWrapper}>
               <div className={styles.headerSection_title}>
                 <Typography color="redTitle" font="cabin" variant="h1">
-                  Do you
+                  {t('header.do')}
                 </Typography>
                 <Typography color="redTitle" font="cabin" variant="h1">
-                  have
+                  {t('header.have')}
                 </Typography>
                 <Typography color="white" font="cabin" variant="h1">
-                  a question?
+                  {t('header.question')}
                 </Typography>
               </div>
               <div className={styles.headerSection_buttons}>
@@ -70,17 +71,23 @@ export const HeaderSection: FC = () => {
                     font="cabin"
                     variant="body-32"
                   >
-                    Yes
+                    {t('header.yes')}
                   </Typography>
                 </button>
-                <button className={styles.headerSection_button}>
+                <button
+                  title={t('header.yes')}
+                  className={cn(
+                    styles.headerSection_button,
+                    styles.headerSection_button_transparent
+                  )}
+                >
                   <Typography
                     uppercase
                     align="center"
                     font="cabin"
                     variant="body-32"
                   >
-                    No
+                    {t('header.no')}
                   </Typography>
                 </button>
               </div>
@@ -94,7 +101,7 @@ export const HeaderSection: FC = () => {
                 uppercase
                 variant="body-20"
               >
-                book a free session
+                {t('header.book')}
               </Typography>
             </div>
           </div>

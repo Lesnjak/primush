@@ -9,7 +9,7 @@ const App = (appProps: any) => {
   return (
     <Fragment>
       <Head>
-        <title>{`some`}</title>
+        <title>{`PRIMUSH`}</title>
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" />
       </Head>

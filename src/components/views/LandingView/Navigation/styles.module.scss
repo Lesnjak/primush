@@ -46,12 +46,20 @@
     border: 1px solid var(--white);
     border-radius: 50%;
     margin: 10px 0;
+    transition: $anim-time;
     &_black {
       border: 1px solid var(--grey);
       &.navigation_dot_active {
         background-color: var(--black);
         border: 1px solid var(--black);
+
       }
+      &:hover {
+        background: var(--black)!important;
+      }
+    }
+    &:hover {
+      background: var(--white);
     }
     &_active {
       background-color:var(--white)

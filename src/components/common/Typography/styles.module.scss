@@ -57,9 +57,7 @@
     }
 
     &_h2 {
-      font-weight: 700;
-      line-height: 1.4;
-      font-size: 2rem;
+      font-size: 32px;
     }
 
     &_h3 {
@@ -95,6 +93,9 @@
     &_bold {
       font-weight: $font-weight-bold;
     }
+    &_extraBold {
+      font-weight: $font-weight-extra-bold;
+    }
   }
 
   &_color {
@@ -104,8 +105,8 @@
     &_white {
       color: var(--white);
     }
-    &_dark-60 {
-      color: var(--dark-60);
+    &_greyText {
+      color: var(--greyText);
     }
     &_dark-40 {
       color: var(--dark-40);
@@ -148,6 +149,9 @@
   &_font {
     &_cabin {
       font-family: Cabin;
+    }
+    &_sen {
+      font-family: Sen;
     }
   }
 
