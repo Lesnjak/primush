@@ -10,7 +10,7 @@
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,scss,md,json}' --config ./.prettierrc",
     "analyze": "cross-env ANALYZE=true yarn build",
     "build": "next build",
-    "start": "next build",
+    "start": "next start",
     "dev": "next dev",
     "prepare": "husky install"
   },
