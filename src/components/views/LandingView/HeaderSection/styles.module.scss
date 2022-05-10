@@ -18,8 +18,20 @@
     filter: blur(200px);
   }
 
+  &_middle {
+    max-width: 1000px;
+    flex-grow: 1;
+    padding: 0 33px;
+    margin: 0 auto;
+    display: flex;
+  }
+
   &_underline {
     border-bottom: 1px solid var(--white);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    white-space: nowrap;
   }
 
   &_social {
@@ -47,9 +59,10 @@
   &_rightBlock {
     height: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: center;
     justify-content: space-between;
+    position: relative;
   }
 
   &_content {

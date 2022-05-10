@@ -51,49 +51,50 @@ export const HeaderSection: FC = () => {
                 <ReactSVG src={ICONS.instagramIcon} />
               </a>
             </div>
-            <div className={styles.headerSection_titleWrapper}>
-              <div className={styles.headerSection_title}>
-                <Typography color="redTitle" font="cabin" variant="h1">
-                  {t('header.do')}
-                </Typography>
-                <Typography color="redTitle" font="cabin" variant="h1">
-                  {t('header.have')}
-                </Typography>
-                <Typography color="white" font="cabin" variant="h1">
-                  {t('header.question')}
-                </Typography>
-              </div>
-              <div className={styles.headerSection_buttons}>
-                <button className={styles.headerSection_button}>
-                  <Typography
-                    uppercase
-                    align="center"
-                    font="cabin"
-                    variant="body-32"
-                  >
-                    {t('header.yes')}
+            <div className={styles.headerSection_middle}>
+              <div className={styles.headerSection_titleWrapper}>
+                <div className={styles.headerSection_title}>
+                  <Typography color="redTitle" font="cabin" variant="h1">
+                    {t('header.do')}
                   </Typography>
-                </button>
-                <button
-                  title={t('header.yes')}
-                  className={cn(
-                    styles.headerSection_button,
-                    styles.headerSection_button_transparent
-                  )}
-                >
-                  <Typography
-                    uppercase
-                    align="center"
-                    font="cabin"
-                    variant="body-32"
-                  >
-                    {t('header.no')}
+                  <Typography color="redTitle" font="cabin" variant="h1">
+                    {t('header.have')}
                   </Typography>
-                </button>
+                  <Typography color="white" font="cabin" variant="h1">
+                    {t('header.question')}
+                  </Typography>
+                </div>
+                <div className={styles.headerSection_buttons}>
+                  <button className={styles.headerSection_button}>
+                    <Typography
+                      uppercase
+                      align="center"
+                      font="cabin"
+                      variant="body-32"
+                    >
+                      {t('header.yes')}
+                    </Typography>
+                  </button>
+                  <button
+                    title={t('header.yes')}
+                    className={cn(
+                      styles.headerSection_button,
+                      styles.headerSection_button_transparent
+                    )}
+                  >
+                    <Typography
+                      uppercase
+                      align="center"
+                      font="cabin"
+                      variant="body-32"
+                    >
+                      {t('header.no')}
+                    </Typography>
+                  </button>
+                </div>
               </div>
             </div>
             <div className={styles.headerSection_rightBlock}>
-              <span />
               <Navigation rightButtonId={'#like'} id="#header" />
               <Typography
                 className={styles.headerSection_underline}
