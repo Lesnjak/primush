@@ -45,9 +45,10 @@
   }
 
   &_middle {
-    //background-color: palegoldenrod;
+    max-width: 1000px;
     flex-grow: 1;
-    padding: 0 85px;
+    padding: 0 33px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
   }

@@ -40,6 +40,10 @@
     }
   }
 
+  &_titleWrapper{
+   position: relative;
+  }
+
   &_rightBlock {
     height: 100%;
     display: flex;
