@@ -6,6 +6,7 @@ import styles from './styles.module.scss';
 
 type Props = {
   marginBottom?:
+    | 's0'
     | 's1'
     | 's2'
     | 's3'
@@ -20,6 +21,7 @@ type Props = {
   position?: 'center' | 'between' | 'right';
   positionVertical?: 'top' | 'bottom' | 'center';
   direction?: 'row' | 'column';
+  width?: 'auto';
   id?: string;
 };
 
@@ -31,6 +33,7 @@ export const SpaceBlock: FC<Props> = (props) => {
     children,
     position,
     direction,
+    width,
     id,
     ...rest
   } = props;
@@ -39,6 +42,7 @@ export const SpaceBlock: FC<Props> = (props) => {
     styles.formBlock,
     {
       [styles[`formBlock_mb_${marginBottom}`]]: marginBottom,
+      [styles[`formBlock_width_${width}`]]: width,
       [styles[`formBlock_justify_${position}`]]: position,
       [styles[`formBlock_align_${positionVertical}`]]: positionVertical,
       [styles[`formBlock_direction_${direction}`]]: direction,

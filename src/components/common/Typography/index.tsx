@@ -34,7 +34,14 @@ type Props = {
     | 'h6';
   display?: 'initial' | 'block' | 'inline';
   noWrap?: boolean;
-  color?: 'redTitle' | 'greyText' | 'inherit' | 'white' | 'error' | 'valid';
+  color?:
+    | 'redTitle'
+    | 'greyText'
+    | 'greyTextLight'
+    | 'inherit'
+    | 'white'
+    | 'error'
+    | 'valid';
   align?: 'inherit' | 'left' | 'center' | 'right' | 'justify';
   font?: 'cabin' | 'sen';
 };

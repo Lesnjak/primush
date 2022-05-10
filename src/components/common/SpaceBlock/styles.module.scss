@@ -2,7 +2,17 @@
   display: flex;
   width: 100%;
 
+  &_width {
+    &_auto {
+      width: auto;
+    }
+  }
+
   &_mb {
+    &_s0 {
+      margin-bottom: 4px;
+    }
+
     &_s1 {
       margin-bottom: 8px;
     }

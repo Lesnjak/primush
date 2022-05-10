@@ -28,5 +28,15 @@
     "findBalance": "find balance in life",
     "dealBurnout": "deal with burnout",
     "becomeHappier": "become happier"
+  },
+  "activities": {
+    "title": "MY ACTIVITIES",
+    "mentor": "Mentor of Venture Mentoring Service",
+    "university": "University of Luxembourg ",
+    "mentorText": "Venture Mentoring Service (VMS) of the University of Luxembourg Incubator helps University’s entrepreneurs turn their ideas into a real business. Under the license of MIT, VMS provides tailored support and industry experts to suit every venture’s needs regardless of their level of experience and stage. My role is to mentor selected VMS startups",
+    "member": "Member of Luxembourg Business Angel Network (LBAN)",
+    "memberText": "LBAN unlocks the potential of private investors and helps entrepreneurs to thrive, in Luxembourg and beyond",
+    "myProjects": "MY Projects",
+    "follow": "Follow our upcoming projects"
   }
 }
