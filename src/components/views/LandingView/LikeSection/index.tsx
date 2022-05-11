@@ -9,6 +9,7 @@ import { Typography } from '../../../common/Typography';
 import { SpaceBlock } from '../../../common/SpaceBlock';
 import useTranslation from 'next-translate/useTranslation';
 import Scrollbar from 'react-scrollbars-custom';
+import cn from 'classnames';
 export const LikeSection: FC = () => {
   const { t } = useTranslation('common');
   const [hideHeader, setHideHeader] = useState(true);
@@ -91,7 +92,9 @@ export const LikeSection: FC = () => {
                 <Scrollbar style={{ width: '100%', height: '100%' }}>
                   {links.map((item: string) => (
                     <div key={item} className={styles.like_links_link}>
-                      <button className={styles.like_links_text}>{item}</button>
+                      <button className={cn(styles.like_links_text, 'link')}>
+                        {item}
+                      </button>
                     </div>
                   ))}
                 </Scrollbar>

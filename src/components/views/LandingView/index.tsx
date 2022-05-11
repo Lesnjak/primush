@@ -19,9 +19,9 @@ export const LandingView: FC = () => {
   return (
     <div className={styles.wrapper}>
       <CustomCursor
-        targets={['.link', '.your-css-selector']}
+        targets={['.link']}
         customClass="custom-cursor"
-        dimensions={30}
+        dimensions={40}
         fill="#000"
         smoothness={{
           movement: 0.2,
@@ -29,6 +29,7 @@ export const LandingView: FC = () => {
           opacity: 0.2,
         }}
         targetOpacity={0.5}
+        targetScale={2.5}
       />
       <HeaderSection />
       <LikeSection />
