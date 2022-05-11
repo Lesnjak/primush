@@ -9,4 +9,5 @@ export const ICONS = {
   facebookIcon: '/icons/svg/facebook.svg',
   twitterIcon: '/icons/svg/twitter.svg',
   instagramIcon: '/icons/svg/instagram.svg',
+  dateIcon: '/icons/svg/date.svg',
 };

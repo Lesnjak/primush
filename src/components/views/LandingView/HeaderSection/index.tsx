@@ -65,7 +65,7 @@ export const HeaderSection: FC = () => {
                   </Typography>
                 </div>
                 <div className={styles.headerSection_buttons}>
-                  <button className={styles.headerSection_button}>
+                  <button className={cn(styles.headerSection_button, 'link')}>
                     <Typography
                       uppercase
                       align="center"
@@ -79,7 +79,8 @@ export const HeaderSection: FC = () => {
                     title={t('header.yes')}
                     className={cn(
                       styles.headerSection_button,
-                      styles.headerSection_button_transparent
+                      styles.headerSection_button_transparent,
+                      'link'
                     )}
                   >
                     <Typography

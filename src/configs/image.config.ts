@@ -11,4 +11,7 @@ export const IMAGES = {
   gravitate: '/images/gravitate.png',
   candy: '/images/candy.png',
   tubes: '/images/tubes.png',
+  face1: '/images/face1.png',
+  face2: '/images/face2.png',
+  face3: '/images/face3.png',
 };

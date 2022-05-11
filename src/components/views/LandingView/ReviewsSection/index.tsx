@@ -8,10 +8,26 @@ import { ICONS } from '../../../../configs/icons.config';
 import { SpaceBlock } from '../../../common/SpaceBlock';
 import { Typography } from '../../../common/Typography';
 import useTranslation from 'next-translate/useTranslation';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import { IMAGES } from '../../../../configs/image.config';
+import { SpaceMaker } from '../../../common/SpaceMaker';
+import cn from 'classnames';
 
 export const ReviewsSection: FC = () => {
   const { t } = useTranslation('common');
   const [hideHeader, setHideHeader] = useState(true);
+  const settings = {
+    className: 'center',
+    infinite: true,
+    centerMode: true,
+    slidesToShow: 3,
+    speed: 500,
+    focusOnSelect: true,
+    // nextArrow: <div className={styles.reviews_slide_next}>next</div>,
+    // prevArrow: <div className={styles.reviews_slide_prev}>prev</div>,
+  };
 
   const handleScroll = () => {
     const element: any = document.querySelector('#reviews');
@@ -24,6 +40,57 @@ export const ReviewsSection: FC = () => {
       }
     }
   };
+
+  const slideList = [
+    {
+      name: 'Leslie Alexander',
+      image: IMAGES.face1,
+      date: '12 April, 2022',
+      textTitle:
+        'Great experience. Would definitely work with Yurii again in the future!',
+      text: 'It was a really wonderful experience working with him. Resources were made easily available and the job was done in a timely manner.',
+    },
+    {
+      name: 'Wade Warren',
+      image: IMAGES.face2,
+      date: '24 April, 2022',
+      textTitle:
+        'Great experience. Would definitely work with Yurii again in the future!',
+      text: 'It was a really wonderful experience working with him. Resources were made easily available and the job was done in a timely manner.',
+    },
+    {
+      name: 'Jenny Wilson',
+      image: IMAGES.face3,
+      date: '10 April, 2022',
+      textTitle:
+        'Great experience. Would definitely work with Yurii again in the future!',
+      text: 'It was a really wonderful experience working with him. Resources were made easily available and the job was done in a timely manner.',
+    },
+    {
+      name: 'Leslie Alexander',
+      image: IMAGES.face1,
+      date: '12 April, 2022',
+      textTitle:
+        'Great experience. Would definitely work with Yurii again in the future!',
+      text: 'It was a really wonderful experience working with him. Resources were made easily available and the job was done in a timely manner.',
+    },
+    {
+      name: 'Wade Warren',
+      image: IMAGES.face2,
+      date: '24 April, 2022',
+      textTitle:
+        'Great experience. Would definitely work with Yurii again in the future!',
+      text: 'It was a really wonderful experience working with him. Resources were made easily available and the job was done in a timely manner.',
+    },
+    {
+      name: 'Jenny Wilson',
+      image: IMAGES.face3,
+      date: '10 April, 2022',
+      textTitle:
+        'Great experience. Would definitely work with Yurii again in the future!',
+      text: 'It was a really wonderful experience working with him. Resources were made easily available and the job was done in a timely manner.',
+    },
+  ];
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll, true);
@@ -52,21 +119,53 @@ export const ReviewsSection: FC = () => {
             </div>
             <div className={styles.reviews_middle}>
               <div className={styles.reviews_contentWrapper}>
-                <SpaceBlock marginBottom="s3">
+                <SpaceBlock marginBottom="s5">
                   <Typography uppercase fontWeight="bold" variant="h3">
                     {t('reviews.title')}
                   </Typography>
                 </SpaceBlock>
-                <SpaceBlock marginBottom="s5">
-                  <Typography
-                    className={styles.reviews_text}
-                    color="greyText"
-                    variant="body-20"
-                  >
-                    {t('reviews.text')}
-                  </Typography>
-                </SpaceBlock>
-                <div className={styles.reviews_sliderWrapper}>csad</div>
+
+                <div className={styles.reviews_sliderWrapper}>
+                  <Slider {...settings}>
+                    {slideList.map((item: any, idx: number) => (
+                      <div key={idx}>
+                        <div className={cn(styles.reviews_slide, 'center')}>
+                          <div className={styles.reviews_slide_content}>
+                            <SpaceBlock marginBottom="s2">
+                              <Typography
+                                align="center"
+                                fontWeight="bold"
+                                variant="body-12"
+                              >
+                                {item.textTitle}
+                              </Typography>
+                            </SpaceBlock>
+                            <Typography
+                              color="greyText"
+                              align="center"
+                              variant="body-12"
+                            >
+                              {item.text}
+                            </Typography>
+                          </div>
+                          <div className={styles.reviews_slide_image}>
+                            <img src={item.image} alt="face" />
+                          </div>
+                          <Typography fontWeight="medium">
+                            {item.name}
+                          </Typography>
+                          <SpaceBlock positionVertical="center" width="auto">
+                            <ReactSVG src={ICONS.dateIcon} />
+                            <SpaceMaker width="s2" />
+                            <Typography color="greyTextLight">
+                              {item.date}
+                            </Typography>
+                          </SpaceBlock>
+                        </div>
+                      </div>
+                    ))}
+                  </Slider>
+                </div>
               </div>
             </div>
             <div className={styles.reviews_rightBlock}>
@@ -74,7 +173,7 @@ export const ReviewsSection: FC = () => {
               <Navigation
                 black
                 rightButtonId="#what"
-                leftButtonId="#what"
+                leftButtonId="#links"
                 id="#reviews"
               />
               <Typography
