@@ -6,8 +6,22 @@ import { RiArrowUpSLine, RiArrowDownSLine } from 'react-icons/ri';
 type Props = {
   id: string;
   black?: boolean;
-  leftButtonId?: '#header' | '#like' | '#who' | '#why' | '#activities';
-  rightButtonId?: '#header' | '#like' | '#who' | '#why' | '#activities';
+  leftButtonId?:
+    | '#header'
+    | '#like'
+    | '#who'
+    | '#why'
+    | '#activities'
+    | '#links'
+    | '#what';
+  rightButtonId?:
+    | '#header'
+    | '#like'
+    | '#who'
+    | '#why'
+    | '#links'
+    | '#activities'
+    | '#what';
 };
 
 export const Navigation: FC<Props> = ({
@@ -16,7 +30,15 @@ export const Navigation: FC<Props> = ({
   leftButtonId,
   rightButtonId,
 }) => {
-  const ids = ['#header', '#like', '#who', '#why', '#activities'];
+  const ids = [
+    '#header',
+    '#like',
+    '#who',
+    '#why',
+    '#activities',
+    '#what',
+    '#links',
+  ];
 
   const handleChange = (id: string) => () => {
     const element: any = document.querySelector(id);

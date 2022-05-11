@@ -142,7 +142,7 @@ export const ActivitiesSection: FC = () => {
               <span />
               <Navigation
                 black
-                // rightButtonId="#who"
+                rightButtonId="#what"
                 leftButtonId="#why"
                 id="#activities"
               />

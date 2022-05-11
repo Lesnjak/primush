@@ -38,5 +38,12 @@
     "memberText": "LBAN unlocks the potential of private investors and helps entrepreneurs to thrive, in Luxembourg and beyond",
     "myProjects": "MY Projects",
     "follow": "Follow our upcoming projects"
+  },
+  "links": {
+    "title": "interesting links",
+    "text": "Here you can find some articles, videos, and other materials that have caught my attention."
+  },
+  "reviews": {
+    "title": "What people say about Yurii"
   }
 }
