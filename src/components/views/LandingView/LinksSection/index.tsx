@@ -25,7 +25,6 @@ export const LinksSection: FC = () => {
       }
     }
   };
-
   useEffect(() => {
     window.addEventListener('scroll', handleScroll, true);
 

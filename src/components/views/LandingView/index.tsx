@@ -8,12 +8,12 @@ import { ActivitiesSection } from './ActivitiesSection';
 import { WhatSection } from './WhatSection';
 import { LinksSection } from './LinksSection';
 import { ReviewsSection } from './ReviewsSection';
-
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import CustomCursor from 'custom-cursor-react';
 import 'gsap';
 import 'custom-cursor-react/dist/index.css';
+import { FormSection } from './FormSection';
 
 export const LandingView: FC = () => {
   return (
@@ -39,6 +39,7 @@ export const LandingView: FC = () => {
       <WhatSection />
       <LinksSection />
       <ReviewsSection />
+      <FormSection />
     </div>
   );
 };

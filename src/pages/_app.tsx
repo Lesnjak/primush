@@ -1,5 +1,5 @@
 import '../styles/index.scss';
-
+import ReactNotification from 'react-notifications-component';
 import Head from 'next/head';
 import { Fragment } from 'react';
 
@@ -15,6 +15,7 @@ const App = (appProps: any) => {
       </Head>
       <Fragment>
         <Component {...pageProps} />
+        <ReactNotification />
       </Fragment>
     </Fragment>
   );

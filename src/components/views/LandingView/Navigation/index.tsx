@@ -14,6 +14,7 @@ type Props = {
     | '#activities'
     | '#links'
     | '#reviews'
+    | '#form'
     | '#what';
   rightButtonId?:
     | '#header'
@@ -22,6 +23,7 @@ type Props = {
     | '#why'
     | '#links'
     | '#reviews'
+    | '#form'
     | '#activities'
     | '#what';
 };
@@ -41,6 +43,7 @@ export const Navigation: FC<Props> = ({
     '#what',
     '#links',
     '#reviews',
+    '#form',
   ];
 
   const handleChange = (id: string) => () => {

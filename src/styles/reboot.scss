@@ -41,6 +41,10 @@ body {
   &.overflow-hidden {
     overflow: hidden;
   }
+
+  .notification__item {
+    box-shadow: none;
+  }
 }
 
 

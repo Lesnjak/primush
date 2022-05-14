@@ -45,5 +45,23 @@
   },
   "reviews": {
     "title": "What people say about Yurii"
+  },
+  "form": {
+    "title": "Contact me",
+    "text1": "Yurii Primush is an experienced, well-trained, certified coach who works with private individuals and various organizations (especially entrepreneurs and start-ups) both in Europe and the US.",
+    "text2": "Both online and offline coaching sessions are offered. For more information please contact:",
+    "subject": "subject",
+    "fullName": "FULL NAME",
+    "email": "EMAIL",
+    "message": "MESSAGE",
+    "subjectPlaceholder": "Your subject",
+    "fullNamePlaceholder": "Your full name",
+    "emailPlaceholder": "Your message",
+    "messagePlaceholder": "MESSAGE",
+    "button": "SEND MESSAGE",
+    "required": "This field is required",
+    "validEmail": "Enter valid email",
+    "errorMessage": "Сталася помилка, спробуйте пізніше",
+    "successMessage": "Ми зв'яжемося з вами найближчим часом"
   }
 }
