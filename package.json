@@ -32,6 +32,7 @@
     "cross-env": "7.0.3",
     "custom-cursor-react": "^1.0.5",
     "dotenv": "9.0.2",
+    "emailjs": "^4.0.0",
     "express": "4.17.1",
     "formik": "2.2.6",
     "gsap": "^3.10.4",

@@ -75,8 +75,9 @@
 
   &_input {
     border-bottom: 1px solid var(--borderLight);
-    padding-bottom: 5px;
+
     input {
+      padding: 5px 0;
       border:  none;
       width: 100%;
       height: 100%;

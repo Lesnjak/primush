@@ -75,9 +75,22 @@ export const FormSection: FC = () => {
       email: '',
       message: '',
     },
-    onSubmit: () => {
+    onSubmit: (values) => {
       notificationsService.successMsg(t('form.successMessage'));
-      notificationsService.errorMsg(t('form.errorMessage'));
+      fetch('http://localhost:3000/api/message', {
+        method: 'POST',
+        mode: 'cors',
+        cache: 'no-cache',
+        credentials: 'same-origin',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        redirect: 'follow',
+        referrerPolicy: 'no-referrer',
+        body: JSON.stringify(values),
+      })
+        .then(() => notificationsService.successMsg(t('form.successMessage')))
+        .catch(() => notificationsService.errorMsg(t('form.errorMessage')));
     },
   });
 
