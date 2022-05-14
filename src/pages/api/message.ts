@@ -1,31 +1,36 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { SMTPClient } from 'emailjs';
 
 type ResponseData = {
   message: string;
 };
 
-export default (req: NextApiRequest, res: NextApiResponse<ResponseData>) => {
-  const client = new SMTPClient({
-    user: 'test@gmail.com',
-    password: 'passward',
-    host: 'smtp.gmail.com',
-    ssl: true,
-  });
-  try {
-    client.send(
-      {
-        text: `Just for testing purpose`,
-        from: 'dlesnyak@s-pro.io',
-        to: 'dlesnyak@s-pro.io',
-        subject: 'testing emailjs',
-      },
-      () => req.body
-    );
-  } catch (e) {
-    res.status(400).end(JSON.stringify({ message: 'Error' }));
-    return;
-  }
+export default async function (
+  req: NextApiRequest,
+  res: NextApiResponse<ResponseData>
+) {
+  require('dotenv').config();
 
+  const nodemailer = require('nodemailer');
+  const smtpTransport = require('nodemailer-smtp-transport');
+
+  const transporter = nodemailer.createTransport(
+    smtpTransport({
+      service: 'gmail',
+      host: 'smtp.gmail.com',
+      auth: {
+        user: 'dlesnyak@s-pro.io',
+        pass: 'zaqwe123zaqwe123',
+      },
+    })
+  );
+  const mailData = {
+    from: 'dlesnyak@s-pro.io',
+    to: 'dlesnyak@s-pro.io',
+    subject: `Message From ${req.body.full_name}`,
+    text: req.body.message + ' | Sent from: ' + req.body.email,
+    html: `<div>${req.body.message}</div><p>Sent from:
+    ${req.body.email}</p>`,
+  };
+  transporter.sendMail(mailData);
   res.status(200).end(JSON.stringify({ message: 'Send Mail' }));
-};
+}

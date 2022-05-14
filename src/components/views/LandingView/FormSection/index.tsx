@@ -76,7 +76,6 @@ export const FormSection: FC = () => {
       message: '',
     },
     onSubmit: (values) => {
-      notificationsService.successMsg(t('form.successMessage'));
       fetch('http://localhost:3000/api/message', {
         method: 'POST',
         mode: 'cors',
