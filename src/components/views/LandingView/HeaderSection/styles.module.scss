@@ -2,21 +2,21 @@
 
 .headerSection {
   height: 100vh;
-  background: var(--red);
+  background: radial-gradient(ellipse at center, rgba(219, 0, 0, 0.70) 0%, var(--red) 100%);
   scroll-snap-align: center;
   position: relative;
-  &:before {
-    content: '';
-    position: absolute;
-    width:70vw;
-    padding-top: 50%;
-    left: 47px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #FFFFFF;
-    opacity: 0.2;
-    filter: blur(200px);
-  }
+  //&:before {
+  //  content: '';
+  //  position: absolute;
+  //  width:70vw;
+  //  padding-top: 50%;
+  //  left: 47px;
+  //  top: 50%;
+  //  transform: translateY(-50%);
+  //  background: #FFFFFF;
+  //  opacity: 0.2;
+  //  filter: blur(200px);
+  //}
 
   &_middle {
     max-width: 1000px;

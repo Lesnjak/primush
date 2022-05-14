@@ -29,6 +29,15 @@
     "dealBurnout": "справиться с выгоранием",
     "becomeHappier": "стать счастливым"
   },
+  "questions": {
+    "who": "Who is Yurii Primush",
+    "why": "Why Yurii Primush",
+    "what": "What is coaching",
+    "activities": "My activities",
+    "links": "Interesting links",
+    "about": "What people say about Yurii",
+    "contacts": "Contacts"
+  },
   "activities": {
     "title": "MY ACTIVITIES",
     "mentor": "Mentor of Venture Mentoring Service",

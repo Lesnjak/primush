@@ -39,7 +39,7 @@ export const WhoSection: FC = () => {
     <div id="who" className={styles.who}>
       <ContentLimiter>
         <div className={styles.who_wrapper}>
-          <Header black show={hideHeader} />
+          <Header id="#who" black show={hideHeader} />
           <div className={styles.who_content}>
             <div className={styles.who_social}>
               <a className={styles.who_social_icon} href="/">

@@ -10,4 +10,7 @@ export const ICONS = {
   twitterIcon: '/icons/svg/twitter.svg',
   instagramIcon: '/icons/svg/instagram.svg',
   dateIcon: '/icons/svg/date.svg',
+  enIcon: '/icons/png/en.png',
+  ruIcon: '/icons/png/ru.png',
+  uaIcon: '/icons/png/ua.png',
 };
