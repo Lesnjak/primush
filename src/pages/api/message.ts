@@ -19,7 +19,7 @@ export default async function (
       host: 'smtp.gmail.com',
       auth: {
         user: 'dlesnyak@s-pro.io',
-        pass: 'zaqwe123zaqwe123',
+        pass: 'ffff',
       },
     })
   );
