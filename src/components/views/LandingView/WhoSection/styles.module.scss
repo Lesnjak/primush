@@ -43,6 +43,9 @@
 
   &_vertical {
     writing-mode: tb-rl;
+    @include respond($breakpoint-down-md){
+      display: none;
+    }
   }
 
   &_middle {
@@ -57,7 +60,6 @@
   }
 
   &_social {
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -106,13 +108,15 @@
   }
 
   &_rightBlock {
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
+    @include respond($breakpoint-down-md){
+      justify-content: center;
+    }
     @include respond($breakpoint-down-sm){
-    display: none;
+      display: none;
     }
   }
 
@@ -121,8 +125,7 @@
     flex-grow: 1;
     padding: 90px 33px 40px;
     justify-content: space-between;
-    height: 100vh;
-    @include respond($breakpoint-down-sm){
+    @include respond($breakpoint-down-md){
       padding: 40px 20px;
     }
   }

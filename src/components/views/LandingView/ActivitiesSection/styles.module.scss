@@ -1,28 +1,36 @@
 @import '../../../../styles/configs';
+@import '../../../../styles/mixins';
 
 .activities {
   height: 100vh;
   scroll-snap-align: center;
   position: relative;
+  @include respond($breakpoint-down-md){
+    scroll-snap-align: none;
+    height: auto;
+    border-top: 1px solid var(--borderLight);
+  }
 
-  :global {
-    .ScrollbarsCustom-Track {
-      background-color: #F0F0F0!important;
-      width: 4px!important;
-      border-radius: 0!important;
-    }
-    .ScrollbarsCustom-Thumb {
-      border-radius: 0 !important;
-      background-color: var(--red)!important;
+  &_header {
+    @include respond($breakpoint-down-md){
+      display: none;
     }
   }
+
   &_linksWrapper{
     display: flex;
     justify-content: space-between;
+    @include respond($breakpoint-down-sm){
+      display: block;
+    }
 
     &_link {
       width: calc(100% / 3 - 20px);
       position: relative;
+      @include respond($breakpoint-down-sm){
+        width: 100%;
+        margin-bottom: 20px;
+      }
       img{
         width: 100%;
       }
@@ -36,12 +44,22 @@
       text-transform: uppercase;
       color: var(--white);
       font-weight: $font-weight-bold;
+      @include respond($breakpoint-down-md){
+        font-size: 12px;
+      }
+      @include respond($breakpoint-down-sm){
+        font-size: 20px;
+      }
     }
 
 
   }
   &_mentorWrapper{
     display: flex;
+    @include respond($breakpoint-down-md){
+      display: block;
+    }
+
   }
 
   &_projectsWrapper{
@@ -74,22 +92,29 @@
 
   &_vertical {
     writing-mode: tb-rl;
+    @include respond($breakpoint-down-md){
+      display: none;
+    }
   }
-
   &_middle {
     max-width: 1000px;
     flex-grow: 1;
     padding: 0 33px;
     display: flex;
     margin: auto 0;
+    @include respond($breakpoint-down-sm){
+      padding: 0;
+    }
   }
 
   &_social {
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    @include respond($breakpoint-down-sm){
+      display: none;
+    }
     &_icon {
       margin-bottom: 25px;
       transition: $anim-time;
@@ -108,11 +133,16 @@
   }
 
   &_rightBlock {
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
+    @include respond($breakpoint-down-md){
+      justify-content: center;
+    }
+    @include respond($breakpoint-down-sm){
+      display: none;
+    }
   }
 
   &_content {
@@ -120,7 +150,10 @@
     flex-grow: 1;
     padding: 90px 33px 40px;
     justify-content: space-between;
-    height: 100vh;
+    @include respond($breakpoint-down-md){
+      padding: 40px 20px;
+      height: auto;
+    }
   }
 
   &_wrapper {

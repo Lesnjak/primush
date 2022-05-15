@@ -139,11 +139,16 @@
   }
 
   &_rightBlock {
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
+    @include respond($breakpoint-down-md){
+      justify-content: center;
+    }
+    @include respond($breakpoint-down-sm){
+      display: none;
+    }
   }
 
   &_content {

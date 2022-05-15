@@ -39,7 +39,9 @@ export const ActivitiesSection: FC = () => {
     <div id="activities" className={styles.activities}>
       <ContentLimiter>
         <div className={styles.activities_wrapper}>
-          <Header black show={hideHeader} />
+          <div className={styles.activities_header}>
+            <Header black show={hideHeader} />
+          </div>
           <div className={styles.activities_content}>
             <div className={styles.activities_social}>
               <a className={styles.activities_social_icon} href="/">

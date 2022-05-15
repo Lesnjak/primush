@@ -73,14 +73,6 @@ export const WhySection: FC = () => {
                     variant="body-14"
                     color="greyText"
                   >
-                    {t('why.text')}
-                  </Typography>
-                  <Typography
-                    className={styles.why_space}
-                    font="sen"
-                    variant="body-14"
-                    color="greyText"
-                  >
                     {t('why.text1')}
                   </Typography>
                   <Typography

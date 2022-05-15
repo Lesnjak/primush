@@ -4,7 +4,7 @@ import { HeaderSection } from './HeaderSection';
 import { LikeSection } from './LikeSection';
 import { WhoSection } from './WhoSection';
 import { WhySection } from './WhySection';
-// import { ActivitiesSection } from './ActivitiesSection';
+import { ActivitiesSection } from './ActivitiesSection';
 // import { WhatSection } from './WhatSection';
 // import { LinksSection } from './LinksSection';
 // import { ReviewsSection } from './ReviewsSection';
@@ -35,7 +35,7 @@ export const LandingView: FC = () => {
       <LikeSection />
       <WhoSection />
       <WhySection />
-      {/*<ActivitiesSection />*/}
+      <ActivitiesSection />
       {/*<WhatSection />*/}
       {/*<LinksSection />*/}
       {/*<ReviewsSection />*/}
