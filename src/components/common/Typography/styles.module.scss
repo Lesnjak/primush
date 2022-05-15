@@ -45,6 +45,9 @@
 
     &_body-20 {
       font-size: 20px;
+      @include respond($breakpoint-down-md){
+        font-size: 18px;
+      }
     }
     &_body-32 {
       font-size: 32px;
@@ -67,6 +70,9 @@
 
     &_h2 {
       font-size: 32px;
+      @include respond($breakpoint-down-md){
+        font-size: 25px;
+      }
     }
 
     &_h3 {
