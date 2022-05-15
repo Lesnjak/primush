@@ -35,13 +35,14 @@
       padding: 28px 0;
       border-bottom: 1px solid #ebebeb;
       display: flex;
-      color: var(--black);
     }
     &_text {
       transition: $anim-time;
       font-weight: $font-weight-bold;
       font-size: 20px;
       cursor: pointer;
+      color: var(--black);
+      text-align: left;
       @include respond($breakpoint-down-sm){
         font-size: 18px;
       }
