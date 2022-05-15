@@ -1,4 +1,5 @@
 @import '../../../../styles/configs';
+@import '../../../../styles/mixins';
 
 .header {
   padding: 33px;
@@ -6,16 +7,26 @@
   transition: $anim-time;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
+  position: relative;
   width: 100%;
   z-index: 1000;
-  top: 0;
+
+  @include respond($breakpoint-down-md){
+    padding: 20px;
+  }
+
+
+  &_absolute {
+    position: absolute;
+    top: 0;
+  }
 
   &_burger {
     height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
   }
 
   &_close {
@@ -42,10 +53,16 @@
 
   &_list {
     text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 35px;
+
     &_link {
       color: var(--white);
       font-size: 28px;
-      margin: 32px 0;
+      margin: 16px 0;
       text-transform: uppercase;
       font-weight: $font-weight-medium;
       opacity: 0.7;
@@ -55,6 +72,11 @@
       }
       &:hover  {
         opacity: 1;
+      }
+
+      @include respond($breakpoint-down-md){
+        font-size: 20px;
+        margin: 10px 0;
       }
     }
   }
@@ -73,7 +95,7 @@
     transition: opacity $anim-time ease-out;
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
     &_open {
       height: 100vh;
       width: 100%;

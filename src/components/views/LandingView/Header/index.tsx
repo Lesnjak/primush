@@ -15,6 +15,7 @@ import Link from 'next/link';
 type Props = {
   show: boolean;
   black?: boolean;
+  absolute?: boolean;
   id?:
     | '#header'
     | '#like'
@@ -27,7 +28,7 @@ type Props = {
     | '#what';
 };
 
-export const Header: FC<Props> = ({ show, black, id }) => {
+export const Header: FC<Props> = ({ show, black, id, absolute = true }) => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
   const { t } = useTranslation('common');
   const { locale, asPath } = useRouter();
@@ -67,11 +68,16 @@ export const Header: FC<Props> = ({ show, black, id }) => {
 
   useOnclickOutside(handleCloseMenu, { refs: [ref] });
   return (
-    <div className={cn(styles.header, { [styles.header_hide]: show })}>
+    <div
+      className={cn(styles.header, {
+        [styles.header_hide]: show,
+        [styles.header_absolute]: absolute,
+      })}
+    >
       <ReactSVG src={black ? ICONS.logoBlackIcon : ICONS.logoWhiteIcon} />
       <div onClick={() => setMenuIsOpen(true)}>
         <ReactSVG
-          className={styles.header_burger}
+          className={cn(styles.header_burger, 'link')}
           src={black ? ICONS.burgerBlackIcon : ICONS.burgerWhiteIcon}
         />
       </div>
@@ -83,7 +89,7 @@ export const Header: FC<Props> = ({ show, black, id }) => {
         <div className={cn(styles.header)}>
           <div
             onClick={() => setMenuIsOpen(false)}
-            className={styles.header_close}
+            className={cn(styles.header_close, 'link')}
           >
             <GrFormClose />
           </div>

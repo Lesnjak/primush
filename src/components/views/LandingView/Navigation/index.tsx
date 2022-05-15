@@ -48,7 +48,9 @@ export const Navigation: FC<Props> = ({
 
   const handleChange = (id: string) => () => {
     const element: any = document.querySelector(id);
-    element.scrollIntoView({ behavior: 'smooth' });
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (

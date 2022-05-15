@@ -11,7 +11,10 @@ const App = (appProps: any) => {
       <Head>
         <title>{`PRIMUSH`}</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="viewport" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=0.9, maximum-scale=1, user-scalable=0"
+        />
       </Head>
       <Fragment>
         <Component {...pageProps} />

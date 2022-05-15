@@ -55,6 +55,14 @@
       line-height: 95px;
       font-size: 108px;
       font-weight: $font-weight-medium;
+      @include respond($breakpoint-down-md){
+        font-size: 80px;
+        line-height: 70px;
+      }
+      @include respond($breakpoint-down-sm){
+        font-size: 60px;
+        line-height: 50px;
+      }
     }
 
     &_h2 {

@@ -38,7 +38,7 @@ export const HeaderSection: FC = () => {
     <div id="header" className={styles.headerSection}>
       <ContentLimiter>
         <div className={styles.headerSection_wrapper}>
-          <Header show={hideHeader} />
+          <Header absolute={false} show={hideHeader} />
           <div className={styles.headerSection_content}>
             <div className={styles.headerSection_social}>
               <a className={styles.headerSection_social_icon} href="/">
@@ -66,31 +66,15 @@ export const HeaderSection: FC = () => {
                 </div>
                 <div className={styles.headerSection_buttons}>
                   <button className={cn(styles.headerSection_button, 'link')}>
-                    <Typography
-                      uppercase
-                      align="center"
-                      font="cabin"
-                      variant="body-32"
-                    >
-                      {t('header.yes')}
-                    </Typography>
+                    {t('header.yes')}
                   </button>
-                  <button
-                    title={t('header.yes')}
-                    className={cn(
-                      styles.headerSection_button,
-                      styles.headerSection_button_transparent,
-                      'link'
-                    )}
-                  >
-                    <Typography
-                      uppercase
-                      align="center"
-                      font="cabin"
-                      variant="body-32"
-                    >
+                  <button className={styles.headerSection_buttonAnim}>
+                    <div className={styles.headerSection_buttonAnim_text}>
                       {t('header.no')}
-                    </Typography>
+                    </div>
+                    <div className={styles.headerSection_buttonAnim_text}>
+                      {t('header.yes')}
+                    </div>
                   </button>
                 </div>
               </div>
@@ -105,6 +89,19 @@ export const HeaderSection: FC = () => {
               >
                 {t('header.book')}
               </Typography>
+            </div>
+            <div className={styles.headerSection_bottomBlock}>
+              <div className={styles.headerSection_socialBottom}>
+                <a className={styles.headerSection_social_icon} href="/">
+                  <ReactSVG src={ICONS.facebookIcon} />
+                </a>
+                <a className={styles.headerSection_social_icon} href="/">
+                  <ReactSVG src={ICONS.twitterIcon} />
+                </a>
+                <a className={styles.headerSection_social_icon} href="/">
+                  <ReactSVG src={ICONS.instagramIcon} />
+                </a>
+              </div>
             </div>
           </div>
         </div>

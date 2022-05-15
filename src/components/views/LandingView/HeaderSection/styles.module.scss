@@ -1,4 +1,5 @@
 @import '../../../../styles/configs';
+@import '../../../../styles/mixins';
 
 .headerSection {
   height: 100vh;
@@ -24,6 +25,14 @@
     padding: 0 33px;
     margin: 0 auto;
     display: flex;
+    padding-bottom: 48px;
+    @include respond($breakpoint-down-md){
+      justify-content: center;
+    }
+    @include respond($breakpoint-down-sm){
+      align-items: center;
+      padding: 0;
+    }
   }
 
   &_underline {
@@ -32,6 +41,11 @@
     right: 0;
     bottom: 0;
     white-space: nowrap;
+    @include respond($breakpoint-down-sm){
+      position: static;
+      color: var(--white);
+      text-transform: uppercase;
+    }
   }
 
   &_social {
@@ -40,9 +54,16 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    @include respond($breakpoint-down-sm){
+      display: none;
+    }
     &_icon {
       margin-bottom: 25px;
       transition: $anim-time;
+      @include respond($breakpoint-down-sm){
+        margin-bottom: 0;
+        margin-right: 20px;
+      }
       &:hover {
         opacity: 0.8;
       }
@@ -50,6 +71,11 @@
         margin-bottom: 0;
       }
     }
+  }
+
+  &_socialBottom {
+    display: flex;
+    align-items: center;
   }
 
   &_titleWrapper{
@@ -63,6 +89,18 @@
     justify-content: center;
     justify-content: space-between;
     position: relative;
+    @include respond($breakpoint-down-sm){
+      display: none;
+    }
+  }
+
+  &_bottomBlock {
+    display: none;
+    @include respond($breakpoint-down-sm){
+      display: flex;
+      justify-content: space-between;
+      //width: 100%;
+    }
   }
 
   &_content {
@@ -71,6 +109,12 @@
     align-items: center;
     padding: 0 33px 40px;
     justify-content: space-between;
+    @include respond($breakpoint-down-md){
+      padding: 0 20px 20px;
+    }
+    @include respond($breakpoint-down-sm){
+      flex-direction: column;
+    }
   }
 
   &_wrapper {
@@ -84,6 +128,9 @@
     text-transform: uppercase;
     font-weight: 100;
     margin-bottom: 60px;
+    @include respond($breakpoint-down-md){
+      margin-bottom: 30px;
+    }
   }
 
   &_buttons {
@@ -103,6 +150,45 @@
     }
   }
 
+  &_buttonAnim {
+    position: relative;
+    overflow: hidden;
+    width: 264px;
+    height: 64px;
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+    font-size: 32px;
+    font-weight: $font-weight-bold;
+    transition: $anim-time;
+    text-transform: uppercase;
+    &_text {
+      transition: $anim-time;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &:hover {
+      .headerSection_buttonAnim_text {
+        transform: translateY(-100%);
+      }
+      background-color: var(--white) !important;
+      color: var(--black);
+    }
+    @include respond($breakpoint-down-md){
+      width: 200px;
+      height: 45px;
+      font-size: 25px!important;
+    }
+    @include respond($breakpoint-down-sm){
+      width: 150px;
+      height: 35px;
+      font-size: 20px!important;
+    }
+  }
+
   &_button {
     width: 264px;
     height: 64px;
@@ -112,30 +198,19 @@
     position: relative;
     font-weight: $font-weight-bold;
     transition: $anim-time;
-    &_transparent {
-      background-color: transparent;
-      color: var(--white);
-      &:before {
-        content: attr(title);
-        position: absolute;
-        color: var(--black);
-        top: 50%;
-        font-family: Cabin;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        overflow: hidden;
-        text-transform: uppercase;
-        width: 0;
-      }
-      &:hover {
-        background-color: var(--white) !important;
-        &:before {
-          width: 70px;
-          animation: changeWidth 0.5s;
-        }
+    text-transform: uppercase;
+    color: var(--black);
 
 
-      }
+    @include respond($breakpoint-down-md){
+      width: 200px;
+      height: 45px;
+      font-size: 25px!important;
+    }
+    @include respond($breakpoint-down-sm){
+      width: 150px;
+      height: 35px;
+      font-size: 20px!important;
     }
     &:hover {
       background-color: transparent;

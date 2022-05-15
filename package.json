@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@next/bundle-analyzer": "10.2.0",
+    "@react-hook/window-size": "^3.0.7",
     "@reduxjs/toolkit": "^1.5.1",
     "@types/react-slick": "^0.23.8",
     "animate.css": "4.1.1",
