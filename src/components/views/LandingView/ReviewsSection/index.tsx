@@ -104,7 +104,9 @@ export const ReviewsSection: FC = () => {
     <div id="reviews" className={styles.reviews}>
       <ContentLimiter>
         <div className={styles.reviews_wrapper}>
-          <Header black show={hideHeader} />
+          <div className={styles.reviews_header}>
+            <Header id="#reviews" black show={hideHeader} />
+          </div>
           <div className={styles.reviews_content}>
             <div className={styles.reviews_social}>
               <a className={styles.reviews_social_icon} href="/">

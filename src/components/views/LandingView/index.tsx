@@ -7,7 +7,7 @@ import { WhySection } from './WhySection';
 import { ActivitiesSection } from './ActivitiesSection';
 import { WhatSection } from './WhatSection';
 import { LinksSection } from './LinksSection';
-// import { ReviewsSection } from './ReviewsSection';
+import { ReviewsSection } from './ReviewsSection';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import CustomCursor from 'custom-cursor-react';
@@ -38,7 +38,7 @@ export const LandingView: FC = () => {
       <ActivitiesSection />
       <WhatSection />
       <LinksSection />
-      {/*<ReviewsSection />*/}
+      <ReviewsSection />
       {/*<FormSection />*/}
     </div>
   );

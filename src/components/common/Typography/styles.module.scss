@@ -77,6 +77,9 @@
 
     &_h3 {
       font-size: 40px;
+      @include respond($breakpoint-down-md){
+        font-size: 30px;
+      }
     }
 
     &_h4 {
