@@ -33,13 +33,13 @@ export const LandingView: FC = () => {
       />
       <HeaderSection />
       <LikeSection />
-      <WhoSection />
-      <WhySection />
-      <ActivitiesSection />
-      <WhatSection />
-      <LinksSection />
-      <ReviewsSection />
-      <FormSection />
+      {/*<WhoSection />*/}
+      {/*<WhySection />*/}
+      {/*<ActivitiesSection />*/}
+      {/*<WhatSection />*/}
+      {/*<LinksSection />*/}
+      {/*<ReviewsSection />*/}
+      {/*<FormSection />*/}
     </div>
   );
 };

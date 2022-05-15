@@ -1,5 +1,11 @@
+@import '../../../styles/configs';
+@import '../../../styles/mixins';
+
 .wrapper {
   height: 100vh;
   overflow: auto;
   scroll-snap-type: y mandatory;
+  @include respond($breakpoint-down-md){
+    scroll-snap-type: none;
+  }
 }
