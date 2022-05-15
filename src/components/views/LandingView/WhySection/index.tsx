@@ -37,7 +37,10 @@ export const WhySection: FC = () => {
     <div id="why" className={styles.why}>
       <ContentLimiter>
         <div className={styles.why_wrapper}>
-          <Header black show={hideHeader} />
+          <div className={styles.why_header}>
+            <Header id="#why" black show={hideHeader} />
+          </div>
+
           <div className={styles.why_wrapper}>
             <div className={styles.why_header}>
               <Header id="#why" black show={hideHeader} />

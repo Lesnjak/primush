@@ -9,6 +9,8 @@ import { SpaceBlock } from '../../../common/SpaceBlock';
 import { Typography } from '../../../common/Typography';
 import useTranslation from 'next-translate/useTranslation';
 import { IMAGES } from '../../../../configs/image.config';
+import { VideoBlock } from '../../../common/VideoBlock';
+import { BsLink45Deg } from 'react-icons/bs';
 
 export const LinksSection: FC = () => {
   const { t } = useTranslation('common');
@@ -37,7 +39,10 @@ export const LinksSection: FC = () => {
     <div id="links" className={styles.links}>
       <ContentLimiter>
         <div className={styles.links_wrapper}>
-          <Header black show={hideHeader} />
+          <div className={styles.links_header}>
+            <Header id="#links" black show={hideHeader} />
+          </div>
+
           <div className={styles.links_content}>
             <div className={styles.links_social}>
               <a className={styles.links_social_icon} href="/">
@@ -68,22 +73,41 @@ export const LinksSection: FC = () => {
                 </SpaceBlock>
                 <div className={styles.links_linksWrapper}>
                   <div className={styles.links_linksWrapper_link}>
-                    <span className={styles.links_linksWrapper_text}>
-                      geotrees.org
-                    </span>
-                    <img src={IMAGES.video} alt="gravitate" />
+                    <VideoBlock
+                      src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4"
+                      preview={IMAGES.video}
+                    />
+                    <SpaceBlock marginBottom="s2" />
+                    <Typography fontWeight="bold" uppercase>
+                      Video1{' '}
+                    </Typography>
                   </div>
                   <div className={styles.links_linksWrapper_link}>
-                    <span className={styles.links_linksWrapper_text}>
-                      rainbowfounders.org
-                    </span>
-                    <img src={IMAGES.video} alt="gravitate" />
+                    <VideoBlock
+                      src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4"
+                      preview={IMAGES.video}
+                    />
+                    <SpaceBlock marginBottom="s2" />
+                    <Typography fontWeight="bold" uppercase>
+                      Video1{' '}
+                    </Typography>
                   </div>
                   <div className={styles.links_linksWrapper_link}>
-                    <span className={styles.links_linksWrapper_text}>
-                      unprfct.com
-                    </span>
-                    <img src={IMAGES.video} alt="gravitate" />
+                    <div className={styles.links_linksWrapper_link_image}>
+                      <a
+                        href="https://www.youtube.com/watch?v=2OJ4dczhqNY"
+                        target="_blank"
+                        className={styles.links_linksWrapper_link_button}
+                        rel="noreferrer"
+                      >
+                        <BsLink45Deg />
+                      </a>
+                      <img src={IMAGES.link} alt="gravitate" />
+                    </div>
+                    <SpaceBlock marginBottom="s2" />
+                    <Typography fontWeight="bold" uppercase>
+                      Link1{' '}
+                    </Typography>
                   </div>
                 </div>
               </div>
@@ -101,7 +125,7 @@ export const LinksSection: FC = () => {
                 uppercase
                 variant="body-20"
               >
-                links Yurii Primush
+                {t('links.title')}
               </Typography>
             </div>
           </div>

@@ -6,6 +6,7 @@ export const IMAGES = {
   why: '/images/why.png',
   what: '/images/what.png',
   video: '/images/video.png',
+  link: '/images/link.png',
   mentor: '/images/mentor.png',
   member: '/images/member.png',
   gravitate: '/images/gravitate.png',
