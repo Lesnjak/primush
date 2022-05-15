@@ -6,7 +6,7 @@ import { WhoSection } from './WhoSection';
 import { WhySection } from './WhySection';
 import { ActivitiesSection } from './ActivitiesSection';
 import { WhatSection } from './WhatSection';
-// import { LinksSection } from './LinksSection';
+import { LinksSection } from './LinksSection';
 // import { ReviewsSection } from './ReviewsSection';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
@@ -37,7 +37,7 @@ export const LandingView: FC = () => {
       <WhySection />
       <ActivitiesSection />
       <WhatSection />
-      {/*<LinksSection />*/}
+      <LinksSection />
       {/*<ReviewsSection />*/}
       {/*<FormSection />*/}
     </div>
