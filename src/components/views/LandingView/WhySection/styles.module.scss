@@ -1,30 +1,41 @@
 @import '../../../../styles/configs';
+@import '../../../../styles/mixins';
 
 .why {
   height: 100vh;
   scroll-snap-align: center;
   position: relative;
+  @include respond($breakpoint-down-md){
+    scroll-snap-align: none;
+    height: auto;
+    border-top: 1px solid var(--borderLight);
+  }
 
-  :global {
-    .ScrollbarsCustom-Track {
-      background-color: #F0F0F0!important;
-      width: 4px!important;
-      border-radius: 0!important;
-    }
-    .ScrollbarsCustom-Thumb {
-      border-radius: 0 !important;
-      background-color: var(--red)!important;
+  &_header {
+    @include respond($breakpoint-down-md){
+      display: none;
     }
   }
 
   &_contentWrapper{
-    display: flex;
+    //display: flex;
+  }
+
+  &_space {
+    margin-bottom: 18px;
   }
 
   &_image {
     width: 50%;
     padding-right: 80px;
+    padding-bottom: 80px;
     flex-shrink: 0;
+    float: left;
+
+    @include respond($breakpoint-down-lg){
+      padding-right: 20px;
+      padding-bottom: 5px;
+    }
     img {
       width: 100%;
     }
@@ -40,6 +51,9 @@
     padding: 0 33px;
     display: flex;
     margin: auto 0;
+    @include respond($breakpoint-down-sm){
+      padding: 0;
+    }
   }
 
   &_social {
@@ -48,8 +62,32 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    @include respond($breakpoint-down-sm){
+      display: none;
+    }
+
     &_icon {
       margin-bottom: 25px;
+      transition: $anim-time;
+      svg {
+        path {
+          fill: var(--black)!important;
+        }
+      }
+      &:hover {
+        opacity: 0.7;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &_socialn {
+    display: flex;
+    align-items: center;
+
+    &_icon {
+      margin-right: 25px;
       transition: $anim-time;
       svg {
         path {
@@ -71,6 +109,9 @@
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
+    @include respond($breakpoint-down-sm){
+      display: none;
+    }
   }
 
   &_content {
@@ -79,6 +120,9 @@
     padding: 90px 33px 40px;
     justify-content: space-between;
     height: 100vh;
+    @include respond($breakpoint-down-sm){
+      padding: 40px 20px;
+    }
   }
 
   &_wrapper {

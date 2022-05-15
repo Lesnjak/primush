@@ -3,7 +3,7 @@ import styles from './styles.module.scss';
 import { HeaderSection } from './HeaderSection';
 import { LikeSection } from './LikeSection';
 import { WhoSection } from './WhoSection';
-// import { WhySection } from './WhySection';
+import { WhySection } from './WhySection';
 // import { ActivitiesSection } from './ActivitiesSection';
 // import { WhatSection } from './WhatSection';
 // import { LinksSection } from './LinksSection';
@@ -34,7 +34,7 @@ export const LandingView: FC = () => {
       <HeaderSection />
       <LikeSection />
       <WhoSection />
-      {/*<WhySection />*/}
+      <WhySection />
       {/*<ActivitiesSection />*/}
       {/*<WhatSection />*/}
       {/*<LinksSection />*/}
