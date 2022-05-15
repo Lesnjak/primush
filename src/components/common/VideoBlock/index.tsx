@@ -20,7 +20,6 @@ export const VideoBlock: FC<Props> = ({ preview, src }) => {
   };
   const handlePause = () => {
     const { current }: any = ref;
-    setIsPlay(false);
     current.pause();
   };
   useEffect(() => {
@@ -31,6 +30,9 @@ export const VideoBlock: FC<Props> = ({ preview, src }) => {
       };
       current.onplay = function () {
         setIsPlay(true);
+      };
+      current.onpause = function () {
+        setIsPlay(false);
       };
     }
   }, [ref]);

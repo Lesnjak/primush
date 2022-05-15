@@ -68,7 +68,9 @@ export const HeaderSection: FC = () => {
                   <button className={cn(styles.headerSection_button, 'link')}>
                     {t('header.yes')}
                   </button>
-                  <button className={styles.headerSection_buttonAnim}>
+                  <button
+                    className={cn(styles.headerSection_buttonAnim, 'link')}
+                  >
                     <div className={styles.headerSection_buttonAnim_text}>
                       {t('header.no')}
                     </div>
