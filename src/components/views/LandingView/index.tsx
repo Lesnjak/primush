@@ -13,7 +13,7 @@ import { ReviewsSection } from './ReviewsSection';
 import CustomCursor from 'custom-cursor-react';
 import 'gsap';
 import 'custom-cursor-react/dist/index.css';
-// import { FormSection } from './FormSection';
+import { FormSection } from './FormSection';
 
 export const LandingView: FC = () => {
   return (
@@ -39,7 +39,7 @@ export const LandingView: FC = () => {
       <WhatSection />
       <LinksSection />
       <ReviewsSection />
-      {/*<FormSection />*/}
+      <FormSection />
     </div>
   );
 };

@@ -116,7 +116,9 @@ export const FormSection: FC = () => {
     <div id="form" className={styles.form}>
       <ContentLimiter>
         <div className={styles.form_wrapper}>
-          <Header black show={hideHeader} />
+          <div className={styles.who_header}>
+            <Header id="#form" black show={hideHeader} />
+          </div>
           <div className={styles.form_content}>
             <div className={styles.form_social}>
               <a className={styles.form_social_icon} href="/">
