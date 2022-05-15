@@ -1,9 +1,20 @@
 @import '../../../../styles/configs';
+@import '../../../../styles/mixins';
 
 .like {
   height: 100vh;
   scroll-snap-align: center;
   position: relative;
+  @include respond($breakpoint-down-md){
+    scroll-snap-align: none;
+    height: auto;
+  }
+
+  &_header {
+    @include respond($breakpoint-down-md){
+      display: none;
+    }
+  }
 
   :global {
     .ScrollbarsCustom-Track {
@@ -24,12 +35,16 @@
       padding: 28px 0;
       border-bottom: 1px solid #ebebeb;
       display: flex;
+      color: var(--black);
     }
     &_text {
       transition: $anim-time;
       font-weight: $font-weight-bold;
       font-size: 20px;
       cursor: pointer;
+      @include respond($breakpoint-down-sm){
+        font-size: 18px;
+      }
       &:first-letter {
         text-transform: uppercase
       }
@@ -45,12 +60,15 @@
   }
 
   &_middle {
-    max-width: 1000px;
+    max-width: 1030px;
     flex-grow: 1;
-    padding: 0 33px;
+    padding: 0 50px 0 33px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    @include respond($breakpoint-down-sm){
+      padding: 0;
+    }
   }
 
   &_social {
@@ -59,6 +77,9 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    @include respond($breakpoint-down-sm){
+      display: none;
+    }
     &_icon {
       margin-bottom: 25px;
       transition: $anim-time;
@@ -82,14 +103,20 @@
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
+    @include respond($breakpoint-down-sm){
+      display: none;
+    }
   }
 
   &_content {
     display: flex;
     flex-grow: 1;
-    padding: 113px 33px 40px;
+    padding: 40px 33px;
     justify-content: space-between;
     height: 100vh;
+    @include respond($breakpoint-down-sm){
+      padding: 40px 20px;
+    }
   }
 
   &_wrapper {

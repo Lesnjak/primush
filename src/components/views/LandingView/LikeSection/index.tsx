@@ -59,7 +59,9 @@ export const LikeSection: FC = () => {
     <div id="like" className={styles.like}>
       <ContentLimiter>
         <div className={styles.like_wrapper}>
-          <Header black show={hideHeader} />
+          <div className={styles.like_header}>
+            <Header absolute={false} black show={hideHeader} />
+          </div>
           <div className={styles.like_content}>
             <div className={styles.like_social}>
               <a className={styles.like_social_icon} href="/">
