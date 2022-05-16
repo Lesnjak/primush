@@ -156,6 +156,7 @@ export const ReviewsSection: FC = () => {
                           <Typography fontWeight="medium">
                             {item.name}
                           </Typography>
+                          <SpaceBlock marginBottom="s0" />
                           <SpaceBlock positionVertical="center" width="auto">
                             <ReactSVG src={ICONS.dateIcon} />
                             <SpaceMaker width="s2" />
