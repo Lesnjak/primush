@@ -19,12 +19,14 @@ import Scrollbar from 'react-scrollbars-custom';
 import useOnclickOutside from 'react-cool-onclickoutside';
 import TextareaAutosize from 'react-textarea-autosize';
 import * as notificationsService from '../../../../configs/notifications.service';
+import { useRouter } from 'next/router';
 
 export const FormSection: FC = () => {
   const [hideHeader, setHideHeader] = useState(true);
   const { t } = useTranslation('common');
   const [menuIspen, setMenuIsOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
+  const router = useRouter();
 
   const links = [
     t('like.startMyVenture'),
@@ -76,7 +78,7 @@ export const FormSection: FC = () => {
       message: '',
     },
     onSubmit: (values, { resetForm }) => {
-      fetch('http://localhost:3000/api/message', {
+      fetch(`${router.basePath}/api/message`, {
         method: 'POST',
         mode: 'cors',
         cache: 'no-cache',
