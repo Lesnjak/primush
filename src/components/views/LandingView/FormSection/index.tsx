@@ -75,7 +75,7 @@ export const FormSection: FC = () => {
       email: '',
       message: '',
     },
-    onSubmit: (values) => {
+    onSubmit: (values, { resetForm }) => {
       fetch('http://localhost:3000/api/message', {
         method: 'POST',
         mode: 'cors',
@@ -88,7 +88,10 @@ export const FormSection: FC = () => {
         referrerPolicy: 'no-referrer',
         body: JSON.stringify(values),
       })
-        .then(() => notificationsService.successMsg(t('form.successMessage')))
+        .then(() => {
+          notificationsService.successMsg(t('form.successMessage'));
+          resetForm();
+        })
         .catch(() => notificationsService.errorMsg(t('form.errorMessage')));
     },
   });
