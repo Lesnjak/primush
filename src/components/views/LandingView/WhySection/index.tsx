@@ -108,8 +108,8 @@ export const WhySection: FC = () => {
                 <span />
                 <Navigation
                   black
-                  rightButtonId="#why"
-                  leftButtonId="#like"
+                  rightButtonId="#activities"
+                  leftButtonId="#who"
                   id="#why"
                 />
                 <Typography

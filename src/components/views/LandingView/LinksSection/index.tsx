@@ -116,8 +116,8 @@ export const LinksSection: FC = () => {
               <span />
               <Navigation
                 black
-                rightButtonId="#what"
-                leftButtonId="#what"
+                rightButtonId="#reviews"
+                leftButtonId="#who"
                 id="#links"
               />
               <Typography

@@ -34,9 +34,15 @@
     //}
 
     .slick-slide {
-      transition: 0.5s;
+      transition: 0.3s;
       cursor: pointer;
       padding-top: 80px;
+      opacity: 0.6;
+      position: relative;
+    }
+    .slick-current {
+      opacity: 1;
+      z-index: 1000;
     }
     .center {
       transition: 0.5s;

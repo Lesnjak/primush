@@ -119,8 +119,8 @@ export const WhatSection: FC = () => {
               <span />
               <Navigation
                 black
-                rightButtonId="#why"
-                leftButtonId="#like"
+                rightButtonId="#links"
+                leftButtonId="#activities"
                 id="#what"
               />
               <Typography

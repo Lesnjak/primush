@@ -174,7 +174,7 @@ export const ReviewsSection: FC = () => {
               <span />
               <Navigation
                 black
-                rightButtonId="#what"
+                rightButtonId="#form"
                 leftButtonId="#links"
                 id="#reviews"
               />
