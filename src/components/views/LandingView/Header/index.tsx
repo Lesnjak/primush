@@ -131,6 +131,14 @@ export const Header: FC<Props> = ({ show, black, id, absolute = true }) => {
           </div>
         </div>
         <div className={styles.header_list}>
+          <Typography
+            className={styles.header_vertical}
+            uppercase
+            color="white"
+            variant="body-20"
+          >
+            {t('header.menu')}
+          </Typography>
           {links.map((item: any) => (
             <div
               key={item.link}

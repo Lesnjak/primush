@@ -5,7 +5,8 @@
     "do": "Do you",
     "have": "have",
     "question": "a question?",
-    "book": "book a free session"
+    "book": "book a free session",
+    "menu": "menu"
   },
   "like": {
     "question": "I will do my best to help you find the answers to all your questions.",

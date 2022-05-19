@@ -9,7 +9,18 @@
   align-items: center;
   position: relative;
   width: 100%;
+  max-width: 1920px;
   z-index: 1000;
+
+  &_vertical {
+    writing-mode: tb-rl;
+    position: absolute;
+    right: 33px;
+    bottom: 40px;
+    @include respond($breakpoint-down-md){
+      display: none;
+    }
+  }
 
   @include respond($breakpoint-down-md){
     padding: 20px;
@@ -58,6 +69,9 @@
     flex-direction: column;
     justify-content: center;
     padding-bottom: 35px;
+    max-width: 1920px;
+    width: 100%;
+    position: relative;
 
     &_link {
       color: var(--white);
