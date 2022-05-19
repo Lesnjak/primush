@@ -64,14 +64,14 @@
     "contacts": "Контакты"
   },
   "activities": {
-    "title": "MY ACTIVITIES",
-    "mentor": "Mentor of Venture Mentoring Service",
-    "university": "University of Luxembourg ",
-    "mentorText": "Venture Mentoring Service (VMS) of the University of Luxembourg Incubator helps University’s entrepreneurs turn their ideas into a real business. Under the license of MIT, VMS provides tailored support and industry experts to suit every venture’s needs regardless of their level of experience and stage. My role is to mentor selected VMS startups",
-    "member": "Member of Luxembourg Business Angel Network (LBAN)",
-    "memberText": "LBAN unlocks the potential of private investors and helps entrepreneurs to thrive, in Luxembourg and beyond",
-    "myProjects": "MY Projects",
-    "follow": "Follow our upcoming projects"
+    "title": "МОЯ ДЕЯТЕЛЬНОСТЬ",
+    "mentor": "Ментор службы венчурного наставничества",
+    "university": "Люксембургский университет",
+    "mentorText": "Служба венчурного наставництва (VMS) інкубатора Люксембурзького університету допомагає підприємцям університету перетворити свої ідеї в реальний бізнес. За ліцензією Массачусетського технологічного інституту VMS надає індивідуальну підтримку та експертів галузі, щоб задовольнити потреби кожного підприємства, незалежно від їхнього рівня досвіду та стадії. Моя роль полягає в наставництві вибраних стартапів VMS",
+    "member": "Член Люксембургской сети бизнес-ангелов (LBAN)",
+    "memberText": "LBAN раскрывает потенциал частных инвесторов и помогает предпринимателям процветать в Люксембурге и за его пределами.",
+    "myProjects": "МОИ проекты",
+    "follow": "Следите за нашими будущими проектами"
   },
   "links": {
     "title": "интересные ссылки",
@@ -81,20 +81,20 @@
     "title": "What people say about Yurii"
   },
   "form": {
-    "title": "Contact me",
-    "text1": "Yurii Primush is an experienced, well-trained, certified coach who works with private individuals and various organizations (especially entrepreneurs and start-ups) both in Europe and the US.",
-    "text2": "Both online and offline coaching sessions are offered. For more information please contact:",
-    "subject": "subject",
-    "fullName": "FULL NAME",
-    "email": "EMAIL",
-    "message": "MESSAGE",
-    "subjectPlaceholder": "Your subject",
-    "fullNamePlaceholder": "Your full name",
-    "emailPlaceholder": "Your message",
-    "messagePlaceholder": "MESSAGE",
-    "button": "SEND MESSAGE",
-    "required": "This field is required",
-    "validEmail": "Enter valid email",
+    "title": "Свяжитесь со мной",
+    "text1": "Юрий Примуш — опытный, хорошо обученный, сертифицированный коуч, работает с частными лицами и различными организациями (особенно предпринимателями и стартапами) как в Европе, так и в США.",
+    "text2": "Предлагаются как онлайн, так и офлайн коуч-сессии. Для получения более подробной информации, пожалуйста, свяжитесь с:",
+    "subject": "ТЕМА",
+    "fullName": "ФИО",
+    "email": "ЭЛ. АДРЕС",
+    "message": "СООБЩЕНИЕ",
+    "subjectPlaceholder": "Ваш предмет",
+    "fullNamePlaceholder": "Ваше полное имя",
+    "emailPlaceholder": "Вашу адресу електронної пошти",
+    "messagePlaceholder": "Твое сообщение",
+    "button": "ОТПРАВИТЬ СООБЩЕНИЕ",
+    "required": "Это поле обязательно к заполнению",
+    "validEmail": "Введите корректный адрес электронной почты",
     "errorMessage": "Что-то пошло не так, повторите попытку позже",
     "successMessage": "Мы свяжемся с вами в близжайшее время"
   }

@@ -153,7 +153,7 @@ export const ActivitiesSection: FC = () => {
                 uppercase
                 variant="body-20"
               >
-                activities Yurii Primush
+                {t('activities.title')}
               </Typography>
             </div>
           </div>

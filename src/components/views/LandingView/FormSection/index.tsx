@@ -354,7 +354,7 @@ export const FormSection: FC = () => {
                 uppercase
                 variant="body-20"
               >
-                form Yurii Primush
+                {t('form.title')}
               </Typography>
             </div>
           </div>
