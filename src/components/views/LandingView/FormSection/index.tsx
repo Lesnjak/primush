@@ -126,14 +126,29 @@ export const FormSection: FC = () => {
           </div>
           <div className={styles.form_content}>
             <div className={styles.form_social}>
-              <a className={styles.form_social_icon} href="/">
+              <a
+                target="_blank"
+                className={styles.form_social_icon}
+                href={t('socialLinks.facebook')}
+                rel="noreferrer"
+              >
                 <ReactSVG src={ICONS.facebookIcon} />
               </a>
-              <a className={styles.form_social_icon} href="/">
-                <ReactSVG src={ICONS.twitterIcon} />
-              </a>
-              <a className={styles.form_social_icon} href="/">
+              <a
+                target="_blank"
+                className={styles.form_social_icon}
+                href={t('socialLinks.instagram')}
+                rel="noreferrer"
+              >
                 <ReactSVG src={ICONS.instagramIcon} />
+              </a>
+              <a
+                target="_blank"
+                className={styles.form_social_icon}
+                href={t('socialLinks.linkedin')}
+                rel="noreferrer"
+              >
+                <ReactSVG src={ICONS.linkedinIcon} />
               </a>
             </div>
             <div className={styles.form_middle}>

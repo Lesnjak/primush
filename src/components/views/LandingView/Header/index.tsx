@@ -25,6 +25,7 @@ type Props = {
     | '#reviews'
     | '#form'
     | '#activities'
+    | '#stand'
     | '#what';
 };
 

@@ -60,6 +60,9 @@
   }
   &_hide {
     opacity: 0;
+    @include respond($breakpoint-down-md){
+      opacity: 1;
+    }
   }
 
   &_list {

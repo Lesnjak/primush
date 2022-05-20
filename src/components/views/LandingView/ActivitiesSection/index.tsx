@@ -44,14 +44,29 @@ export const ActivitiesSection: FC = () => {
           </div>
           <div className={styles.activities_content}>
             <div className={styles.activities_social}>
-              <a className={styles.activities_social_icon} href="/">
+              <a
+                target="_blank"
+                className={styles.activities_social_icon}
+                href={t('socialLinks.facebook')}
+                rel="noreferrer"
+              >
                 <ReactSVG src={ICONS.facebookIcon} />
               </a>
-              <a className={styles.activities_social_icon} href="/">
-                <ReactSVG src={ICONS.twitterIcon} />
-              </a>
-              <a className={styles.activities_social_icon} href="/">
+              <a
+                target="_blank"
+                className={styles.activities_social_icon}
+                href={t('socialLinks.instagram')}
+                rel="noreferrer"
+              >
                 <ReactSVG src={ICONS.instagramIcon} />
+              </a>
+              <a
+                target="_blank"
+                className={styles.activities_social_icon}
+                href={t('socialLinks.linkedin')}
+                rel="noreferrer"
+              >
+                <ReactSVG src={ICONS.linkedinIcon} />
               </a>
             </div>
             <div className={styles.activities_middle}>
@@ -110,33 +125,66 @@ export const ActivitiesSection: FC = () => {
                   <Typography uppercase fontWeight="bold" variant="body-20">
                     {t('activities.myProjects')}
                   </Typography>
-                  <Typography
-                    color="greyText"
-                    fontWeight="medium"
-                    variant="body-14"
-                  >
-                    {t('activities.follow')}
-                  </Typography>
+                  <SpaceBlock positionVertical="center" width="auto">
+                    <Typography
+                      className={styles.activities_follow_res}
+                      color="greyText"
+                      fontWeight="medium"
+                      variant="body-14"
+                    >
+                      {t('activities.follow')}
+                    </Typography>
+                    <SpaceMaker width="s3" />
+                    <div className={styles.activities_follow}>
+                      <ReactSVG src={ICONS.followIcon} />
+                      <div className={styles.activities_follow_menuWrapper}>
+                        <div className={styles.activities_follow_menu}>
+                          {t('activities.followText')}
+                          <a
+                            className={styles.activities_follow_link}
+                            href="mailto:projects@primush.com"
+                          >
+                            projects@primush.com
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </SpaceBlock>
                 </div>
                 <div className={styles.activities_linksWrapper}>
-                  <div className={styles.activities_linksWrapper_link}>
+                  <a
+                    target="_blank"
+                    href={t('myActivitiesLinks.geotrees')}
+                    className={styles.activities_linksWrapper_link}
+                    rel="noreferrer"
+                  >
                     <span className={styles.activities_linksWrapper_text}>
                       geotrees.org
                     </span>
                     <img src={IMAGES.gravitate} alt="gravitate" />
-                  </div>
-                  <div className={styles.activities_linksWrapper_link}>
+                  </a>
+                  <a
+                    target="_blank"
+                    href={t('myActivitiesLinks.rainbowfounders')}
+                    className={styles.activities_linksWrapper_link}
+                    rel="noreferrer"
+                  >
                     <span className={styles.activities_linksWrapper_text}>
                       rainbowfounders.org
                     </span>
                     <img src={IMAGES.candy} alt="gravitate" />
-                  </div>
-                  <div className={styles.activities_linksWrapper_link}>
+                  </a>
+                  <a
+                    target="_blank"
+                    href={t('myActivitiesLinks.unprfct')}
+                    className={styles.activities_linksWrapper_link}
+                    rel="noreferrer"
+                  >
                     <span className={styles.activities_linksWrapper_text}>
                       unprfct.com
                     </span>
                     <img src={IMAGES.tubes} alt="gravitate" />
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>

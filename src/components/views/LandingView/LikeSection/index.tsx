@@ -47,6 +47,13 @@ export const LikeSection: FC = () => {
     }
   };
 
+  const handleChange = (id: string) => () => {
+    const element: any = document.querySelector(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   useEffect(() => {
     window.addEventListener('scroll', handleScroll, true);
 
@@ -64,14 +71,29 @@ export const LikeSection: FC = () => {
           </div>
           <div className={styles.like_content}>
             <div className={styles.like_social}>
-              <a className={styles.like_social_icon} href="/">
+              <a
+                target="_blank"
+                className={styles.like_social_icon}
+                href={t('socialLinks.facebook')}
+                rel="noreferrer"
+              >
                 <ReactSVG src={ICONS.facebookIcon} />
               </a>
-              <a className={styles.like_social_icon} href="/">
-                <ReactSVG src={ICONS.twitterIcon} />
-              </a>
-              <a className={styles.like_social_icon} href="/">
+              <a
+                target="_blank"
+                className={styles.like_social_icon}
+                href={t('socialLinks.instagram')}
+                rel="noreferrer"
+              >
                 <ReactSVG src={ICONS.instagramIcon} />
+              </a>
+              <a
+                target="_blank"
+                className={styles.like_social_icon}
+                href={t('socialLinks.linkedin')}
+                rel="noreferrer"
+              >
+                <ReactSVG src={ICONS.linkedinIcon} />
               </a>
             </div>
             <div className={styles.like_middle}>
@@ -93,7 +115,11 @@ export const LikeSection: FC = () => {
               <div className={styles.like_links}>
                 <Scrollbar style={{ width: '100%', height: '100%' }}>
                   {links.map((item: string) => (
-                    <div key={item} className={styles.like_links_link}>
+                    <div
+                      onClick={handleChange('#form')}
+                      key={item}
+                      className={styles.like_links_link}
+                    >
                       <button className={cn(styles.like_links_text, 'link')}>
                         {item}
                       </button>

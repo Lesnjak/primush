@@ -25,6 +25,12 @@ export const HeaderSection: FC = () => {
       }
     }
   };
+  const handleChange = (id: string) => () => {
+    const element: any = document.querySelector(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll, true);
@@ -38,20 +44,45 @@ export const HeaderSection: FC = () => {
     <div id="header" className={styles.headerSection}>
       <ContentLimiter>
         <div className={styles.headerSection_wrapper}>
-          <Header absolute={false} show={hideHeader} />
+          <div
+            className={cn(styles.headerSection_header, {
+              [styles.headerSection_header_red]: hideHeader,
+            })}
+          >
+            <Header absolute={false} show={hideHeader} />
+          </div>
           <div className={styles.headerSection_content}>
             <div className={styles.headerSection_social}>
-              <a className={styles.headerSection_social_icon} href="/">
+              <a
+                target="_blank"
+                className={styles.headerSection_social_icon}
+                href={t('socialLinks.facebook')}
+                rel="noreferrer"
+              >
                 <ReactSVG src={ICONS.facebookIcon} />
               </a>
-              <a className={styles.headerSection_social_icon} href="/">
-                <ReactSVG src={ICONS.twitterIcon} />
-              </a>
-              <a className={styles.headerSection_social_icon} href="/">
+              <a
+                target="_blank"
+                className={styles.headerSection_social_icon}
+                href={t('socialLinks.instagram')}
+                rel="noreferrer"
+              >
                 <ReactSVG src={ICONS.instagramIcon} />
               </a>
+              <a
+                target="_blank"
+                className={styles.headerSection_social_icon}
+                href={t('socialLinks.linkedin')}
+                rel="noreferrer"
+              >
+                <ReactSVG src={ICONS.linkedinIcon} />
+              </a>
             </div>
-            <div className={styles.headerSection_middle}>
+            <div
+              className={cn(styles.headerSection_middle, {
+                [styles.headerSection_middle_padding]: hideHeader,
+              })}
+            >
               <div className={styles.headerSection_titleWrapper}>
                 <div className={styles.headerSection_title}>
                   <Typography color="redTitle" font="cabin" variant="h1">
@@ -65,10 +96,14 @@ export const HeaderSection: FC = () => {
                   </Typography>
                 </div>
                 <div className={styles.headerSection_buttons}>
-                  <button className={cn(styles.headerSection_button, 'link')}>
+                  <button
+                    onClick={handleChange('#like')}
+                    className={cn(styles.headerSection_button, 'link')}
+                  >
                     {t('header.yes')}
                   </button>
                   <button
+                    onClick={handleChange('#like')}
                     className={cn(styles.headerSection_buttonAnim, 'link')}
                   >
                     <div className={styles.headerSection_buttonAnim_text}>
@@ -94,14 +129,29 @@ export const HeaderSection: FC = () => {
             </div>
             <div className={styles.headerSection_bottomBlock}>
               <div className={styles.headerSection_socialBottom}>
-                <a className={styles.headerSection_social_icon} href="/">
+                <a
+                  target="_blank"
+                  className={styles.headerSection_social_icon}
+                  href={t('socialLinks.facebook')}
+                  rel="noreferrer"
+                >
                   <ReactSVG src={ICONS.facebookIcon} />
                 </a>
-                <a className={styles.headerSection_social_icon} href="/">
-                  <ReactSVG src={ICONS.twitterIcon} />
-                </a>
-                <a className={styles.headerSection_social_icon} href="/">
+                <a
+                  target="_blank"
+                  className={styles.headerSection_social_icon}
+                  href={t('socialLinks.instagram')}
+                  rel="noreferrer"
+                >
                   <ReactSVG src={ICONS.instagramIcon} />
+                </a>
+                <a
+                  target="_blank"
+                  className={styles.headerSection_social_icon}
+                  href={t('socialLinks.linkedin')}
+                  rel="noreferrer"
+                >
+                  <ReactSVG src={ICONS.linkedinIcon} />
                 </a>
               </div>
             </div>

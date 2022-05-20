@@ -47,14 +47,29 @@ export const WhySection: FC = () => {
             </div>
             <div className={styles.why_content}>
               <div className={styles.why_social}>
-                <a className={styles.why_social_icon} href="/">
+                <a
+                  target="_blank"
+                  className={styles.why_social_icon}
+                  href={t('socialLinks.facebook')}
+                  rel="noreferrer"
+                >
                   <ReactSVG src={ICONS.facebookIcon} />
                 </a>
-                <a className={styles.why_social_icon} href="/">
-                  <ReactSVG src={ICONS.twitterIcon} />
-                </a>
-                <a className={styles.why_social_icon} href="/">
+                <a
+                  target="_blank"
+                  className={styles.why_social_icon}
+                  href={t('socialLinks.instagram')}
+                  rel="noreferrer"
+                >
                   <ReactSVG src={ICONS.instagramIcon} />
+                </a>
+                <a
+                  target="_blank"
+                  className={styles.why_social_icon}
+                  href={t('socialLinks.linkedin')}
+                  rel="noreferrer"
+                >
+                  <ReactSVG src={ICONS.linkedinIcon} />
                 </a>
               </div>
               <div className={styles.why_middle}>

@@ -42,14 +42,29 @@ export const WhoSection: FC = () => {
           </div>
           <div className={styles.who_content}>
             <div className={styles.who_social}>
-              <a className={styles.who_social_icon} href="/">
+              <a
+                target="_blank"
+                className={styles.who_social_icon}
+                href={t('socialLinks.facebook')}
+                rel="noreferrer"
+              >
                 <ReactSVG src={ICONS.facebookIcon} />
               </a>
-              <a className={styles.who_social_icon} href="/">
-                <ReactSVG src={ICONS.twitterIcon} />
-              </a>
-              <a className={styles.who_social_icon} href="/">
+              <a
+                target="_blank"
+                className={styles.who_social_icon}
+                href={t('socialLinks.instagram')}
+                rel="noreferrer"
+              >
                 <ReactSVG src={ICONS.instagramIcon} />
+              </a>
+              <a
+                target="_blank"
+                className={styles.who_social_icon}
+                href={t('socialLinks.linkedin')}
+                rel="noreferrer"
+              >
+                <ReactSVG src={ICONS.linkedinIcon} />
               </a>
             </div>
             <div className={styles.who_middle}>
@@ -114,14 +129,29 @@ export const WhoSection: FC = () => {
                   {t('who.text5')}
                 </Typography>
                 <div className={styles.who_socialn}>
-                  <a className={styles.who_socialn_icon} href="/">
+                  <a
+                    target="_blank"
+                    className={styles.who_socialn_icon}
+                    href={t('socialLinks.facebook')}
+                    rel="noreferrer"
+                  >
                     <ReactSVG src={ICONS.facebookIcon} />
                   </a>
-                  <a className={styles.who_socialn_icon} href="/">
-                    <ReactSVG src={ICONS.twitterIcon} />
-                  </a>
-                  <a className={styles.who_socialn_icon} href="/">
+                  <a
+                    target="_blank"
+                    className={styles.who_socialn_icon}
+                    href={t('socialLinks.instagram')}
+                    rel="noreferrer"
+                  >
                     <ReactSVG src={ICONS.instagramIcon} />
+                  </a>
+                  <a
+                    target="_blank"
+                    className={styles.who_socialn_icon}
+                    href={t('socialLinks.linkedin')}
+                    rel="noreferrer"
+                  >
+                    <ReactSVG src={ICONS.linkedinIcon} />
                   </a>
                 </div>
               </div>

@@ -1,7 +1,7 @@
 @import '../../../../styles/configs';
 @import '../../../../styles/mixins';
 
-.activities {
+.stand {
   height: 100vh;
   scroll-snap-align: center;
   position: relative;
@@ -11,99 +11,61 @@
     border-top: 1px solid var(--borderLight);
   }
 
-  &_follow {
-    position: relative;
-
-    &_res {
-      @media (max-width: 600px) {
-       display: none;
-      }
-    }
-    &_link {
-      color: var(--red);
-      display: block;
-      margin-top: 10px;
-    }
-    &_menuWrapper {
-      position: absolute;
-      display: none;
-      z-index: 10;
-      top: 100%;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 279px;
-      padding-top: 20px;
-      @media (max-width: 1270px) {
-        left: auto;
-        right: 0;
-        transform: translateX(0);
-      }
-    }
-    &_menu {
-      background-color: var(--white);
-      font-size: 12px;
-      padding: 22px 12px;
-      text-align: center;
-      color: #2F2F2F;
-      filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.16));
-      position: relative;
-      z-index: 1;
-      &:before {
-        content: '';
-        position: absolute;
-        z-index: 20;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        bottom: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-        border-width: 0 12px 12px 12px;
-        border-color: transparent transparent #fcfcfc transparent;
-        @media (max-width: 1270px) {
-          left: auto;
-          right: 0;
-          transform: translateX(0);
-        }
-      }
-    }
-    &:hover {
-      .activities_follow_menuWrapper {
-        display: block;
-      }
-    }
-  }
-
   &_header {
     @include respond($breakpoint-down-md){
       display: none;
     }
   }
 
+
+  &_text {
+    max-width: 900px;
+    line-height: 24px;
+  }
   &_linksWrapper{
     display: flex;
     justify-content: space-between;
-    @include respond($breakpoint-down-sm){
-      display: block;
-    }
+    flex-wrap: wrap;
+    width: 100%;
 
     &_link {
-      width: calc(100% / 3 - 20px);
+      width: calc(100% / 3 - 40px);
       position: relative;
-      display: block;
-      @include respond($breakpoint-down-sm){
-        width: 100%;
+      display: flex;
+      flex-direction: column;
+      background: #FFFFFF;
+      box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.06);
+      color: #6B6B6B;
+      padding: 25px 36px;
+      text-align: center;
+      margin-bottom: 40px;
+      justify-content: center;
+      align-items: center;
+      height: 160px;
+      transition: $anim-time;
+      &:hover {
+        background-color: var(--red);
+        color: var(--white);
+      }
+      img {
+        width: 130px;
+        margin:0 auto;
+        margin-bottom: 30px;
+      }
+
+
+      @include respond($breakpoint-down-md){
+        width: calc(100% / 2 - 40px);
         margin-bottom: 20px;
         &:last-child {
           margin-bottom: 0;
         }
       }
-      img{
+      @include respond($breakpoint-down-xs){
         width: 100%;
-      }
-      &:hover {
-        .activities_linksWrapper_text {
-          text-decoration: underline;
+        margin-bottom: 20px;
+        &:last-child {
+          margin-bottom: 0;
         }
       }
     }
@@ -114,25 +76,14 @@
       transform: translate(-50%, -50%);
       font-size: 16px;
       text-transform: uppercase;
-      display: block;
       color: var(--white);
       font-weight: $font-weight-bold;
-      @include respond($breakpoint-down-md){
-        font-size: 12px;
-      }
-      @include respond($breakpoint-down-sm){
-        font-size: 20px;
-      }
     }
 
 
   }
   &_mentorWrapper{
     display: flex;
-    @include respond($breakpoint-down-md){
-      display: block;
-    }
-
   }
 
   &_projectsWrapper{
@@ -152,6 +103,8 @@
 
   &_contentWrapper{
    position: relative;
+    width: 100%;
+
   }
 
   &_image {
@@ -169,8 +122,9 @@
       display: none;
     }
   }
+
   &_middle {
-    max-width: 1000px;
+    max-width: 1200px;
     flex-grow: 1;
     padding: 0 33px;
     display: flex;
@@ -223,6 +177,8 @@
     flex-grow: 1;
     padding: 90px 33px 40px;
     justify-content: space-between;
+    flex-grow: 1;
+    height: 100%;
     @include respond($breakpoint-down-md){
       padding: 40px 20px;
       height: auto;

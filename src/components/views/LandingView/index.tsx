@@ -14,6 +14,7 @@ import CustomCursor from 'custom-cursor-react';
 import 'gsap';
 import 'custom-cursor-react/dist/index.css';
 import { FormSection } from './FormSection';
+import { StandSection } from './StandSection';
 
 export const LandingView: FC = () => {
   return (
@@ -38,6 +39,7 @@ export const LandingView: FC = () => {
       <ActivitiesSection />
       <WhatSection />
       <LinksSection />
+      <StandSection />
       <ReviewsSection />
       <FormSection />
     </div>

@@ -109,14 +109,29 @@ export const ReviewsSection: FC = () => {
           </div>
           <div className={styles.reviews_content}>
             <div className={styles.reviews_social}>
-              <a className={styles.reviews_social_icon} href="/">
+              <a
+                target="_blank"
+                className={styles.reviews_social_icon}
+                href={t('socialLinks.facebook')}
+                rel="noreferrer"
+              >
                 <ReactSVG src={ICONS.facebookIcon} />
               </a>
-              <a className={styles.reviews_social_icon} href="/">
-                <ReactSVG src={ICONS.twitterIcon} />
-              </a>
-              <a className={styles.reviews_social_icon} href="/">
+              <a
+                target="_blank"
+                className={styles.reviews_social_icon}
+                href={t('socialLinks.instagram')}
+                rel="noreferrer"
+              >
                 <ReactSVG src={ICONS.instagramIcon} />
+              </a>
+              <a
+                target="_blank"
+                className={styles.reviews_social_icon}
+                href={t('socialLinks.linkedin')}
+                rel="noreferrer"
+              >
+                <ReactSVG src={ICONS.linkedinIcon} />
               </a>
             </div>
             <div className={styles.reviews_middle}>
@@ -176,7 +191,7 @@ export const ReviewsSection: FC = () => {
               <Navigation
                 black
                 rightButtonId="#form"
-                leftButtonId="#links"
+                leftButtonId="#stand"
                 id="#reviews"
               />
               <Typography

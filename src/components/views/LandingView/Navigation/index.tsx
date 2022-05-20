@@ -15,6 +15,7 @@ type Props = {
     | '#links'
     | '#reviews'
     | '#form'
+    | '#stand'
     | '#what';
   rightButtonId?:
     | '#header'
@@ -23,6 +24,7 @@ type Props = {
     | '#why'
     | '#links'
     | '#reviews'
+    | '#stand'
     | '#form'
     | '#activities'
     | '#what';
@@ -42,6 +44,7 @@ export const Navigation: FC<Props> = ({
     '#activities',
     '#what',
     '#links',
+    '#stand',
     '#reviews',
     '#form',
   ];
@@ -72,7 +75,8 @@ export const Navigation: FC<Props> = ({
             [styles.navigation_number_black]: black,
           })}
         >
-          0{ids.indexOf(id) + 1}
+          {ids.indexOf(id) < 9 && '0'}
+          {ids.indexOf(id) + 1}
         </div>
         {ids.map((item: string) => (
           <button
