@@ -55,7 +55,9 @@ export const Header: FC<Props> = ({ show, black, id, absolute = true }) => {
   const handleLink = (id: any) => {
     const element: any = document.querySelector(id);
     setMenuIsOpen(false);
-    element.scrollIntoView();
+    element.scrollIntoView({
+      behavior: 'smooth',
+    });
   };
 
   const handleToggleMenu = () => {
@@ -70,6 +72,7 @@ export const Header: FC<Props> = ({ show, black, id, absolute = true }) => {
   useOnclickOutside(handleCloseMenu, { refs: [ref] });
   return (
     <div
+      id="hideHeader"
       className={cn(styles.header, {
         [styles.header_hide]: show,
         [styles.header_absolute]: absolute,

@@ -121,7 +121,7 @@ export const FormSection: FC = () => {
     <div id="form" className={styles.form}>
       <ContentLimiter>
         <div className={styles.form_wrapper}>
-          <div className={styles.who_header}>
+          <div className={styles.form_header}>
             <Header id="#form" black show={hideHeader} />
           </div>
           <div className={styles.form_content}>
