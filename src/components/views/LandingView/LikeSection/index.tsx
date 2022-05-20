@@ -141,7 +141,7 @@ export const LikeSection: FC = () => {
                 uppercase
                 variant="body-20"
               >
-                {t('like.wouldLike')}
+                {t('like.wouldLik')}
               </Typography>
             </div>
           </div>
