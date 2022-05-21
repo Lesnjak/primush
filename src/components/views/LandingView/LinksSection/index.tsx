@@ -93,7 +93,7 @@ export const LinksSection: FC = () => {
                     />
                     <SpaceBlock marginBottom="s2" />
                     <Typography fontWeight="bold" uppercase>
-                      {t('links.video1.title')}
+                      {t('links.video1.name')}
                     </Typography>
                   </div>
                   <div className={styles.links_linksWrapper_link}>
@@ -103,7 +103,7 @@ export const LinksSection: FC = () => {
                     />
                     <SpaceBlock marginBottom="s2" />
                     <Typography fontWeight="bold" uppercase>
-                      {t('links.video2.title')}
+                      {t('links.video2.name')}
                     </Typography>
                   </div>
                   <div className={styles.links_linksWrapper_link}>
