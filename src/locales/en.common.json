@@ -78,7 +78,22 @@
   },
   "links": {
     "title": "interesting links",
-    "text": "Here you can find some articles, videos, and other materials that have caught my attention."
+    "text": "Here you can find some articles, videos, and other materials that have caught my attention.",
+    "video1": {
+      "name": " Video 1",
+      "preview": "https://assets.entrepreneur.com/content/3x2/2000/20200126010631-shutterstock-1029299632.jpeg",
+      "url": "https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4"
+    },
+    "video2": {
+      "name": " Video 2",
+      "preview": "https://assets.entrepreneur.com/content/3x2/2000/20200126010631-shutterstock-1029299632.jpeg",
+      "url": "https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4"
+    },
+    "link1": {
+      "name": " Link 1",
+      "preview": "https://assets.entrepreneur.com/content/3x2/2000/20200126010631-shutterstock-1029299632.jpeg",
+      "url": "https://www.youtube.com/watch?v=2OJ4dczhqNY"
+    }
   },
   "reviews": {
     "title": "What people say about Yurii",

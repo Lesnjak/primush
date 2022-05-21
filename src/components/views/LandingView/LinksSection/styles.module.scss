@@ -33,6 +33,7 @@
       position: relative;
       display: flex;
       flex-direction: column;
+      cursor: pointer;
 
 
       @include respond($breakpoint-down-md){

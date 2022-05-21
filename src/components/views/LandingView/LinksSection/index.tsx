@@ -8,7 +8,6 @@ import { ICONS } from '../../../../configs/icons.config';
 import { SpaceBlock } from '../../../common/SpaceBlock';
 import { Typography } from '../../../common/Typography';
 import useTranslation from 'next-translate/useTranslation';
-import { IMAGES } from '../../../../configs/image.config';
 import { VideoBlock } from '../../../common/VideoBlock';
 import { BsLink45Deg } from 'react-icons/bs';
 
@@ -89,39 +88,39 @@ export const LinksSection: FC = () => {
                 <div className={styles.links_linksWrapper}>
                   <div className={styles.links_linksWrapper_link}>
                     <VideoBlock
-                      src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4"
-                      preview={IMAGES.video}
+                      src={t('links.video1.url')}
+                      preview={t('links.video1.preview')}
                     />
                     <SpaceBlock marginBottom="s2" />
                     <Typography fontWeight="bold" uppercase>
-                      Video1{' '}
+                      {t('links.video1.title')}
                     </Typography>
                   </div>
                   <div className={styles.links_linksWrapper_link}>
                     <VideoBlock
-                      src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4"
-                      preview={IMAGES.video}
+                      src={t('links.video2.url')}
+                      preview={t('links.video2.preview')}
                     />
                     <SpaceBlock marginBottom="s2" />
                     <Typography fontWeight="bold" uppercase>
-                      Video1{' '}
+                      {t('links.video2.title')}
                     </Typography>
                   </div>
                   <div className={styles.links_linksWrapper_link}>
                     <div className={styles.links_linksWrapper_link_image}>
                       <a
-                        href="https://www.youtube.com/watch?v=2OJ4dczhqNY"
+                        href={t('links.link1.url')}
                         target="_blank"
                         className={styles.links_linksWrapper_link_button}
                         rel="noreferrer"
                       >
                         <BsLink45Deg />
                       </a>
-                      <img src={IMAGES.link} alt="gravitate" />
+                      <img src={t('links.link1.preview')} alt="gravitate" />
                     </div>
                     <SpaceBlock marginBottom="s2" />
                     <Typography fontWeight="bold" uppercase>
-                      Link1{' '}
+                      {t('links.link1.name')}
                     </Typography>
                   </div>
                 </div>
