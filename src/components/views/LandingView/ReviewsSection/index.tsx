@@ -199,7 +199,7 @@ export const ReviewsSection: FC = () => {
                 uppercase
                 variant="body-20"
               >
-                reviews Yurii Primush
+                {t('reviews.nav')}
               </Typography>
             </div>
           </div>

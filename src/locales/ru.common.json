@@ -81,7 +81,15 @@
     "text": "Здесь вы можете найти некоторые статьи, видео и другие материалы, которые привлекли мое внимание."
   },
   "reviews": {
-    "title": "What people say about Yurii"
+    "title": "Что говорят о Юрии",
+    "nav": "Что говорят люди",
+    "review1": {
+      "title": "Some title",
+      "text": "Some text",
+      "name": "John Dow",
+      "date": "24 April, 2022",
+      "image": "image url"
+    }
   },
   "stand": {
     "title": "ПОДДЕРЖАТЬ УКРАИНУ",
