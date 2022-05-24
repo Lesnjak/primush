@@ -12,49 +12,49 @@
     "question": "I will do my best to help you find the answers to all your questions.",
     "wouldLike": "I would like to:",
     "wouldLik": "I would like to",
-    "startMyVenture": "start my venture",
-    "businessMentoring": "business mentoring",
-    "developMyBusiness": "develop my business",
-    "increaseProductivity": "increase team’s productivity",
-    "leadershipCoaching": "leadership coaching",
-    "findInspiration": "find inspiration",
-    "businessCoaching": "business coaching",
-    "manageTimeEfficiently": "manage time more efficiently",
-    "delegateOthers": "delegate and involve more others",
-    "setClearerGoals": "set clearer goals",
-    "solveConflictsTeam": "solve conflicts in the team",
-    "talkUnderstand": "talk to someone who can hear me out and understand me",
-    "liveMeaningful": "live a more meaningful life",
-    "dealAnxiety": "deal with my stress and anxiety",
-    "workRelationship": "work on my relationship",
-    "findBalance": "find balance in life",
-    "dealBurnout": "deal with burnout",
-    "becomeHappier": "become happier"
+    "wantsupport": "I want a support",
+    "talkUnderstand": "to talk to someone who can hear me out and understand me",
+    "meaningfulLife": "to live a meaningful life",
+    "dealAnxiety": "to deal with stress and anxiety",
+    "workRelationship": "to work on my relationship",
+    "becomeHappy": "to become happy",
+    "balanceLife": "to find a balance in life",
+    "dealBurnout": "to deal with burnout",
+    "developBusiness": "to develop my business",
+    "startVenture": "to start my own venture",
+    "existingVenture": "to develop an existing venture",
+    "developProductivity": "to develop team productivity",
+    "getInspiration ": "to get an inspiration",
+    "productivityManagement": "to deal with my productivity or time management",
+    "delegatingInvolving": "to deal with delegating and involving others",
+    "goalSetting": "goal setting",
+    "valuesAlignment": "values alignment",
+    "performanceReviews": "performance reviews",
+    "manageConflict": "to manage conflict",
+    "buildNetwork": "to build a network"
   },
   "who": {
     "title": "Who is Yurii Primush",
     "text": "My name is Yurii Primush. I’m a human being, a man, an explorer, an adventurer, an entrepreneur, an investor, a coach, and a mentor. I enjoy diving deep into new experiences.",
-    "text1": "I believe that every one of us can open our potential to the fullest and become happier by accepting our imperfections. By doing that we have a chance to unlock our full potential.",
-    "text2": "I also believe that relationships – within teams, with clients, and relationships in general between people – are our most valuable asset. Working in the finance technology sector for almost 10 years I have gained great experience in commercial, technical and operational business skills. I enjoy working with talented and creative people who are good at developing technical business solutions.  As a partner and co-founder, I launched several successful fin-tech projects over the years.",
-    "text3": "However, since 2017 my focus has been on personal development: I have 5 years of experience in psychotherapy as a client. Since 2017 I have studied the life and business coaching and I have been learning from the best while putting this into practice with business teams and as a private coach.",
-    "text4": "My goal is to make the World a better place through innovation and technology while building awareness and protecting the environment.  If you have the same goals, let us connect and create new synergies together.",
-    "text5": "Feel free to follow also my social media pages."
+    "text1": "I believe that we can open our potential to the fullest and become happier by aсaccepting our imperfection which often becomes our greatest value.",
+    "text2": "I also believe that relationships within our teams and with our clients and in general relationships between people are our most valuable assets. Working in the finance technology sector for almost 10 years I have a great experience in commercial, technical, and operational skills in business. I enjoy working with talented and creative people who like to create technical business solutions. I worked as a partner in several successful fin-tech projects.",
+    "text3": "Since 2017 my focus has been more on personal development: I have 5 years of experience in psychotherapy as a client. Since 2017 I have studied life and business coaching and learning from the best while putting this into practice with business teams and as a private coach.",
+    "text4": "My goal is to make the world a great place through innovation, and technology while building awareness and supporting our environment.  If we have the same goals let’s connect and find further opportunities to make changes together.",
+    "text5": "You are also welcome to visit my social media pages if you want to know more about me."
   },
   "why": {
     "title": "Why Yurii Primush",
-    "text1": "People often say that I’m a big and ambitious dreamer that always makes his dreams true. I believe they are right. By the age of 27 I had achieved most of my childhood dreams.",
-    "text2": "I started working during my university studies, at the age of 19. When I turned 20, I launched my first start-up which in 10 years grow into one of the most successful ventures in the field, placing it in 4th place in the CEE region. The success helped me to generate significant personal wealth already by the age of 30. I believe that this success was a result of a combination of a good strategic view, creativity, proactivity, scale of thinking, leadership and managerial skills. I’ve been often told to be a good team player and a very empathic person. At the same time, I believe that I can sometimes be very straightforward in my suggestions and opinions.",
-    "text3": "I hold an International Economics and MBA degrees. I’m also a certified professional life and business coach, participating regularly in various educational programs. I’m proud to be a client in psychotherapy for the last 5 years. I love working on my personal development which always helps to discover new perspectives pushing me to challenge myself. Working in psychotherapy also helps me not to bring my personal agenda to the sessions with my clients in coaching, so there is full focus on the client and client’s requests",
+    "text1": "People often say that I’m a big and ambitious dreamer that always makes his dreams true. I believe they are right. By the age of 27, I had achieved most of my childhood dreams.",
+    "text2": "I started working during my university studies, at the age of 19. When I turned 20, I launched my first start-up which in 10 years grow into one of the most successful ventures in the field, placing it in 4th place in the CEE region. The success helped me to generate significant personal wealth already by the age of 30. I believe that this success was a result of a combination of a good strategic view, creativity, proactivity, scale of thinking, leadership, and managerial skills. I’ve been often told to be a good team player and a very empathic person. At the same time, I believe that I can sometimes be very straightforward in my suggestions and opinions.",
+    "text3": "I hold an International Economics and MBA degrees. I’m also a certified professional life and business coach, participating regularly in various educational programs. I’m proud to be a client in psychotherapy for the last 5 years. I love working on my personal development which always helps to discover new perspectives pushing me to challenge myself. Working in psychotherapy also helps me not to bring my personal agenda to the sessions with my clients in coaching, so there is full focus on the client and client’s requests.",
     "text4": "If you have an idea or a challenge and you dream to change something, to have a more meaningful and successful life, you want to achieve new and exciting goals in your business or in your personal life, I promise to do everything possible to help you on this path."
   },
   "what": {
     "title": "What is coaching",
-    "text1": "Coaching is not only a set of tools and techniques that help to unleash your potential. It is also the art of creating a coaching environment for the comprehensive development of the client.",
-    "text2": "Coaching is profoundly different from consulting, mentoring, counseling or therapy. The coaching process is about specific personal projects, business successes, general conditions and transitions in a person’s life or relationships. In this process the focus is on analyzing, what is happening right now, learning what the obstacles or challenges may be, and choosing a course of action, that leads to the desired destination.",
-    "text3": "Coaching is an alliance between the coach and the client, where the coaching relationship constantly gives all the power to you, the client. I believe that deep inside we know all the answers to our questions, even in situations where there seems no way out. Those answers may be hidden deep inside of us.",
-    "text4": "My job is to ask the right questions and provide the right tools and techniques that will allow you to find those answers within yourself.",
-    "text5": "You, the client, are the best and the only expert in your life, knowing who you really are and what you need. You are the only expert who can recognize what is best for you. My job is to figure out how to assist you in this through the coaching process.",
-    "text6": "Every day we make bigger and smaller decisions. As your coach, I will help you in finding out what your best decision might be. Coaching helps you learn how to make choices that create an effective, balanced and fulfilling life."
+    "text1": "Coaching is not only a set of tools and techniques that help to unleash your potential at your own expense but also the art of creating a coaching environment for the comprehensive development of the client.",
+    "text2": "Coaching is profoundly different from consulting, mentoring, counseling or therapy. The coaching process is about specific personal projects, business successes, general conditions and transitions in personal life, relationships, or the client's profession, studying what is happening now, learning what your obstacles or challenges may be, and choosing a course of action, your life is what you want it to be.",
+    "text3": "Coaching is a developed alliance between the coach and the client, where the coaching relationship constantly gives all the power to you, the client. I believe that you know the answers to every question or challenge you may have in your life, even if those answers seem incomprehensible, hidden, or hidden inside. My skills are knowing the right questions, as well as the right tools and techniques that will allow you to find answers within yourself.You, the client, are the only expert in your life who really knows who you are and what you need. You are the only expert who can recognize what is best for you. And I’m an expert in the coaching process.",
+    "text4": "As your coach, I help you find out what your best decision might be. Every day we make a choice to do or not to do a lot. These choices can range from profound to trivial, and each has an effect that makes our lives fuller or less fulfilling, more balanced, or less balanced, making our lives more efficient or less efficient. Coaching helps you learn how to make choices that create an effective, balanced and fulfilling life."
   },
   "questions": {
     "who": "Who is Yurii Primush",
@@ -78,38 +78,53 @@
   },
   "links": {
     "title": "interesting links",
-    "text": "Here you can find some articles, videos, and other materials that have caught my attention.",
-    "video1": {
-      "name": " Video 1",
-      "preview": "https://assets.entrepreneur.com/content/3x2/2000/20200126010631-shutterstock-1029299632.jpeg",
-      "url": "https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4"
-    },
-    "video2": {
-      "name": " Video 2",
-      "preview": "https://assets.entrepreneur.com/content/3x2/2000/20200126010631-shutterstock-1029299632.jpeg",
-      "url": "https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4"
-    },
+    "text": "Here you can see articles, information, or videos which I assume interesting or important",
     "link1": {
-      "name": " Link 1",
-      "preview": "https://assets.entrepreneur.com/content/3x2/2000/20200126010631-shutterstock-1029299632.jpeg",
-      "url": "https://www.youtube.com/watch?v=2OJ4dczhqNY"
+      "name": " Nine Reasons Leaders Are Hiring Executive Coaches, And What Happens Next",
+      "preview": "https://imageio.forbes.com/specials-images/imageserve/6157748752f04bda4a235c55/Sharing-information-facilitates-success/960x0.jpg?format=jpg&width=960",
+      "url": "https://www.forbes.com/sites/forbescoachescouncil/2021/10/04/nine-reasons-leaders-are-hiring-executive-coaches-and-what-happens-next/?sh=3345efa779f3"
+    },
+    "link2": {
+      "name": " What is Human Capital? Everything You Need to Know",
+      "preview": "https://assets.weforum.org/article/image/large_8jqW9CNfvkyiFBhLstjEJ3uc_bCYTmfExt2zo06wkmc.jpg",
+      "url": "https://www.weforum.org/agenda/2019/06/what-is-human-capital-know/"
+    },
+    "link3": {
+      "name": " The Pygmalion Effect and the Power of Positive Expectations",
+      "preview": "https://i.ytimg.com/vi/RIRREOyjwdg/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=hTghEXKNj7g&ab_channel=HeroicImaginationTV"
     }
   },
   "reviews": {
     "title": "What people say about Yurii",
     "nav": "What people say",
     "review1": {
-      "title": "Some title",
-      "text": "Some text",
-      "name": "John Dow",
+      "title": "CEO of an IT company(34 years)",
+      "text":"I started working with Yuri when I was totally lost, with a complete lack of energy for the next steps. Thanks to Yuri, I managed to find internal strength and energy, improve my family relationships, achieve my goals, and I am still working on some of them. I can now enjoy my life to the fullest.",
+      "text1": "At the start, I had 7 goals that I was able to achieve only after realizing what was stopping me. I went through more than 40 sessions in a year and I still have something to work on, but I already have an internal clear dialogue with myself.",
+      "name": "Denis Antonov",
       "date": "24 April, 2022",
-      "image": "image url"
+      "image": "denis"
+    },
+    "review2": {
+      "title": "Surgeon, oncologist",
+      "text":"Yurii is always there when I need it. No matter rather it’s emotional support, solving an issue, a friendly conversation, or a plan with clear steps. Sessions with Yurii bring clarity and always put me back on track if I’m getting lost in my everyday routine. I recommend Yurii as a great coach. If you want to transform your life and live it to the fullest book faster a session with Yurii!",
+      "name": "Natalia",
+      "date": "10 March, 2022",
+      "image": "natalia"
+    },
+    "review3": {
+      "title": "CEO",
+      "text":"I worked with Yuri for more than a year, and I was satisfied. It was my first coaching experience. I set the goal and moved towards it with progressive steps ... During our sessions I acquired clarity and what clear steps are needed. I am glad that I had the experience working with Yurii!",
+      "name": "Ihor",
+      "date": "2 January, 2022",
+      "image": "igor"
     }
   },
   "stand": {
     "title": "STAND WITH UKRAINE",
-    "text1": "I’m Ukrainian. I have friends and family in Ukraine. Most of my memories are connected with Ukraine. My heart tears apart seeing how Russia’s invasion, violence and crimes are destroying and killing a big part of me. ",
-    "text2": "Below you can find links to trustworthy organizations in need of funds.",
+    "text1": "I’m Ukrainian. I have friends and family in Ukraine. Most of my memories are connected with Ukraine. My heart tears apart seeing how Russia’s invasion, violence, and crimes are destroying and killing a big part of me.",
+    "text2": "Below you can fund the links to trustworthy organizations in need of funds.",
     "text3": "Thank you very much for your support!",
     "card1": "The initiative of the President of Ukraine",
     "card2": "Come Back Alive Fund",
@@ -147,11 +162,11 @@
     "unprfct": "unprfct.com"
   },
   "standLinks": {
-    "link1": "https://www.kmu.gov.ua/",
-    "link2": "https://www.kmu.gov.ua/",
-    "link3": "https://www.kmu.gov.ua/",
-    "link4": "https://www.kmu.gov.ua/",
-    "link5": "https://www.kmu.gov.ua/",
-    "link6": "https://www.kmu.gov.ua/"
+    "link1": "https://u24.gov.ua",
+    "link2": "https://www.comebackalive.in.ua",
+    "link3": "https://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-spetsrahunok-dlya-zboru-koshtiv-na-potrebi-armiyi",
+    "link4": "https://novaukraine.org",
+    "link5": "https://razomforukraine.org",
+    "link6": "https://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-rahunok-dlya-gumanitarnoyi-dopomogi-ukrayintsyam-postrajdalim-vid-rosiyskoyi-agresiyi"
   }
 }

@@ -22,6 +22,7 @@ export const ReviewsSection: FC = () => {
     className: 'center',
     infinite: true,
     centerMode: true,
+    adaptiveHeight: false,
     slidesToShow: 3,
     speed: 500,
     focusOnSelect: true,
@@ -43,52 +44,46 @@ export const ReviewsSection: FC = () => {
 
   const slideList = [
     {
-      name: 'Leslie Alexander',
-      image: IMAGES.face1,
-      date: '12 April, 2022',
-      textTitle:
-        'Great experience. Would definitely work with Yurii again in the future!',
-      text: 'It was a really wonderful experience working with him. Resources were made easily available and the job was done in a timely manner.',
+      name: t('reviews.review1.name'),
+      image: IMAGES[t('reviews.review1.image')],
+      date: t('reviews.review1.date'),
+      textTitle: t('reviews.review1.title'),
+      text: t('reviews.review1.text'),
     },
     {
-      name: 'Wade Warren',
-      image: IMAGES.face2,
-      date: '24 April, 2022',
-      textTitle:
-        'Great experience. Would definitely work with Yurii again in the future!',
-      text: 'It was a really wonderful experience working with him. Resources were made easily available and the job was done in a timely manner.',
+      name: t('reviews.review2.name'),
+      image: IMAGES[t('reviews.review2.image')],
+      date: t('reviews.review2.date'),
+      textTitle: t('reviews.review2.title'),
+      text: t('reviews.review2.text'),
     },
     {
-      name: 'Jenny Wilson',
-      image: IMAGES.face3,
-      date: '10 April, 2022',
-      textTitle:
-        'Great experience. Would definitely work with Yurii again in the future!',
-      text: 'It was a really wonderful experience working with him. Resources were made easily available and the job was done in a timely manner.',
+      name: t('reviews.review3.name'),
+      image: IMAGES[t('reviews.review3.image')],
+      date: t('reviews.review3.date'),
+      textTitle: t('reviews.review3.title'),
+      text: t('reviews.review3.text'),
     },
     {
-      name: 'Leslie Alexander',
-      image: IMAGES.face1,
-      date: '12 April, 2022',
-      textTitle:
-        'Great experience. Would definitely work with Yurii again in the future!',
-      text: 'It was a really wonderful experience working with him. Resources were made easily available and the job was done in a timely manner.',
+      name: t('reviews.review1.name'),
+      image: IMAGES[t('reviews.review1.image')],
+      date: t('reviews.review1.date'),
+      textTitle: t('reviews.review1.title'),
+      text: t('reviews.review1.text'),
     },
     {
-      name: 'Wade Warren',
-      image: IMAGES.face2,
-      date: '24 April, 2022',
-      textTitle:
-        'Great experience. Would definitely work with Yurii again in the future!',
-      text: 'It was a really wonderful experience working with him. Resources were made easily available and the job was done in a timely manner.',
+      name: t('reviews.review2.name'),
+      image: IMAGES[t('reviews.review2.image')],
+      date: t('reviews.review2.date'),
+      textTitle: t('reviews.review2.title'),
+      text: t('reviews.review2.text'),
     },
     {
-      name: 'Jenny Wilson',
-      image: IMAGES.face3,
-      date: '10 April, 2022',
-      textTitle:
-        'Great experience. Would definitely work with Yurii again in the future!',
-      text: 'It was a really wonderful experience working with him. Resources were made easily available and the job was done in a timely manner.',
+      name: t('reviews.review3.name'),
+      image: IMAGES[t('reviews.review3.image')],
+      date: t('reviews.review3.date'),
+      textTitle: t('reviews.review3.title'),
+      text: t('reviews.review3.text'),
     },
   ];
 
@@ -148,7 +143,7 @@ export const ReviewsSection: FC = () => {
                       <div key={idx}>
                         <div className={cn(styles.reviews_slide, 'center')}>
                           <div className={styles.reviews_slide_content}>
-                            <SpaceBlock marginBottom="s2">
+                            <SpaceBlock position="center" marginBottom="s2">
                               <Typography
                                 align="center"
                                 fontWeight="bold"

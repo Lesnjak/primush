@@ -34,7 +34,7 @@
       display: flex;
       flex-direction: column;
       cursor: pointer;
-
+      margin-bottom: 20px;
 
       @include respond($breakpoint-down-md){
        width: 100%;
@@ -45,8 +45,9 @@
       }
 
       &_image {
-        flex-grow: 1;
         position: relative;
+        padding-top: 60%;
+        overflow: hidden;
       }
 
       &_button {
@@ -72,11 +73,19 @@
       }
       video {
         width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
       }
       img{
         width: 100%;
         height: 100%;
         object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
       }
     }
     &_text {
@@ -187,7 +196,6 @@
     flex-grow: 1;
     padding: 90px 33px 40px;
     justify-content: space-between;
-    flex-grow: 1;
     height: 100%;
     @include respond($breakpoint-down-md){
       padding: 80px 20px 40px;

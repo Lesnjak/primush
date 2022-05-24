@@ -8,7 +8,7 @@ import { ICONS } from '../../../../configs/icons.config';
 import { SpaceBlock } from '../../../common/SpaceBlock';
 import { Typography } from '../../../common/Typography';
 import useTranslation from 'next-translate/useTranslation';
-import { VideoBlock } from '../../../common/VideoBlock';
+// import { VideoBlock } from '../../../common/VideoBlock';
 import { BsLink45Deg } from 'react-icons/bs';
 
 export const LinksSection: FC = () => {
@@ -86,26 +86,26 @@ export const LinksSection: FC = () => {
                   </Typography>
                 </SpaceBlock>
                 <div className={styles.links_linksWrapper}>
-                  <div className={styles.links_linksWrapper_link}>
-                    <VideoBlock
-                      src={t('links.video1.url')}
-                      preview={t('links.video1.preview')}
-                    />
-                    <SpaceBlock marginBottom="s2" />
-                    <Typography fontWeight="bold" uppercase>
-                      {t('links.video1.name')}
-                    </Typography>
-                  </div>
-                  <div className={styles.links_linksWrapper_link}>
-                    <VideoBlock
-                      src={t('links.video2.url')}
-                      preview={t('links.video2.preview')}
-                    />
-                    <SpaceBlock marginBottom="s2" />
-                    <Typography fontWeight="bold" uppercase>
-                      {t('links.video2.name')}
-                    </Typography>
-                  </div>
+                  {/*<div className={styles.links_linksWrapper_link}>*/}
+                  {/*  <VideoBlock*/}
+                  {/*    src={t('links.video1.url')}*/}
+                  {/*    preview={t('links.video1.preview')}*/}
+                  {/*  />*/}
+                  {/*  <SpaceBlock marginBottom="s2" />*/}
+                  {/*  <Typography fontWeight="bold" uppercase>*/}
+                  {/*    {t('links.video1.name')}*/}
+                  {/*  </Typography>*/}
+                  {/*</div>*/}
+                  {/*<div className={styles.links_linksWrapper_link}>*/}
+                  {/*  <VideoBlock*/}
+                  {/*    src={t('links.video2.url')}*/}
+                  {/*    preview={t('links.video2.preview')}*/}
+                  {/*  />*/}
+                  {/*  <SpaceBlock marginBottom="s2" />*/}
+                  {/*  <Typography fontWeight="bold" uppercase>*/}
+                  {/*    {t('links.video2.name')}*/}
+                  {/*  </Typography>*/}
+                  {/*</div>*/}
                   <div className={styles.links_linksWrapper_link}>
                     <div className={styles.links_linksWrapper_link_image}>
                       <a
@@ -121,6 +121,40 @@ export const LinksSection: FC = () => {
                     <SpaceBlock marginBottom="s2" />
                     <Typography fontWeight="bold" uppercase>
                       {t('links.link1.name')}
+                    </Typography>
+                  </div>
+                  <div className={styles.links_linksWrapper_link}>
+                    <div className={styles.links_linksWrapper_link_image}>
+                      <a
+                        href={t('links.link2.url')}
+                        target="_blank"
+                        className={styles.links_linksWrapper_link_button}
+                        rel="noreferrer"
+                      >
+                        <BsLink45Deg />
+                      </a>
+                      <img src={t('links.link2.preview')} alt="gravitate" />
+                    </div>
+                    <SpaceBlock marginBottom="s2" />
+                    <Typography fontWeight="bold" uppercase>
+                      {t('links.link2.name')}
+                    </Typography>
+                  </div>
+                  <div className={styles.links_linksWrapper_link}>
+                    <div className={styles.links_linksWrapper_link_image}>
+                      <a
+                        href={t('links.link3.url')}
+                        target="_blank"
+                        className={styles.links_linksWrapper_link_button}
+                        rel="noreferrer"
+                      >
+                        <BsLink45Deg />
+                      </a>
+                      <img src={t('links.link3.preview')} alt="gravitate" />
+                    </div>
+                    <SpaceBlock marginBottom="s2" />
+                    <Typography fontWeight="bold" uppercase>
+                      {t('links.link3.name')}
                     </Typography>
                   </div>
                 </div>

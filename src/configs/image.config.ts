@@ -15,4 +15,7 @@ export const IMAGES = {
   face1: '/images/face1.png',
   face2: '/images/face2.png',
   face3: '/images/face3.png',
+  denis: '/images/denis.jpeg',
+  natalia: '/images/natalia.jpeg',
+  igor: '/images/igor.jpeg',
 };
