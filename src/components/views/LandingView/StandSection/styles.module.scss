@@ -57,16 +57,10 @@
       @include respond($breakpoint-down-md){
         width: calc(100% / 2 - 40px);
         margin-bottom: 20px;
-        &:last-child {
-          margin-bottom: 0;
-        }
       }
       @include respond($breakpoint-down-xs){
         width: 100%;
         margin-bottom: 20px;
-        &:last-child {
-          margin-bottom: 0;
-        }
       }
     }
     &_text {
