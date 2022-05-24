@@ -99,7 +99,15 @@ export const StandSection: FC = () => {
                     className={styles.stand_linksWrapper_link}
                     rel="noreferrer"
                   >
-                    <img src={ICONS.card1Icon} alt="icon" />
+                    <div className={styles.stand_linksWrapper_link_logo}>
+                      <img src={ICONS.card1Icon} alt="icon" />
+                      <img
+                        className={styles.stand_linksWrapper_link_hover}
+                        src={ICONS.card1HIcon}
+                        alt="icon"
+                      />
+                    </div>
+
                     <Typography align="center" variant="body-16">
                       {t('stand.card1')}
                     </Typography>
@@ -110,7 +118,14 @@ export const StandSection: FC = () => {
                     className={styles.stand_linksWrapper_link}
                     rel="noreferrer"
                   >
-                    <img src={ICONS.card2Icon} alt="icon" />
+                    <div className={styles.stand_linksWrapper_link_logo}>
+                      <img src={ICONS.card2Icon} alt="icon" />
+                      <img
+                        className={styles.stand_linksWrapper_link_hover}
+                        src={ICONS.card2HIcon}
+                        alt="icon"
+                      />
+                    </div>
                     <Typography align="center" variant="body-16">
                       {t('stand.card2')}
                     </Typography>
@@ -121,7 +136,14 @@ export const StandSection: FC = () => {
                     className={styles.stand_linksWrapper_link}
                     rel="noreferrer"
                   >
-                    <img src={ICONS.card3Icon} alt="icon" />
+                    <div className={styles.stand_linksWrapper_link_logo}>
+                      <img src={ICONS.card3Icon} alt="icon" />
+                      <img
+                        className={styles.stand_linksWrapper_link_hover}
+                        src={ICONS.card3HIcon}
+                        alt="icon"
+                      />
+                    </div>
                     <Typography align="center" variant="body-16">
                       {t('stand.card3')}
                     </Typography>
@@ -132,7 +154,14 @@ export const StandSection: FC = () => {
                     className={styles.stand_linksWrapper_link}
                     rel="noreferrer"
                   >
-                    <img src={ICONS.card4Icon} alt="icon" />
+                    <div className={styles.stand_linksWrapper_link_logo}>
+                      <img src={ICONS.card4Icon} alt="icon" />
+                      <img
+                        className={styles.stand_linksWrapper_link_hover}
+                        src={ICONS.card4HIcon}
+                        alt="icon"
+                      />
+                    </div>
                     <Typography align="center" variant="body-16">
                       {t('stand.card4')}
                     </Typography>
@@ -143,7 +172,14 @@ export const StandSection: FC = () => {
                     className={styles.stand_linksWrapper_link}
                     rel="noreferrer"
                   >
-                    <img src={ICONS.card5Icon} alt="icon" />
+                    <div className={styles.stand_linksWrapper_link_logo}>
+                      <img src={ICONS.card5Icon} alt="icon" />
+                      <img
+                        className={styles.stand_linksWrapper_link_hover}
+                        src={ICONS.card5HIcon}
+                        alt="icon"
+                      />
+                    </div>
                     <Typography align="center" variant="body-16">
                       {t('stand.card5')}
                     </Typography>
@@ -154,7 +190,14 @@ export const StandSection: FC = () => {
                     className={styles.stand_linksWrapper_link}
                     rel="noreferrer"
                   >
-                    <img src={ICONS.card6Icon} alt="icon" />
+                    <div className={styles.stand_linksWrapper_link_logo}>
+                      <img src={ICONS.card3Icon} alt="icon" />
+                      <img
+                        className={styles.stand_linksWrapper_link_hover}
+                        src={ICONS.card3HIcon}
+                        alt="icon"
+                      />
+                    </div>
                     <Typography align="center" variant="body-16">
                       {t('stand.card6')}
                     </Typography>

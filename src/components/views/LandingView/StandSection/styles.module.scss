@@ -43,9 +43,29 @@
       align-items: center;
       height: 160px;
       transition: $anim-time;
+
+      &_hover {
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        transition: $anim-time;
+      }
+      &_logo {
+        position: relative;
+      }
       &:hover {
         background-color: var(--red);
         color: var(--white);
+        img {
+          opacity: 0;
+        }
+        .stand_linksWrapper_link_hover {
+          opacity: 1;
+        }
+        svg {
+          fill: var(--white)
+        }
       }
       img {
         width: 130px;
