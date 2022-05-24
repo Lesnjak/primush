@@ -78,7 +78,15 @@ export const Header: FC<Props> = ({ show, black, id, absolute = true }) => {
         [styles.header_absolute]: absolute,
       })}
     >
-      <ReactSVG src={black ? ICONS.logoBlackIcon : ICONS.logoWhiteIcon} />
+      <div
+        style={{ cursor: 'pointer' }}
+        onClick={() => {
+          handleLink('#header');
+        }}
+      >
+        <ReactSVG src={black ? ICONS.logoBlackIcon : ICONS.logoWhiteIcon} />
+      </div>
+
       <div onClick={() => setMenuIsOpen(true)}>
         <ReactSVG
           className={cn(styles.header_burger, 'link')}
