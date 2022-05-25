@@ -63,6 +63,14 @@
     position: relative;
     overflow: hidden;
     height: 580px;
+    &:hover {
+      .reviews_slide_prev{
+        opacity: 1;
+      }
+      .reviews_slide_next{
+        opacity: 1;
+      }
+    }
   }
 
   &_slide {
@@ -72,6 +80,75 @@
     flex-direction: column;
     align-items: center;
     padding: 15px;
+    position: relative;
+
+    &_arrow {
+      position: absolute;
+      z-index: 0;
+      width: 20%;
+      right: 30px;
+      top: 30px;
+      img {
+        width: 100%;
+      }
+    }
+
+
+
+    &_prev {
+      z-index: 100;
+      color: var(--black);
+      left: 30%;
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+      width: 43px;
+      height: 43px;
+      opacity: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: #F1F1F1;
+      cursor: pointer;
+      font-size: 30px;
+      transition: $anim-time;
+      &:hover {
+        opacity: 0.7;
+      }
+      @include respond($breakpoint-down-xs){
+        opacity: 1;
+      }
+    }
+    &_next {
+      z-index: 100;
+      color: var(--black);
+      width: 43px;
+      height: 43px;
+      right: 30%;
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+      opacity: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: #F1F1F1;
+      cursor: pointer;
+      font-size: 30px;
+      transition: $anim-time;
+      &:hover {
+        opacity: 0.7;
+      }
+      @include respond($breakpoint-down-xs){
+        opacity: 1;
+      }
+    }
+
+    svg {
+      width: 16px;
+    }
 
 
     &_content {
@@ -81,6 +158,9 @@
       border-radius: 6px;
       margin-bottom: -30px;
       transition: 1s;
+      * {
+        position: relative;
+      }
     }
     &_image {
       width: 60px;

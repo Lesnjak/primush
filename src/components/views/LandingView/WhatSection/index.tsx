@@ -112,22 +112,6 @@ export const WhatSection: FC = () => {
                 >
                   {t('what.text4')}
                 </Typography>
-                <Typography
-                  className={styles.what_space}
-                  font="sen"
-                  variant="body-14"
-                  color="greyText"
-                >
-                  {t('what.text5')}
-                </Typography>
-                <Typography
-                  className={styles.what_space}
-                  font="sen"
-                  variant="body-14"
-                  color="greyText"
-                >
-                  {t('what.text6')}
-                </Typography>
               </div>
             </div>
             <div className={styles.what_rightBlock}>

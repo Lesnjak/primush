@@ -12,26 +12,26 @@
     "question": "Я сделаю все возможное, чтобы помочь вам найти ответы на все ваши вопросы.",
     "wouldLike": "Я хочу:",
     "wouldLik": "Я хочу",
-    "wantsupport": "Я хочу поддержки",
-    "talkUnderstand": "Поговорить с кем-то, кто меня выслушает и поймет",
-    "meaningfulLife": "Жить осмысленной жизнью",
-    "dealAnxiety": "Справиться со стрессом и тревогой",
-    "workRelationship": "Работать над моими отношениями",
-    "becomeHappy": "Стать счастливым",
-    "balanceLife": "Найти баланс в жизни",
-    "dealBurnout": "Бороться с выгоранием",
-    "developBusiness": "Развивать мой бизнес",
-    "startVenture": "Начать собственное дело",
-    "existingVenture": "Развивать существующее предприятие",
-    "developProductivity": "Развивать продуктивность команды",
-    "getInspiration ": "Получить вдохновение",
-    "productivityManagement": "Улучшить продуктивность или тайм-менеджмент",
-    "delegatingInvolving": "Улучшить свои знания в делегировании и привлечении других людей",
-    "goalSetting": "Постановка целей",
-    "valuesAlignment": "Определение ценностей",
-    "performanceReviews": "Оценка работы",
-    "manageConflict": "Работа с конфликтами",
-    "buildNetwork": "Создать сеть контактов"
+    "question1": "мне нужна поддержка",
+    "question2": "поговорить с кем-то, кто меня выслушает и поймет",
+    "question3": "жить содержательной жизнью",
+    "question4": "справиться со стрессом и тревогой",
+    "question5": "работать над моими отношениями",
+    "question6": "стать счастливым",
+    "question7": "впоратися з вигорянням",
+    "question8": "найти баланс в жизни",
+    "question9": "развивать свой бизнес",
+    "question10": "начать собственное дело",
+    "question11": "развивать существующее предприятие",
+    "question12": "развивать производительность команды",
+    "question13": "получить вдохновение",
+    "question14": "работать со своей производительностью или тайм-менеджментом",
+    "question15": "работать с делегированием и привлечением других",
+    "question16": "постановка целей",
+    "question17": "выравнивание ценностей",
+    "question18": "обзоры производительности",
+    "question19": "управлять конфликтом",
+    "question20": "построить сеть контактов"
   },
   "who": {
     "title": "О Юрий Примуш",
@@ -121,6 +121,13 @@
       "name": "Игорь",
       "date": "2 января, 2021",
       "image": "igor"
+    },
+    "review4": {
+      "title": "Финансовый директор",
+      "text":"Рад что знаком с Юрой. Интеллигентный, вдумчивый коуч, помогает увидеть скрытое и начать делать отложенное. Рекомендую.",
+      "name": "Александр",
+      "date": "8 грудня, 2021",
+      "image": "oleksandr"
     }
   },
   "stand": {
@@ -154,9 +161,9 @@
     "successMessage": "Мы свяжемся с вами в ближайшее время"
   },
   "socialLinks" : {
-    "facebook": "https://facebook.com/",
-    "instagram": "https://www.instagram.com/",
-    "linkedin": "https://www.linkedin.com/"
+    "facebook": "https://www.facebook.com/primush/",
+    "instagram": "https://www.instagram.com/primush_/",
+    "linkedin": "https://www.linkedin.com/in/primush/"
   },
   "myActivitiesLinks": {
     "geotrees": "geotrees.org",

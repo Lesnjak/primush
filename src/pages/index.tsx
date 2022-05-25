@@ -1,7 +1,11 @@
 import { LandingView } from '../components/views/LandingView';
 
 export const LandingPage = () => {
-  return <LandingView />;
+  return (
+    <>
+      <LandingView />
+    </>
+  );
 };
 
 export default LandingPage;

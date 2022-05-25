@@ -12,26 +12,26 @@
     "question": "I will do my best to help you find the answers to all your questions.",
     "wouldLike": "I would like to:",
     "wouldLik": "I would like to",
-    "wantsupport": "I want a support",
-    "talkUnderstand": "to talk to someone who can hear me out and understand me",
-    "meaningfulLife": "to live a meaningful life",
-    "dealAnxiety": "to deal with stress and anxiety",
-    "workRelationship": "to work on my relationship",
-    "becomeHappy": "to become happy",
-    "balanceLife": "to find a balance in life",
-    "dealBurnout": "to deal with burnout",
-    "developBusiness": "to develop my business",
-    "startVenture": "to start my own venture",
-    "existingVenture": "to develop an existing venture",
-    "developProductivity": "to develop team productivity",
-    "getInspiration ": "to get an inspiration",
-    "productivityManagement": "to deal with my productivity or time management",
-    "delegatingInvolving": "to deal with delegating and involving others",
-    "goalSetting": "goal setting",
-    "valuesAlignment": "values alignment",
-    "performanceReviews": "performance reviews",
-    "manageConflict": "to manage conflict",
-    "buildNetwork": "to build a network"
+    "question1": "I want a support",
+    "question2": "to talk to someone who can hear me out and understand me",
+    "question3": "to live a meaningful life",
+    "question4": "to deal with stress and anxiety",
+    "question5": "to work on my relationship",
+    "question6": "to become happy",
+    "question7": " to find a balance in life",
+    "question8": "to deal with burnout",
+    "question9": "to develop my business",
+    "question10": "to start my own venture",
+    "question11": "to develop an existing venture",
+    "question12": "to develop team productivity",
+    "question13": "to get an inspiration",
+    "question14": "to deal with my productivity or time management",
+    "question15": "to deal with delegating and involving others",
+    "question16": "goal setting",
+    "question17": "values alignment",
+    "question18": "performance reviews",
+    "question19": "to manage conflict",
+    "question20": "to build a network"
   },
   "who": {
     "title": "Who is Yurii Primush",
@@ -119,6 +119,13 @@
       "name": "Ihor",
       "date": "2 January, 2022",
       "image": "igor"
+    },
+    "review4": {
+      "title": "CFO",
+      "text":"I’m glad to know Yurii. An intelligent, thoughtful coach. He helps to see the hidden perspective and start doing the postponed. I recommend.",
+      "name": "Alex",
+      "date": "8 december, 2021",
+      "image": "oleksandr"
     }
   },
   "stand": {
@@ -152,9 +159,9 @@
     "successMessage": "We will contact you shortly"
   },
   "socialLinks" : {
-    "facebook": "https://facebook.com/",
-    "instagram": "https://www.instagram.com/",
-    "linkedin": "https://www.linkedin.com/"
+    "facebook": "https://www.facebook.com/primush/",
+    "instagram": "https://www.instagram.com/primush_/",
+    "linkedin": "https://www.linkedin.com/in/primush/"
   },
   "myActivitiesLinks": {
     "geotrees": "geotrees.org",

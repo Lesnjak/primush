@@ -19,6 +19,20 @@ import { StandSection } from './StandSection';
 export const LandingView: FC = () => {
   return (
     <div className={styles.wrapper}>
+      {/*<div className={styles.wrapper_iframe}>*/}
+      {/*  <div></div>*/}
+      {/*  <iframe*/}
+      {/*    src="https://widget.easyweek.io/primush-coaching"*/}
+      {/*    style={{*/}
+      {/*      border: 0,*/}
+      {/*      display: 'block',*/}
+      {/*      width: '100%',*/}
+      {/*      height: '100vh',*/}
+      {/*      height: '-webkit-fill-available',*/}
+      {/*    }}*/}
+      {/*    frameBorder={0}*/}
+      {/*  />*/}
+      {/*</div>*/}
       <CustomCursor
         targets={['.link']}
         customClass="custom-cursor"

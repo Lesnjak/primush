@@ -18,4 +18,6 @@ export const IMAGES = {
   denis: '/images/denis.jpeg',
   natalia: '/images/natalia.jpeg',
   igor: '/images/igor.jpeg',
+  oleksandr: '/images/oleksandr.jpeg',
+  arrows: '/images/arrows.png',
 };

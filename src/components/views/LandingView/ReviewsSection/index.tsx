@@ -13,11 +13,30 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { IMAGES } from '../../../../configs/image.config';
 import { SpaceMaker } from '../../../common/SpaceMaker';
+import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from 'react-icons/md';
 import cn from 'classnames';
 
 export const ReviewsSection: FC = () => {
   const { t } = useTranslation('common');
   const [hideHeader, setHideHeader] = useState(true);
+
+  function SampleNextArrow(props: any) {
+    const { onClick } = props;
+    return (
+      <div onClick={onClick} className={styles.reviews_slide_prev}>
+        <MdKeyboardArrowLeft />
+      </div>
+    );
+  }
+
+  function SamplePrevArrow(props: any) {
+    const { onClick } = props;
+    return (
+      <div onClick={onClick} className={styles.reviews_slide_next}>
+        <MdKeyboardArrowRight />
+      </div>
+    );
+  }
   const settings = {
     className: 'center',
     infinite: true,
@@ -26,8 +45,8 @@ export const ReviewsSection: FC = () => {
     slidesToShow: 3,
     speed: 500,
     focusOnSelect: true,
-    // nextArrow: <div className={styles.reviews_slide_next}>next</div>,
-    // prevArrow: <div className={styles.reviews_slide_prev}>prev</div>,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
   };
 
   const handleScroll = () => {
@@ -65,6 +84,13 @@ export const ReviewsSection: FC = () => {
       text: t('reviews.review3.text'),
     },
     {
+      name: t('reviews.review4.name'),
+      image: IMAGES[t('reviews.review4.image')],
+      date: t('reviews.review4.date'),
+      textTitle: t('reviews.review4.title'),
+      text: t('reviews.review4.text'),
+    },
+    {
       name: t('reviews.review1.name'),
       image: IMAGES[t('reviews.review1.image')],
       date: t('reviews.review1.date'),
@@ -84,6 +110,13 @@ export const ReviewsSection: FC = () => {
       date: t('reviews.review3.date'),
       textTitle: t('reviews.review3.title'),
       text: t('reviews.review3.text'),
+    },
+    {
+      name: t('reviews.review4.name'),
+      image: IMAGES[t('reviews.review4.image')],
+      date: t('reviews.review4.date'),
+      textTitle: t('reviews.review4.title'),
+      text: t('reviews.review4.text'),
     },
   ];
 
@@ -142,6 +175,9 @@ export const ReviewsSection: FC = () => {
                     {slideList.map((item: any, idx: number) => (
                       <div key={idx}>
                         <div className={cn(styles.reviews_slide, 'center')}>
+                          <div className={styles.reviews_slide_arrow}>
+                            <img src={IMAGES.arrows} alt="icon" />
+                          </div>
                           <div className={styles.reviews_slide_content}>
                             <SpaceBlock position="center" marginBottom="s2">
                               <Typography
@@ -170,7 +206,7 @@ export const ReviewsSection: FC = () => {
                           <SpaceBlock positionVertical="center" width="auto">
                             <ReactSVG src={ICONS.dateIcon} />
                             <SpaceMaker width="s2" />
-                            <Typography color="greyTextLight">
+                            <Typography variant="body-12" color="greyTextLight">
                               {item.date}
                             </Typography>
                           </SpaceBlock>
