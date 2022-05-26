@@ -126,6 +126,13 @@
       "name": "Alex",
       "date": "8 december, 2021",
       "image": "oleksandr"
+    },
+    "review5": {
+      "title": "Lawyer",
+      "text":"I worked with Yurii when he first started coaching and it was a very useful and pleasant experience. I continue to successfully use a technique he taught me during our sessions. And I highly recommend working with Yurii!",
+      "name": "Madina",
+      "date": "6 may, 2022",
+      "image": "madina"
     }
   },
   "stand": {

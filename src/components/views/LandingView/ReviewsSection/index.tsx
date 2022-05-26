@@ -91,32 +91,11 @@ export const ReviewsSection: FC = () => {
       text: t('reviews.review4.text'),
     },
     {
-      name: t('reviews.review1.name'),
-      image: IMAGES[t('reviews.review1.image')],
-      date: t('reviews.review1.date'),
-      textTitle: t('reviews.review1.title'),
-      text: t('reviews.review1.text'),
-    },
-    {
-      name: t('reviews.review2.name'),
-      image: IMAGES[t('reviews.review2.image')],
-      date: t('reviews.review2.date'),
-      textTitle: t('reviews.review2.title'),
-      text: t('reviews.review2.text'),
-    },
-    {
-      name: t('reviews.review3.name'),
-      image: IMAGES[t('reviews.review3.image')],
-      date: t('reviews.review3.date'),
-      textTitle: t('reviews.review3.title'),
-      text: t('reviews.review3.text'),
-    },
-    {
-      name: t('reviews.review4.name'),
-      image: IMAGES[t('reviews.review4.image')],
-      date: t('reviews.review4.date'),
-      textTitle: t('reviews.review4.title'),
-      text: t('reviews.review4.text'),
+      name: t('reviews.review5.name'),
+      image: IMAGES[t('reviews.review5.image')],
+      date: t('reviews.review5.date'),
+      textTitle: t('reviews.review5.title'),
+      text: t('reviews.review5.text'),
     },
   ];
 
