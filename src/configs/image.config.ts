@@ -19,6 +19,6 @@ export const IMAGES = {
   natalia: '/images/natalia.jpeg',
   igor: '/images/igor.jpeg',
   oleksandr: '/images/oleksandr.jpeg',
-  madina: '/images/madina.webp',
+  madina: '/images/madina.jpeg',
   arrows: '/images/arrows.png',
 };
