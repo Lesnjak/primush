@@ -79,7 +79,7 @@ export const StandSection: FC = () => {
                   <Typography
                     className={styles.stand_text}
                     color="greyText"
-                    variant="body-20"
+                    variant="body-16"
                   >
                     {t('stand.text1')}
                   </Typography>
@@ -88,7 +88,7 @@ export const StandSection: FC = () => {
                   <Typography
                     className={styles.stand_text}
                     color="greyText"
-                    variant="body-20"
+                    variant="body-16"
                   >
                     {t('stand.text2')}
                   </Typography>
