@@ -42,9 +42,10 @@ export const Header: FC<Props> = ({ show, black, id, absolute = true }) => {
     { to: '#who', link: t('questions.who') },
     { to: '#why', link: t('questions.why') },
     { to: '#what', link: t('questions.what') },
-    { to: '#activities', link: t('questions.activities') },
+    { to: '#reviews', link: t('reviews.title') },
     { to: '#links', link: t('questions.links') },
-    { to: '#reviews', link: t('questions.about') },
+    { to: '#activities', link: t('questions.activities') },
+    { to: '#stand', link: t('stand.title') },
     { to: '#form', link: t('questions.contacts') },
   ];
 

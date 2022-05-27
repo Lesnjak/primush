@@ -41,7 +41,7 @@ export const ActivitiesSection: FC = () => {
       <ContentLimiter>
         <div className={styles.activities_wrapper}>
           <div className={styles.activities_header}>
-            <Header black show={hideHeader} />
+            <Header id="#activities" black show={hideHeader} />
           </div>
           <div className={styles.activities_content}>
             <div className={styles.activities_social}>
