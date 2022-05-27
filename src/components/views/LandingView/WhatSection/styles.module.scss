@@ -33,6 +33,7 @@
     padding-right: 80px;
     flex-shrink: 0;
     float: left;
+    padding-bottom: 80px;
 
     @include respond($breakpoint-down-lg){
       padding-right: 20px;
