@@ -46,7 +46,7 @@
     }
     .slick-current {
       opacity: 1;
-      z-index: 1000;
+      z-index: 2;
     }
     .center {
       transition: 0.5s;
@@ -96,7 +96,7 @@
 
 
     &_prev {
-      z-index: 100;
+      z-index: 2;
       color: var(--black);
       left: 30%;
       top: 50%;
@@ -118,10 +118,11 @@
       }
       @include respond($breakpoint-down-xs){
         opacity: 1;
+        left: 33%;
       }
     }
     &_next {
-      z-index: 100;
+      z-index: 2;
       color: var(--black);
       width: 43px;
       height: 43px;
@@ -143,6 +144,7 @@
       }
       @include respond($breakpoint-down-xs){
         opacity: 1;
+        right: 33%;
       }
     }
 

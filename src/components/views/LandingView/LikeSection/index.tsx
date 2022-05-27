@@ -70,7 +70,7 @@ export const LikeSection: FC = () => {
       <ContentLimiter>
         <div className={styles.like_wrapper}>
           <div className={styles.like_header}>
-            <Header absolute={false} black show={hideHeader} />
+            <Header id="#like" absolute={false} black show={hideHeader} />
           </div>
           <div className={styles.like_content}>
             <div className={styles.like_social}>

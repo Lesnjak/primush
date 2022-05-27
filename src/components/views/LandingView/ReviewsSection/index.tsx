@@ -69,6 +69,7 @@ export const ReviewsSection: FC = () => {
       date: t('reviews.review1.date'),
       textTitle: t('reviews.review1.title'),
       text: t('reviews.review1.text'),
+      text1: t('reviews.review1.text1'),
     },
     {
       name: t('reviews.review2.name'),
@@ -76,6 +77,7 @@ export const ReviewsSection: FC = () => {
       date: t('reviews.review2.date'),
       textTitle: t('reviews.review2.title'),
       text: t('reviews.review2.text'),
+      text1: '',
     },
     {
       name: t('reviews.review3.name'),
@@ -83,6 +85,7 @@ export const ReviewsSection: FC = () => {
       date: t('reviews.review3.date'),
       textTitle: t('reviews.review3.title'),
       text: t('reviews.review3.text'),
+      text1: '',
     },
     {
       name: t('reviews.review4.name'),
@@ -90,6 +93,7 @@ export const ReviewsSection: FC = () => {
       date: t('reviews.review4.date'),
       textTitle: t('reviews.review4.title'),
       text: t('reviews.review4.text'),
+      text1: '',
     },
     {
       name: t('reviews.review5.name'),
@@ -97,6 +101,7 @@ export const ReviewsSection: FC = () => {
       date: t('reviews.review5.date'),
       textTitle: t('reviews.review5.title'),
       text: t('reviews.review5.text'),
+      text1: '',
     },
   ];
 
@@ -175,6 +180,18 @@ export const ReviewsSection: FC = () => {
                             >
                               {item.text}
                             </Typography>
+                            {item.text1 && (
+                              <>
+                                <SpaceBlock marginBottom="s1" />
+                                <Typography
+                                  color="greyText"
+                                  align="center"
+                                  variant="body-12"
+                                >
+                                  {item.text1}
+                                </Typography>
+                              </>
+                            )}
                           </div>
                           <div className={styles.reviews_slide_image}>
                             <img src={item.image} alt="face" />
