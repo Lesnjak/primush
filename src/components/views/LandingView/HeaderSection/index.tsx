@@ -119,7 +119,7 @@ export const HeaderSection: FC = () => {
             </div>
             <div className={styles.headerSection_rightBlock}>
               <Navigation rightButtonId={'#like'} id="#header" />
-              <IframeText black />
+              <IframeText z black />
             </div>
             <div className={styles.headerSection_bottomBlock}>
               <div className={styles.headerSection_socialBottom}>

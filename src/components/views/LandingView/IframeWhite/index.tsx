@@ -10,7 +10,7 @@ type Props = {
   z?: boolean;
 };
 
-export const Iframe: FC<Props> = ({ black, z }) => {
+export const IframeWhite: FC<Props> = ({ black, z }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 

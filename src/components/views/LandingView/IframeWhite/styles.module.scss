@@ -5,8 +5,10 @@
  position: absolute;
   bottom: 0;
   left: -100px;
-  z-index: 3;
-
+  z-index: 10000;
+  &_z {
+    z-index:10000000
+  }
 
   @media (max-width: 920px) {
     right: 20px;

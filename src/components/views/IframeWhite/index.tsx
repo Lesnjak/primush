@@ -3,7 +3,7 @@ import styles from './styles.module.scss';
 import cn from 'classnames';
 import { IoIosClose } from 'react-icons/io';
 import { ReactSVG } from 'react-svg';
-import { ICONS } from '../../../../configs/icons.config';
+import { ICONS } from '../../../configs/icons.config';
 
 type Props = {
   black?: boolean;

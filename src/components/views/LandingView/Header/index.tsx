@@ -12,6 +12,7 @@ import { SpaceMaker } from '../../../common/SpaceMaker';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { Iframe } from '../Iframe';
+import { IframeWhite } from '../IframeWhite';
 
 type Props = {
   show: boolean;
@@ -77,6 +78,7 @@ export const Header: FC<Props> = ({ show, black, id, absolute = true }) => {
       className={cn(styles.header, {
         [styles.header_hide]: show,
         [styles.header_absolute]: absolute,
+        [styles.header_z]: menuIsOpen,
       })}
     >
       <div
@@ -153,7 +155,7 @@ export const Header: FC<Props> = ({ show, black, id, absolute = true }) => {
             {t('header.menu')}
             <Iframe black />
           </Typography>
-          <Iframe black />
+          <IframeWhite black />
           {links.map((item: any) => (
             <div
               key={item.link}

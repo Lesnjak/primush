@@ -3,13 +3,15 @@ import styles from './styles.module.scss';
 import { IoIosClose } from 'react-icons/io';
 import { Typography } from '../../../common/Typography';
 import useTranslation from 'next-translate/useTranslation';
+import cn from 'classnames';
 
 type Props = {
   black?: boolean;
   under?: boolean;
+  z?: boolean;
 };
 
-export const IframeText: FC<Props> = () => {
+export const IframeText: FC<Props> = ({ z }) => {
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation('common');
 
@@ -22,7 +24,7 @@ export const IframeText: FC<Props> = () => {
   };
 
   return (
-    <div className={styles.wrapper}>
+    <div className={cn(styles.wrapper, { [styles.wrapper_z]: z })}>
       {isOpen && (
         <div className={styles.wrapper_iframe}>
           <button
