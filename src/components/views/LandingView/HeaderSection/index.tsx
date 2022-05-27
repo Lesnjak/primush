@@ -9,6 +9,7 @@ import { ReactSVG } from 'react-svg';
 import { ICONS } from '../../../../configs/icons.config';
 import cn from 'classnames';
 import useTranslation from 'next-translate/useTranslation';
+import { IframeText } from '../IframeText';
 
 export const HeaderSection: FC = () => {
   const { t } = useTranslation('common');
@@ -118,14 +119,7 @@ export const HeaderSection: FC = () => {
             </div>
             <div className={styles.headerSection_rightBlock}>
               <Navigation rightButtonId={'#like'} id="#header" />
-              <Typography
-                className={styles.headerSection_underline}
-                color="white"
-                uppercase
-                variant="body-20"
-              >
-                {t('header.book')}
-              </Typography>
+              <IframeText black />
             </div>
             <div className={styles.headerSection_bottomBlock}>
               <div className={styles.headerSection_socialBottom}>

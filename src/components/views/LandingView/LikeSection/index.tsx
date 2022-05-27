@@ -10,6 +10,7 @@ import { SpaceBlock } from '../../../common/SpaceBlock';
 import useTranslation from 'next-translate/useTranslation';
 import Scrollbar from 'react-scrollbars-custom';
 import cn from 'classnames';
+import { Iframe } from '../Iframe';
 export const LikeSection: FC = () => {
   const { t } = useTranslation('common');
   const [hideHeader, setHideHeader] = useState(true);
@@ -145,6 +146,7 @@ export const LikeSection: FC = () => {
               >
                 {t('like.wouldLik')}
               </Typography>
+              <Iframe />
             </div>
           </div>
         </div>

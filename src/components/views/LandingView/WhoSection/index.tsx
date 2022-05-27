@@ -8,6 +8,7 @@ import { ICONS } from '../../../../configs/icons.config';
 import { Typography } from '../../../common/Typography';
 import { IMAGES } from '../../../../configs/image.config';
 import useTranslation from 'next-translate/useTranslation';
+import { Iframe } from '../Iframe';
 
 export const WhoSection: FC = () => {
   const { t } = useTranslation('common');
@@ -171,6 +172,7 @@ export const WhoSection: FC = () => {
               >
                 {t('who.title')}
               </Typography>
+              <Iframe />
             </div>
           </div>
         </div>

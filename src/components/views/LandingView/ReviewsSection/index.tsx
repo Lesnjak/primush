@@ -15,6 +15,7 @@ import { IMAGES } from '../../../../configs/image.config';
 import { SpaceMaker } from '../../../common/SpaceMaker';
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from 'react-icons/md';
 import cn from 'classnames';
+import { Iframe } from '../Iframe';
 
 export const ReviewsSection: FC = () => {
   const { t } = useTranslation('common');
@@ -211,6 +212,7 @@ export const ReviewsSection: FC = () => {
               >
                 {t('reviews.nav')}
               </Typography>
+              <Iframe />
             </div>
           </div>
         </div>

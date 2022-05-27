@@ -185,8 +185,10 @@
     padding: 0 33px;
     display: flex;
     margin: auto;
+    padding-bottom: 80px;
     @include respond($breakpoint-down-sm){
       padding: 0;
+      padding-bottom: 60px;
     }
   }
 
@@ -230,6 +232,7 @@
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
+    position: relative;
     @include respond($breakpoint-down-md){
       justify-content: center;
     }

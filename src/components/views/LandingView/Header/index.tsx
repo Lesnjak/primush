@@ -11,6 +11,7 @@ import useOnclickOutside from 'react-cool-onclickoutside';
 import { SpaceMaker } from '../../../common/SpaceMaker';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import { Iframe } from '../Iframe';
 
 type Props = {
   show: boolean;
@@ -150,7 +151,9 @@ export const Header: FC<Props> = ({ show, black, id, absolute = true }) => {
             variant="body-20"
           >
             {t('header.menu')}
+            <Iframe black />
           </Typography>
+          <Iframe black />
           {links.map((item: any) => (
             <div
               key={item.link}

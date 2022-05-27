@@ -10,6 +10,7 @@ import { Typography } from '../../../common/Typography';
 import useTranslation from 'next-translate/useTranslation';
 import { IMAGES } from '../../../../configs/image.config';
 import { SpaceMaker } from '../../../common/SpaceMaker';
+import { Iframe } from '../Iframe';
 
 export const ActivitiesSection: FC = () => {
   const { t } = useTranslation('common');
@@ -203,6 +204,7 @@ export const ActivitiesSection: FC = () => {
               >
                 {t('activities.title')}
               </Typography>
+              <Iframe />
             </div>
           </div>
         </div>

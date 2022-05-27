@@ -8,6 +8,7 @@ import { ICONS } from '../../../../configs/icons.config';
 import { SpaceBlock } from '../../../common/SpaceBlock';
 import { Typography } from '../../../common/Typography';
 import useTranslation from 'next-translate/useTranslation';
+import { Iframe } from '../Iframe';
 
 export const StandSection: FC = () => {
   const { t } = useTranslation('common');
@@ -223,6 +224,7 @@ export const StandSection: FC = () => {
               >
                 {t('stand.title')}
               </Typography>
+              <Iframe />
             </div>
           </div>
         </div>

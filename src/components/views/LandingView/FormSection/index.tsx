@@ -20,6 +20,7 @@ import useOnclickOutside from 'react-cool-onclickoutside';
 import TextareaAutosize from 'react-textarea-autosize';
 import * as notificationsService from '../../../../configs/notifications.service';
 import { useRouter } from 'next/router';
+import { Iframe } from '../Iframe';
 
 export const FormSection: FC = () => {
   const [hideHeader, setHideHeader] = useState(true);
@@ -373,6 +374,7 @@ export const FormSection: FC = () => {
               >
                 {t('form.title')}
               </Typography>
+              <Iframe />
             </div>
           </div>
         </div>

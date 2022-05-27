@@ -25,4 +25,8 @@ export const ICONS = {
   card5HIcon: '/icons/png/cardH5.png',
   card6Icon: '/icons/png/card6.png',
   followIcon: '/icons/svg/follow.svg',
+  calendarWhite: '/icons/svg/calendarWhite.svg',
+  calendarBlack: '/icons/svg/calendarBlack.svg',
+  loadingWhite: '/icons/svg/loadingWhite.svg',
+  loadingBlack: '/icons/svg/loadingBlack.svg',
 };

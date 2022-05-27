@@ -8,6 +8,7 @@ import { ICONS } from '../../../../configs/icons.config';
 import { IMAGES } from '../../../../configs/image.config';
 import { Typography } from '../../../common/Typography';
 import useTranslation from 'next-translate/useTranslation';
+import { Iframe } from '../Iframe';
 
 export const WhySection: FC = () => {
   const { t } = useTranslation('common');
@@ -134,6 +135,7 @@ export const WhySection: FC = () => {
                 >
                   {t('why.title')}
                 </Typography>
+                <Iframe />
               </div>
             </div>
           </div>

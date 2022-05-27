@@ -10,6 +10,7 @@ import { Typography } from '../../../common/Typography';
 import useTranslation from 'next-translate/useTranslation';
 // import { VideoBlock } from '../../../common/VideoBlock';
 import { BsLink45Deg } from 'react-icons/bs';
+import { Iframe } from '../Iframe';
 
 export const LinksSection: FC = () => {
   const { t } = useTranslation('common');
@@ -175,6 +176,7 @@ export const LinksSection: FC = () => {
               >
                 {t('links.title')}
               </Typography>
+              <Iframe />
             </div>
           </div>
         </div>
