@@ -10,8 +10,8 @@
   },
   "like": {
     "question": "I will do my best to help you find the answers to all your questions.",
-    "wouldLike": "I would like to:",
-    "wouldLik": "I would like to",
+    "wouldLike": "I want help with:",
+    "wouldLik": "I want help with",
     "question1": "I want a support",
     "question2": "to talk to someone who can hear me out and understand me",
     "question3": "to live a meaningful life",
@@ -59,6 +59,7 @@
     "text6": "As your coach, I will help you find out what your best solution might be. Every day we make a choice to do or not to do a lot. These choices can range from profound to trivial, and each has an effect that makes our life more fulfilling or less fulfilling, more balanced or less balanced, making our life process more efficient or less efficient. Coaching helps you learn how to make choices that create an effective, balanced and fulfilling life."
   },
   "questions": {
+    "help": "I want help with",
     "who": "Who is Yurii Primush",
     "why": "Why Yurii Primush",
     "what": "What is coaching",

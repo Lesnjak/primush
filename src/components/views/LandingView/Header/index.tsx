@@ -39,6 +39,7 @@ export const Header: FC<Props> = ({ show, black, id, absolute = true }) => {
   const ref = useRef<HTMLDivElement>(null);
 
   const links = [
+    { to: '#like', link: t('questions.help') },
     { to: '#who', link: t('questions.who') },
     { to: '#why', link: t('questions.why') },
     { to: '#what', link: t('questions.what') },
