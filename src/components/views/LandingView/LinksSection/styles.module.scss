@@ -33,6 +33,13 @@
       cursor: pointer;
       margin-bottom: 20px;
 
+      &_a {
+        &:hover {
+          color: var(--red);text-decoration: underline;
+
+        }
+      }
+
       @include respond($breakpoint-down-md){
        width: 100%;
         margin-bottom: 20px;

@@ -85,7 +85,7 @@ export const LinksSection: FC<Props> = ({ setIsOpen }) => {
                   <Typography
                     className={styles.links_text}
                     color="greyText"
-                    variant="body-20"
+                    variant="body-16"
                   >
                     {t('links.text')}
                   </Typography>
@@ -124,9 +124,16 @@ export const LinksSection: FC<Props> = ({ setIsOpen }) => {
                       <img src={t('links.link1.preview')} alt="gravitate" />
                     </div>
                     <SpaceBlock marginBottom="s2" />
-                    <Typography fontWeight="bold" uppercase>
-                      {t('links.link1.name')}
-                    </Typography>
+                    <a
+                      className={styles.links_linksWrapper_link_a}
+                      target="_blank"
+                      href={t('links.link1.url')}
+                      rel="noreferrer"
+                    >
+                      <Typography fontWeight="bold" uppercase>
+                        {t('links.link1.name')}
+                      </Typography>
+                    </a>
                   </div>
                   <div className={styles.links_linksWrapper_link}>
                     <div className={styles.links_linksWrapper_link_image}>
@@ -141,9 +148,16 @@ export const LinksSection: FC<Props> = ({ setIsOpen }) => {
                       <img src={t('links.link2.preview')} alt="gravitate" />
                     </div>
                     <SpaceBlock marginBottom="s2" />
-                    <Typography fontWeight="bold" uppercase>
-                      {t('links.link2.name')}
-                    </Typography>
+                    <a
+                      className={styles.links_linksWrapper_link_a}
+                      target="_blank"
+                      href={t('links.link1.url')}
+                      rel="noreferrer"
+                    >
+                      <Typography fontWeight="bold" uppercase>
+                        {t('links.link2.name')}
+                      </Typography>
+                    </a>
                   </div>
                   <div className={styles.links_linksWrapper_link}>
                     <div className={styles.links_linksWrapper_link_image}>
@@ -158,9 +172,16 @@ export const LinksSection: FC<Props> = ({ setIsOpen }) => {
                       <img src={t('links.link3.preview')} alt="gravitate" />
                     </div>
                     <SpaceBlock marginBottom="s2" />
-                    <Typography fontWeight="bold" uppercase>
-                      {t('links.link3.name')}
-                    </Typography>
+                    <a
+                      className={styles.links_linksWrapper_link_a}
+                      target="_blank"
+                      href={t('links.link1.url')}
+                      rel="noreferrer"
+                    >
+                      <Typography fontWeight="bold" uppercase>
+                        {t('links.link3.name')}
+                      </Typography>
+                    </a>
                   </div>
                 </div>
               </div>
