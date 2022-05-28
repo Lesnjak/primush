@@ -34,6 +34,10 @@
       align-items: flex-end;
     }
 
+    .slick-list{
+      padding: 50px!important;
+    }
+
     .slick-slide {
       transition: 0.3s;
       cursor: pointer;
@@ -63,6 +67,8 @@
     position: relative;
     overflow: hidden;
     height: 580px;
+    display: flex;
+    align-items: flex-end;
     &:hover {
       .reviews_slide_prev{
         opacity: 1;
@@ -71,6 +77,10 @@
         opacity: 1;
       }
     }
+    @include respond($breakpoint-down-xs){
+     overflow: visible;
+    }
+
   }
 
   &_slide {
@@ -118,7 +128,6 @@
       }
       @include respond($breakpoint-down-xs){
         opacity: 1;
-        left: 33%;
       }
     }
     &_next {
@@ -144,7 +153,7 @@
       }
       @include respond($breakpoint-down-xs){
         opacity: 1;
-        right: 33%;
+
       }
     }
 
@@ -162,6 +171,9 @@
       transition: 1s;
       * {
         position: relative;
+      }
+      @include respond($breakpoint-down-xs){
+        padding: 20px 20px 40px;
       }
     }
     &_image {
