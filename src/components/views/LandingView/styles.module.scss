@@ -11,7 +11,7 @@
 
   &_hide{
     display: none;
-    @media (max-width: 790px) {
+    @include respond($breakpoint-down-md){
       display: block;
     }
   }

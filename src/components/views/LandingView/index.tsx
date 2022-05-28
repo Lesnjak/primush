@@ -16,6 +16,7 @@ import 'custom-cursor-react/dist/index.css';
 import { FormSection } from './FormSection';
 import { StandSection } from './StandSection';
 import { Iframe } from './Iframe';
+import { IframeButton } from './IframeButton';
 
 export const LandingView: FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,6 +48,9 @@ export const LandingView: FC = () => {
       <StandSection setIsOpen={setIsOpen} />
       <ReviewsSection setIsOpen={setIsOpen} />
       <FormSection setIsOpen={setIsOpen} />
+      <div className={styles.wrapper_hide}>
+        <IframeButton setIsOpen={setIsOpen} />
+      </div>
     </div>
   );
 };

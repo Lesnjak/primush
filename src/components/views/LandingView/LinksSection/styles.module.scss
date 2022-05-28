@@ -158,7 +158,7 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    @include respond($breakpoint-down-sm){
+    @include respond($breakpoint-down-md){
       display: none;
     }
     &_icon {
@@ -184,10 +184,8 @@
     align-items: flex-end;
     position: relative;
     justify-content: space-between;
+
     @include respond($breakpoint-down-md){
-      justify-content: center;
-    }
-    @include respond($breakpoint-down-sm){
       display: none;
     }
   }
