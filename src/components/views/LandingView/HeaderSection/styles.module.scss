@@ -41,9 +41,6 @@
     }
     &_padding {
       @media (max-width: 1400px) {
-        padding: 176px 0 120px;
-      }
-      @include respond($breakpoint-down-md){
         padding: 150px 0 120px;
       }
     }
