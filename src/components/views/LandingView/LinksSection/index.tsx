@@ -151,7 +151,7 @@ export const LinksSection: FC<Props> = ({ setIsOpen }) => {
                     <a
                       className={styles.links_linksWrapper_link_a}
                       target="_blank"
-                      href={t('links.link1.url')}
+                      href={t('links.link2.url')}
                       rel="noreferrer"
                     >
                       <Typography fontWeight="bold" uppercase>
@@ -175,7 +175,7 @@ export const LinksSection: FC<Props> = ({ setIsOpen }) => {
                     <a
                       className={styles.links_linksWrapper_link_a}
                       target="_blank"
-                      href={t('links.link1.url')}
+                      href={t('links.link3.url')}
                       rel="noreferrer"
                     >
                       <Typography fontWeight="bold" uppercase>
