@@ -6,6 +6,8 @@
   background: radial-gradient(ellipse at center, rgba(219, 0, 0, 0.70) 0%, var(--red) 100%);
   scroll-snap-align: center;
   position: relative;
+  overflow: hidden;
+  width: 100vw;
   z-index: 10;
   @media (max-width: 1400px) {
     scroll-snap-align: none;
