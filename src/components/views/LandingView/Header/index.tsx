@@ -11,7 +11,6 @@ import useOnclickOutside from 'react-cool-onclickoutside';
 import { SpaceMaker } from '../../../common/SpaceMaker';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import { IframeButton } from '../IframeButton';
 
 type Props = {
   show: boolean;
