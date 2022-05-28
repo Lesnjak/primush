@@ -78,7 +78,7 @@
       }
     }
     @include respond($breakpoint-down-xs){
-     overflow: visible;
+     margin: 0 -20px;
     }
 
   }
