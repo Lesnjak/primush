@@ -50,8 +50,8 @@ export const ReviewsSection: FC<Props> = ({ setIsOpen }) => {
     slidesToShow: 3,
     speed: 500,
     focusOnSelect: true,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
+    nextArrow: <SamplePrevArrow />,
+    prevArrow: <SampleNextArrow />,
   };
 
   const handleScroll = () => {
