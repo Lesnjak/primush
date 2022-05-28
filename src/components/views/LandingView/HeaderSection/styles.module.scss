@@ -6,9 +6,9 @@
   background: radial-gradient(ellipse at center, rgba(219, 0, 0, 0.70) 0%, var(--red) 100%);
   scroll-snap-align: center;
   position: relative;
+  z-index: 10;
   @media (max-width: 1400px) {
     scroll-snap-align: none;
-    height: auto;
   }
 
   &_header {
@@ -67,7 +67,7 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    @media (max-width: 1400px) {
+    @include respond($breakpoint-down-md){
       display: none;
     }
     &_icon {
@@ -104,7 +104,7 @@
     align-items: flex-end;
     justify-content: center;
     position: relative;
-    @media (max-width: 1400px) {
+    @include respond($breakpoint-down-md){
       display: none;
     }
   }
