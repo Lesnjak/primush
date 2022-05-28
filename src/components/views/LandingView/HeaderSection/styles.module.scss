@@ -11,6 +11,10 @@
     scroll-snap-align: none;
   }
 
+  @media (max-width: 1200px) {
+    height: auto;
+  }
+
   &_header {
     &_red {
       @media (max-width: 1400px) {
