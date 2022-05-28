@@ -5,13 +5,11 @@
   height: 100vh;
   scroll-snap-align: center;
   position: relative;
-  @include respond($breakpoint-down-md){
+  @media (max-width: 1400px) {
     scroll-snap-align: none;
     height: auto;
-  }
-
-  &_header {
-    @include respond($breakpoint-down-md){
+    border-top: 1px solid var(--borderLight);
+    &_header {
       display: none;
     }
   }
@@ -70,7 +68,7 @@
     max-width: 1220px;
     flex-grow: 1;
     padding: 0 50px 0 33px;
-    margin: 0 auto;
+    margin: auto;
     display: flex;
     flex-direction: column;
     @include respond($breakpoint-down-sm){
@@ -83,7 +81,7 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    @include respond($breakpoint-down-md){
+    @media (max-width: 1400px) {
       display: none;
     }
     &_icon {
@@ -109,7 +107,7 @@
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
-    @include respond($breakpoint-down-md){
+    @media (max-width: 1400px) {
       display: none;
     }
   }

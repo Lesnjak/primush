@@ -126,7 +126,7 @@ export const LikeSection: FC<Props> = ({ setIsOpen }) => {
                 </Typography>
               </SpaceBlock>
               <div className={styles.like_links}>
-                <Scrollbar style={{ width: '100%', height: '100%' }}>
+                <Scrollbar style={{ width: '100%', height: '62vh' }}>
                   {links.map((item: string) => (
                     <div
                       onClick={handleChange('#form')}

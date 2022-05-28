@@ -5,10 +5,13 @@
   height: 100vh;
   scroll-snap-align: center;
   position: relative;
-  @include respond($breakpoint-down-md){
+  @media (max-width: 1400px) {
     scroll-snap-align: none;
     height: auto;
     border-top: 1px solid var(--borderLight);
+    &_header {
+      display: none;
+    }
   }
 
   &_follow {
@@ -174,7 +177,7 @@
     flex-grow: 1;
     padding: 0 33px;
     display: flex;
-    margin: auto 0;
+    margin: auto;
     @include respond($breakpoint-down-sm){
       padding: 0;
     }
@@ -185,7 +188,7 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    @include respond($breakpoint-down-md){
+    @media (max-width: 1400px) {
       display: none;
     }
     &_icon {
@@ -211,7 +214,7 @@
     align-items: flex-end;
     justify-content: space-between;
     position: relative;
-    @include respond($breakpoint-down-md){
+    @media (max-width: 1400px) {
       display: none;
     }
   }

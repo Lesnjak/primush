@@ -5,14 +5,11 @@
   height: 100vh;
   scroll-snap-align: center;
   position: relative;
-  @include respond($breakpoint-down-md){
+  @media (max-width: 1400px) {
     scroll-snap-align: none;
     height: auto;
     border-top: 1px solid var(--borderLight);
-  }
-
-  &_header {
-    @include respond($breakpoint-down-md){
+    &_header {
       display: none;
     }
   }
@@ -56,7 +53,7 @@
     padding: 0 33px;
     display: flex;
     align-items: center;
-    margin: auto 0;
+    margin: auto;
     @include respond($breakpoint-down-sm){
       padding: 0;
     }
@@ -67,7 +64,7 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    @include respond($breakpoint-down-md){
+    @media (max-width: 1400px) {
       display: none;
     }
 
@@ -114,7 +111,7 @@
     align-items: flex-end;
     justify-content: space-between;
     position: relative;
-    @include respond($breakpoint-down-md){
+    @media (max-width: 1400px) {
       display: none;
     }
   }

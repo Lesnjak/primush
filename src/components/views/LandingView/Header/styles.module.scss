@@ -21,7 +21,7 @@
     position: absolute;
     right: 33px;
     bottom: 40px;
-    @include respond($breakpoint-down-md){
+    @media (max-width: 1400px) {
       display: none!important;
     }
   }
@@ -64,7 +64,7 @@
   }
   &_hide {
     opacity: 0;
-    @include respond($breakpoint-down-md){
+    @media (max-width: 1400px) {
       opacity: 1;
     }
   }
