@@ -8,9 +8,13 @@ import { ICONS } from '../../../../configs/icons.config';
 import { Typography } from '../../../common/Typography';
 import { IMAGES } from '../../../../configs/image.config';
 import useTranslation from 'next-translate/useTranslation';
-import { Iframe } from '../Iframe';
+import { IframeButton } from '../IframeButton';
 
-export const WhoSection: FC = () => {
+type Props = {
+  setIsOpen?: any;
+};
+
+export const WhoSection: FC<Props> = ({ setIsOpen }) => {
   const { t } = useTranslation('common');
   const [hideHeader, setHideHeader] = useState(true);
 
@@ -39,7 +43,7 @@ export const WhoSection: FC = () => {
       <ContentLimiter>
         <div className={styles.who_wrapper}>
           <div className={styles.who_header}>
-            <Header id="#who" black show={hideHeader} />
+            <Header setIsOpen={setIsOpen} id="#who" black show={hideHeader} />
           </div>
           <div className={styles.who_content}>
             <div className={styles.who_social}>
@@ -172,7 +176,7 @@ export const WhoSection: FC = () => {
               >
                 {t('who.title')}
               </Typography>
-              <Iframe />
+              <IframeButton setIsOpen={setIsOpen} />
             </div>
           </div>
         </div>

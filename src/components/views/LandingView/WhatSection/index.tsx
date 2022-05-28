@@ -8,9 +8,13 @@ import { ICONS } from '../../../../configs/icons.config';
 import { IMAGES } from '../../../../configs/image.config';
 import { Typography } from '../../../common/Typography';
 import useTranslation from 'next-translate/useTranslation';
-import { Iframe } from '../Iframe';
+import { IframeButton } from '../IframeButton';
 
-export const WhatSection: FC = () => {
+type Props = {
+  setIsOpen?: any;
+};
+
+export const WhatSection: FC<Props> = ({ setIsOpen }) => {
   const { t } = useTranslation('common');
   const [hideHeader, setHideHeader] = useState(true);
 
@@ -39,7 +43,7 @@ export const WhatSection: FC = () => {
       <ContentLimiter>
         <div className={styles.what_wrapper}>
           <div className={styles.what_header}>
-            <Header id="#what" black show={hideHeader} />
+            <Header setIsOpen={setIsOpen} id="#what" black show={hideHeader} />
           </div>
           <div className={styles.what_content}>
             <div className={styles.what_social}>
@@ -146,7 +150,7 @@ export const WhatSection: FC = () => {
               >
                 {t('what.title')}
               </Typography>
-              <Iframe />
+              <IframeButton setIsOpen={setIsOpen} />
             </div>
           </div>
         </div>

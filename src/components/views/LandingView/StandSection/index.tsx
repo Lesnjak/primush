@@ -8,9 +8,13 @@ import { ICONS } from '../../../../configs/icons.config';
 import { SpaceBlock } from '../../../common/SpaceBlock';
 import { Typography } from '../../../common/Typography';
 import useTranslation from 'next-translate/useTranslation';
-import { Iframe } from '../Iframe';
+import { IframeButton } from '../IframeButton';
 
-export const StandSection: FC = () => {
+type Props = {
+  setIsOpen?: any;
+};
+
+export const StandSection: FC<Props> = ({ setIsOpen }) => {
   const { t } = useTranslation('common');
   const [hideHeader, setHideHeader] = useState(true);
 
@@ -38,7 +42,7 @@ export const StandSection: FC = () => {
       <ContentLimiter>
         <div className={styles.stand_wrapper}>
           <div className={styles.stand_header}>
-            <Header id="#stand" black show={hideHeader} />
+            <Header setIsOpen={setIsOpen} id="#stand" black show={hideHeader} />
           </div>
 
           <div className={styles.stand_content}>
@@ -224,7 +228,7 @@ export const StandSection: FC = () => {
               >
                 {t('stand.title')}
               </Typography>
-              <Iframe />
+              <IframeButton setIsOpen={setIsOpen} />
             </div>
           </div>
         </div>

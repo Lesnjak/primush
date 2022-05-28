@@ -10,9 +10,13 @@ import { Typography } from '../../../common/Typography';
 import useTranslation from 'next-translate/useTranslation';
 // import { VideoBlock } from '../../../common/VideoBlock';
 import { BsLink45Deg } from 'react-icons/bs';
-import { Iframe } from '../Iframe';
+import { IframeButton } from '../IframeButton';
 
-export const LinksSection: FC = () => {
+type Props = {
+  setIsOpen?: any;
+};
+
+export const LinksSection: FC<Props> = ({ setIsOpen }) => {
   const { t } = useTranslation('common');
   const [hideHeader, setHideHeader] = useState(true);
 
@@ -40,7 +44,7 @@ export const LinksSection: FC = () => {
       <ContentLimiter>
         <div className={styles.links_wrapper}>
           <div className={styles.links_header}>
-            <Header id="#links" black show={hideHeader} />
+            <Header setIsOpen={setIsOpen} id="#links" black show={hideHeader} />
           </div>
 
           <div className={styles.links_content}>
@@ -176,7 +180,7 @@ export const LinksSection: FC = () => {
               >
                 {t('links.title')}
               </Typography>
-              <Iframe />
+              <IframeButton setIsOpen={setIsOpen} />
             </div>
           </div>
         </div>

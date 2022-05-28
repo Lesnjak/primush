@@ -10,8 +10,12 @@ import { SpaceBlock } from '../../../common/SpaceBlock';
 import useTranslation from 'next-translate/useTranslation';
 import Scrollbar from 'react-scrollbars-custom';
 import cn from 'classnames';
-import { Iframe } from '../Iframe';
-export const LikeSection: FC = () => {
+import { IframeButton } from '../IframeButton';
+
+type Props = {
+  setIsOpen?: any;
+};
+export const LikeSection: FC<Props> = ({ setIsOpen }) => {
   const { t } = useTranslation('common');
   const [hideHeader, setHideHeader] = useState(true);
 
@@ -70,7 +74,13 @@ export const LikeSection: FC = () => {
       <ContentLimiter>
         <div className={styles.like_wrapper}>
           <div className={styles.like_header}>
-            <Header id="#like" absolute={false} black show={hideHeader} />
+            <Header
+              setIsOpen={setIsOpen}
+              id="#like"
+              absolute={false}
+              black
+              show={hideHeader}
+            />
           </div>
           <div className={styles.like_content}>
             <div className={styles.like_social}>
@@ -146,7 +156,7 @@ export const LikeSection: FC = () => {
               >
                 {t('like.wouldLik')}
               </Typography>
-              <Iframe />
+              <IframeButton setIsOpen={setIsOpen} />
             </div>
           </div>
         </div>

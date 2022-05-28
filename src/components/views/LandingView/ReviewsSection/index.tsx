@@ -15,9 +15,13 @@ import { IMAGES } from '../../../../configs/image.config';
 import { SpaceMaker } from '../../../common/SpaceMaker';
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from 'react-icons/md';
 import cn from 'classnames';
-import { Iframe } from '../Iframe';
+import { IframeButton } from '../IframeButton';
 
-export const ReviewsSection: FC = () => {
+type Props = {
+  setIsOpen?: any;
+};
+
+export const ReviewsSection: FC<Props> = ({ setIsOpen }) => {
   const { t } = useTranslation('common');
   const [hideHeader, setHideHeader] = useState(true);
 
@@ -118,7 +122,12 @@ export const ReviewsSection: FC = () => {
       <ContentLimiter>
         <div className={styles.reviews_wrapper}>
           <div className={styles.reviews_header}>
-            <Header id="#reviews" black show={hideHeader} />
+            <Header
+              setIsOpen={setIsOpen}
+              id="#reviews"
+              black
+              show={hideHeader}
+            />
           </div>
           <div className={styles.reviews_content}>
             <div className={styles.reviews_social}>
@@ -229,7 +238,7 @@ export const ReviewsSection: FC = () => {
               >
                 {t('reviews.nav')}
               </Typography>
-              <Iframe />
+              <IframeButton setIsOpen={setIsOpen} />
             </div>
           </div>
         </div>

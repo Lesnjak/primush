@@ -9,9 +9,12 @@ import { ReactSVG } from 'react-svg';
 import { ICONS } from '../../../../configs/icons.config';
 import cn from 'classnames';
 import useTranslation from 'next-translate/useTranslation';
-import { IframeText } from '../IframeText';
 
-export const HeaderSection: FC = () => {
+type Props = {
+  setIsOpen?: any;
+};
+
+export const HeaderSection: FC<Props> = ({ setIsOpen }) => {
   const { t } = useTranslation('common');
   const [hideHeader, setHideHeader] = useState(false);
 
@@ -50,7 +53,7 @@ export const HeaderSection: FC = () => {
               [styles.headerSection_header_red]: hideHeader,
             })}
           >
-            <Header absolute={false} show={hideHeader} />
+            <Header setIsOpen={setIsOpen} absolute={false} show={hideHeader} />
           </div>
           <div className={styles.headerSection_content}>
             <div className={styles.headerSection_social}>
@@ -119,7 +122,16 @@ export const HeaderSection: FC = () => {
             </div>
             <div className={styles.headerSection_rightBlock}>
               <Navigation rightButtonId={'#like'} id="#header" />
-              <IframeText z black />
+              <div onClick={() => setIsOpen(true)}>
+                <Typography
+                  className={styles.headerSection_underline}
+                  color="white"
+                  uppercase
+                  variant="body-20"
+                >
+                  {t('header.book')}
+                </Typography>
+              </div>
             </div>
             <div className={styles.headerSection_bottomBlock}>
               <div className={styles.headerSection_socialBottom}>

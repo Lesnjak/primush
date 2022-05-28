@@ -20,9 +20,13 @@ import useOnclickOutside from 'react-cool-onclickoutside';
 import TextareaAutosize from 'react-textarea-autosize';
 import * as notificationsService from '../../../../configs/notifications.service';
 import { useRouter } from 'next/router';
-import { Iframe } from '../Iframe';
+import { IframeButton } from '../IframeButton';
 
-export const FormSection: FC = () => {
+type Props = {
+  setIsOpen?: any;
+};
+
+export const FormSection: FC<Props> = ({ setIsOpen }) => {
   const [hideHeader, setHideHeader] = useState(true);
   const { t } = useTranslation('common');
   const [menuIspen, setMenuIsOpen] = useState(false);
@@ -125,7 +129,7 @@ export const FormSection: FC = () => {
       <ContentLimiter>
         <div className={styles.form_wrapper}>
           <div className={styles.form_header}>
-            <Header id="#form" black show={hideHeader} />
+            <Header setIsOpen={setIsOpen} id="#form" black show={hideHeader} />
           </div>
           <div className={styles.form_content}>
             <div className={styles.form_social}>
@@ -374,7 +378,7 @@ export const FormSection: FC = () => {
               >
                 {t('form.title')}
               </Typography>
-              <Iframe />
+              <IframeButton setIsOpen={setIsOpen} />
             </div>
           </div>
         </div>

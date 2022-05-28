@@ -5,7 +5,7 @@
  position: absolute;
   bottom: 0;
   left: -100px;
-  z-index: 10000;
+  z-index: 1;
 
   @media (max-width: 920px) {
     right: 20px;
@@ -87,6 +87,7 @@
 
     &_white {
       background: var(--white);
+      opacity: 1!important;
     }
 
     &_loading {

@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import styles from './styles.module.scss';
 import { HeaderSection } from './HeaderSection';
 import { LikeSection } from './LikeSection';
@@ -18,8 +18,12 @@ import { StandSection } from './StandSection';
 import { Iframe } from './Iframe';
 
 export const LandingView: FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className={styles.wrapper}>
+      <div id="iframe" className={styles.wrapper_iframe}>
+        {isOpen && <Iframe setIsOpen={setIsOpen} />}
+      </div>
       <CustomCursor
         targets={['.link']}
         customClass="custom-cursor"
@@ -33,19 +37,16 @@ export const LandingView: FC = () => {
         targetOpacity={0.5}
         targetScale={2.5}
       />
-      <HeaderSection />
-      <LikeSection />
-      <WhoSection />
-      <WhySection />
-      <ActivitiesSection />
-      <WhatSection />
-      <LinksSection />
-      <StandSection />
-      <ReviewsSection />
-      <FormSection />
-      <div className={styles.wrapper_hide}>
-        <Iframe />
-      </div>
+      <HeaderSection setIsOpen={setIsOpen} />
+      <LikeSection setIsOpen={setIsOpen} />
+      <WhoSection setIsOpen={setIsOpen} />
+      <WhySection setIsOpen={setIsOpen} />
+      <ActivitiesSection setIsOpen={setIsOpen} />
+      <WhatSection setIsOpen={setIsOpen} />
+      <LinksSection setIsOpen={setIsOpen} />
+      <StandSection setIsOpen={setIsOpen} />
+      <ReviewsSection setIsOpen={setIsOpen} />
+      <FormSection setIsOpen={setIsOpen} />
     </div>
   );
 };

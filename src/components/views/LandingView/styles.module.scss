@@ -16,4 +16,9 @@
     }
   }
 
+  &_iframe {
+    position: relative;
+    z-index: 1000000;
+  }
+
 }

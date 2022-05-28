@@ -10,9 +10,13 @@ import { Typography } from '../../../common/Typography';
 import useTranslation from 'next-translate/useTranslation';
 import { IMAGES } from '../../../../configs/image.config';
 import { SpaceMaker } from '../../../common/SpaceMaker';
-import { Iframe } from '../Iframe';
+import { IframeButton } from '../IframeButton';
 
-export const ActivitiesSection: FC = () => {
+type Props = {
+  setIsOpen?: any;
+};
+
+export const ActivitiesSection: FC<Props> = ({ setIsOpen }) => {
   const { t } = useTranslation('common');
   const [hideHeader, setHideHeader] = useState(true);
 
@@ -41,7 +45,12 @@ export const ActivitiesSection: FC = () => {
       <ContentLimiter>
         <div className={styles.activities_wrapper}>
           <div className={styles.activities_header}>
-            <Header id="#activities" black show={hideHeader} />
+            <Header
+              setIsOpen={setIsOpen}
+              id="#activities"
+              black
+              show={hideHeader}
+            />
           </div>
           <div className={styles.activities_content}>
             <div className={styles.activities_social}>
@@ -204,7 +213,7 @@ export const ActivitiesSection: FC = () => {
               >
                 {t('activities.title')}
               </Typography>
-              <Iframe />
+              <IframeButton setIsOpen={setIsOpen} />
             </div>
           </div>
         </div>

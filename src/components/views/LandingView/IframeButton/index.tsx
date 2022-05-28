@@ -1,22 +1,16 @@
 import { FC, useState } from 'react';
 import styles from './styles.module.scss';
 import cn from 'classnames';
-import { IoIosClose } from 'react-icons/io';
 import { ReactSVG } from 'react-svg';
 import { ICONS } from '../../../../configs/icons.config';
 
 type Props = {
+  setIsOpen?: any;
   black?: boolean;
-  z?: boolean;
 };
 
-export const IframeWhite: FC<Props> = ({ black, z }) => {
-  const [isOpen, setIsOpen] = useState(false);
+export const IframeButton: FC<Props> = ({ setIsOpen, black }) => {
   const [isLoading, setIsLoading] = useState(false);
-
-  const handleToggleOpen = () => {
-    setIsOpen(!isOpen);
-  };
 
   const handleOpen = () => {
     setIsLoading(true);
@@ -27,22 +21,7 @@ export const IframeWhite: FC<Props> = ({ black, z }) => {
   };
 
   return (
-    <div className={cn(styles.wrapper, { [styles.wrapper_z]: z })}>
-      {isOpen && (
-        <div className={styles.wrapper_iframe}>
-          <button
-            onClick={handleToggleOpen}
-            className={styles.wrapper_button_close}
-          >
-            <IoIosClose />
-          </button>
-          <iframe
-            title="iframe"
-            src="https://widget.easyweek.io/primush-coaching"
-          />
-        </div>
-      )}
-
+    <div className={cn(styles.wrapper)}>
       <button
         onClick={handleOpen}
         className={cn(styles.wrapper_button, {

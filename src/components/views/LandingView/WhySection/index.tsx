@@ -8,9 +8,13 @@ import { ICONS } from '../../../../configs/icons.config';
 import { IMAGES } from '../../../../configs/image.config';
 import { Typography } from '../../../common/Typography';
 import useTranslation from 'next-translate/useTranslation';
-import { Iframe } from '../Iframe';
+import { IframeButton } from '../IframeButton';
 
-export const WhySection: FC = () => {
+type Props = {
+  setIsOpen?: any;
+};
+
+export const WhySection: FC<Props> = ({ setIsOpen }) => {
   const { t } = useTranslation('common');
   const [hideHeader, setHideHeader] = useState(true);
 
@@ -39,12 +43,12 @@ export const WhySection: FC = () => {
       <ContentLimiter>
         <div className={styles.why_wrapper}>
           <div className={styles.why_header}>
-            <Header id="#why" black show={hideHeader} />
+            <Header setIsOpen={setIsOpen} id="#why" black show={hideHeader} />
           </div>
 
           <div className={styles.why_wrapper}>
             <div className={styles.why_header}>
-              <Header id="#why" black show={hideHeader} />
+              <Header setIsOpen={setIsOpen} id="#why" black show={hideHeader} />
             </div>
             <div className={styles.why_content}>
               <div className={styles.why_social}>
@@ -135,7 +139,7 @@ export const WhySection: FC = () => {
                 >
                   {t('why.title')}
                 </Typography>
-                <Iframe />
+                <IframeButton setIsOpen={setIsOpen} />
               </div>
             </div>
           </div>

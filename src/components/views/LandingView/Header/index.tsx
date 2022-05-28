@@ -11,13 +11,13 @@ import useOnclickOutside from 'react-cool-onclickoutside';
 import { SpaceMaker } from '../../../common/SpaceMaker';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import { Iframe } from '../Iframe';
-import { IframeWhite } from '../IframeWhite';
+import { IframeButton } from '../IframeButton';
 
 type Props = {
   show: boolean;
   black?: boolean;
   absolute?: boolean;
+  setIsOpen?: any;
   id?:
     | '#header'
     | '#like'
@@ -31,7 +31,13 @@ type Props = {
     | '#what';
 };
 
-export const Header: FC<Props> = ({ show, black, id, absolute = true }) => {
+export const Header: FC<Props> = ({
+  show,
+  black,
+  id,
+  absolute = true,
+  setIsOpen,
+}) => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
   const { t } = useTranslation('common');
   const { locale, asPath } = useRouter();
@@ -155,9 +161,9 @@ export const Header: FC<Props> = ({ show, black, id, absolute = true }) => {
             variant="body-20"
           >
             {t('header.menu')}
-            <Iframe black />
+            <IframeButton setIsOpen={setIsOpen} black />
           </Typography>
-          <IframeWhite black />
+          <IframeButton setIsOpen={setIsOpen} black />
           {links.map((item: any) => (
             <div
               key={item.link}
