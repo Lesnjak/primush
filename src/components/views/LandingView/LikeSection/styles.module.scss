@@ -29,9 +29,6 @@
   &_links {
     overflow: auto;
     flex-grow: 1;
-    @include respond($breakpoint-down-md){
-      min-height: 600px;
-    }
     &_link {
       padding: 28px 0;
       border-bottom: 1px solid #ebebeb;
