@@ -123,10 +123,12 @@
       font-size: 30px;
       transition: $anim-time;
       &:hover {
-        opacity: 0.7;
+        opacity: 1;
       }
       @include respond($breakpoint-down-xs){
-        opacity: 1;
+        opacity: 0.6!important;
+        left: 33%;
+
       }
     }
     &_next {
@@ -147,10 +149,11 @@
       font-size: 30px;
       transition: $anim-time;
       &:hover {
-        opacity: 0.7;
+        opacity: 1;
       }
       @include respond($breakpoint-down-xs){
-        opacity: 1;
+        opacity: 0.6!important;
+        right: 33%;
 
       }
     }
