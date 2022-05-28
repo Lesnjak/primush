@@ -64,8 +64,7 @@
       margin-bottom: 25px;
       transition: $anim-time;
       @include respond($breakpoint-down-md){
-        margin-bottom: 0;
-        margin-right: 20px;
+        margin: 0 20px 40px!important;
       }
       &:hover {
         opacity: 0.8;
