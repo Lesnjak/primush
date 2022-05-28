@@ -11,6 +11,11 @@ const App = (appProps: any) => {
       <Head>
         <title>{`PRIMUSH`}</title>
         <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="preload"
+          href="/fonts/Montserrat/Montserrat-Regular.ttf"
+          as="font"
+        />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"

@@ -8,6 +8,7 @@ export const ICONS = {
   burgerBlackIcon: '/icons/svg/burgerBlack.svg',
   facebookIcon: '/icons/svg/facebook.svg',
   linkedinIcon: '/icons/svg/linkedin.svg',
+  twitterIcon: '/icons/svg/twitter.svg',
   instagramIcon: '/icons/svg/instagram.svg',
   dateIcon: '/icons/svg/date.svg',
   enIcon: '/icons/png/en.png',

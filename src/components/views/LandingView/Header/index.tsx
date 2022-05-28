@@ -53,6 +53,7 @@ export const Header: FC<Props> = ({
     { to: '#links', link: t('questions.links') },
     { to: '#activities', link: t('questions.activities') },
     { to: '#stand', link: t('stand.title') },
+    { to: '#book', link: t('questions.book') },
     { to: '#form', link: t('questions.contacts') },
   ];
 
@@ -161,13 +162,14 @@ export const Header: FC<Props> = ({
             variant="body-20"
           >
             {t('header.menu')}
-            <IframeButton setIsOpen={setIsOpen} black />
           </Typography>
           <IframeButton setIsOpen={setIsOpen} black />
           {links.map((item: any) => (
             <div
               key={item.link}
-              onClick={() => handleLink(item.to)}
+              onClick={() =>
+                item.to === '#book' ? setIsOpen(true) : handleLink(item.to)
+              }
               className={cn(styles.header_list_link, {
                 [styles.header_list_link_active]: item.to === id,
               })}

@@ -5,7 +5,7 @@
     "do": "Do you",
     "have": "have",
     "question": "a question?",
-    "book": "book a free session",
+    "book": "Book a session",
     "menu": "menu"
   },
   "like": {
@@ -66,6 +66,7 @@
     "activities": "My activities",
     "links": "Interesting links",
     "about": "What people say about Yurii",
+    "book": "Book a session",
     "contacts": "Contacts"
   },
   "activities": {
@@ -124,14 +125,14 @@
       "image": "igor"
     },
     "review4": {
-      "title": "CFO",
+      "title": "CEO",
       "text":"I’m glad to know Yurii. An intelligent, thoughtful coach. He helps to see the hidden perspective and start doing the postponed. I recommend.",
       "name": "Olexandr",
       "date": "8 december, 2021",
       "image": "oleksandr"
     },
     "review5": {
-      "title": "Lawyer",
+      "title": "International development professional",
       "text":"I worked with Yurii when he first started coaching and it was a very useful and pleasant experience. I continue to successfully use a technique he taught me during our sessions. And I highly recommend working with Yurii!",
       "name": "Madina",
       "date": "6 may, 2022",
@@ -171,7 +172,8 @@
   "socialLinks" : {
     "facebook": "https://www.facebook.com/primush/",
     "instagram": "https://www.instagram.com/primush_/",
-    "linkedin": "https://www.linkedin.com/in/primush/"
+    "linkedin": "https://www.linkedin.com/in/primush/",
+    "twitter": "https://www.twitter.com/in/primush/"
   },
   "myActivitiesLinks": {
     "geotrees": "geotrees.org",

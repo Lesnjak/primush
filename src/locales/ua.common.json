@@ -5,7 +5,7 @@
     "do": "Ти",
     "have": "Маєш",
     "question": "питання?",
-    "book": "записатися на безкоштовний сеанс",
+    "book": "Записатись на сесію",
     "menu": "меню"
   },
   "like": {
@@ -66,6 +66,7 @@
     "activities": "Моя діяльність",
     "links": "Цікава інформація",
     "about": "Що люди говорять про Юрія",
+    "book": "Записатися на сесію",
     "contacts": "Контакти"
   },
   "activities": {
@@ -124,14 +125,14 @@
       "image": "igor"
     },
     "review4": {
-      "title": "Фінансовий директор",
+      "title": "CEO",
       "text":"Я радий знайомству з Юрієм. Розумний, вдумливий коуч. Він допомагає побачити приховану перспективу і почати робити відкладене. Я рекомендую.",
       "name": "Олександр",
       "date": "8 грудня, 2021",
       "image": "oleksandr"
     },
     "review5": {
-      "title": "Адвокат",
+      "title": "Спеціаліст по міжнародному розвитку",
       "text":"Я працювала з Юрієм, коли він тільки почав займатися коучинговою діяльністю, і це був дуже корисний та приємний досвід. Я продовжую успішно використовувати техніку, якої він навчив мене під час наших сеансів. Дуже рекомендую працювати з Юрієм!",
       "name": "Мадіна",
       "date": "6 травня, 2022",
@@ -171,7 +172,8 @@
   "socialLinks" : {
     "facebook": "https://www.facebook.com/primush/",
     "instagram": "https://www.instagram.com/primush_/",
-    "linkedin": "https://www.linkedin.com/in/primush/"
+    "linkedin": "https://www.linkedin.com/in/primush/",
+    "twitter": "https://www.twitter.com/in/primush/"
   },
   "myActivitiesLinks": {
     "geotrees": "geotrees.org",

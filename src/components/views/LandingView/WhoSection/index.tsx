@@ -154,6 +154,14 @@ export const WhoSection: FC<Props> = ({ setIsOpen }) => {
                   <a
                     target="_blank"
                     className={styles.who_socialn_icon}
+                    href={t('socialLinks.twitter')}
+                    rel="noreferrer"
+                  >
+                    <ReactSVG src={ICONS.twitterIcon} />
+                  </a>
+                  <a
+                    target="_blank"
+                    className={styles.who_socialn_icon}
                     href={t('socialLinks.linkedin')}
                     rel="noreferrer"
                   >
