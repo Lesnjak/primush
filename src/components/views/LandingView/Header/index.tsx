@@ -163,7 +163,6 @@ export const Header: FC<Props> = ({
           >
             {t('header.menu')}
           </Typography>
-          <IframeButton setIsOpen={setIsOpen} black />
           {links.map((item: any) => (
             <div
               key={item.link}
