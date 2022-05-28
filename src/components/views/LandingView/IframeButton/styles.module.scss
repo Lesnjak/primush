@@ -5,9 +5,9 @@
  position: absolute;
   bottom: 0;
   left: -100px;
-  z-index: 3;
+  z-index: 10;
 
-  @include respond($breakpoint-down-md){
+  @media (max-width: 1400px) {
     right: 20px;
     bottom: 20px;
     left: auto;

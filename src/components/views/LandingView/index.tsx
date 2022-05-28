@@ -25,6 +25,9 @@ export const LandingView: FC = () => {
       <div id="iframe" className={styles.wrapper_iframe}>
         {isOpen && <Iframe setIsOpen={setIsOpen} />}
       </div>
+      <div className={styles.wrapper_hide}>
+        <IframeButton setIsOpen={setIsOpen} />
+      </div>
       <CustomCursor
         targets={['.link']}
         customClass="custom-cursor"
@@ -48,9 +51,6 @@ export const LandingView: FC = () => {
       <StandSection setIsOpen={setIsOpen} />
       <ReviewsSection setIsOpen={setIsOpen} />
       <FormSection setIsOpen={setIsOpen} />
-      <div className={styles.wrapper_hide}>
-        <IframeButton setIsOpen={setIsOpen} />
-      </div>
     </div>
   );
 };
