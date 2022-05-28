@@ -71,6 +71,12 @@ export const LikeSection: FC<Props> = ({ setIsOpen }) => {
 
   return (
     <div id="like" className={styles.like}>
+      <Navigation
+        black
+        rightButtonId="#who"
+        leftButtonId="#header"
+        id="#like"
+      />
       <ContentLimiter>
         <div className={styles.like_wrapper}>
           <div className={styles.like_header}>
@@ -143,12 +149,6 @@ export const LikeSection: FC<Props> = ({ setIsOpen }) => {
             </div>
             <div className={styles.like_rightBlock}>
               <span />
-              <Navigation
-                black
-                rightButtonId="#who"
-                leftButtonId="#header"
-                id="#like"
-              />
               <Typography
                 className={styles.like_vertical}
                 uppercase

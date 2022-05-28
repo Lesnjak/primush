@@ -41,6 +41,12 @@ export const LinksSection: FC<Props> = ({ setIsOpen }) => {
 
   return (
     <div id="links" className={styles.links}>
+      <Navigation
+        black
+        rightButtonId="#stand"
+        leftButtonId="#what"
+        id="#links"
+      />
       <ContentLimiter>
         <div className={styles.links_wrapper}>
           <div className={styles.links_header}>
@@ -188,12 +194,7 @@ export const LinksSection: FC<Props> = ({ setIsOpen }) => {
             </div>
             <div className={styles.links_rightBlock}>
               <span />
-              <Navigation
-                black
-                rightButtonId="#stand"
-                leftButtonId="#what"
-                id="#links"
-              />
+
               <Typography
                 className={styles.links_vertical}
                 uppercase

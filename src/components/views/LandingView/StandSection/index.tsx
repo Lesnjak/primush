@@ -39,6 +39,12 @@ export const StandSection: FC<Props> = ({ setIsOpen }) => {
 
   return (
     <div id="stand" className={styles.stand}>
+      <Navigation
+        black
+        rightButtonId="#reviews"
+        leftButtonId="#links"
+        id="#stand"
+      />
       <ContentLimiter>
         <div className={styles.stand_wrapper}>
           <div className={styles.stand_header}>
@@ -215,12 +221,6 @@ export const StandSection: FC<Props> = ({ setIsOpen }) => {
             </div>
             <div className={styles.stand_rightBlock}>
               <span />
-              <Navigation
-                black
-                rightButtonId="#reviews"
-                leftButtonId="#links"
-                id="#stand"
-              />
               <Typography
                 className={styles.stand_vertical}
                 uppercase

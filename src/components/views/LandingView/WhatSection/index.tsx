@@ -40,6 +40,12 @@ export const WhatSection: FC<Props> = ({ setIsOpen }) => {
 
   return (
     <div id="what" className={styles.what}>
+      <Navigation
+        black
+        rightButtonId="#links"
+        leftButtonId="#activities"
+        id="#what"
+      />
       <ContentLimiter>
         <div className={styles.what_wrapper}>
           <div className={styles.what_header}>
@@ -137,12 +143,6 @@ export const WhatSection: FC<Props> = ({ setIsOpen }) => {
             </div>
             <div className={styles.what_rightBlock}>
               <span />
-              <Navigation
-                black
-                rightButtonId="#links"
-                leftButtonId="#activities"
-                id="#what"
-              />
               <Typography
                 className={styles.what_vertical}
                 uppercase

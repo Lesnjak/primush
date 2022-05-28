@@ -46,6 +46,7 @@ export const HeaderSection: FC<Props> = ({ setIsOpen }) => {
 
   return (
     <div id="header" className={styles.headerSection}>
+      <Navigation rightButtonId={'#like'} id="#header" />
       <ContentLimiter>
         <div className={styles.headerSection_wrapper}>
           <div className={styles.headerSection_header}>
@@ -117,7 +118,6 @@ export const HeaderSection: FC<Props> = ({ setIsOpen }) => {
               </div>
             </div>
             <div className={styles.headerSection_rightBlock}>
-              <Navigation rightButtonId={'#like'} id="#header" />
               <div onClick={() => setIsOpen(true)}>
                 <Typography
                   className={styles.headerSection_underline}

@@ -7,8 +7,14 @@
   align-items: center;
   position: absolute;
   top: 50%;
-  transform: translateY(-80%);
-  right: 0px;
+  transform: translateY(-50%);
+  right: 33px;
+  z-index: 3;
+
+
+  @media (max-width: 1400px) {
+    display: none;
+  }
 
 
 

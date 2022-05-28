@@ -126,6 +126,7 @@ export const FormSection: FC<Props> = ({ setIsOpen }) => {
 
   return (
     <div id="form" className={styles.form}>
+      <Navigation black leftButtonId="#reviews" id="#form" />
       <ContentLimiter>
         <div className={styles.form_wrapper}>
           <div className={styles.form_header}>
@@ -370,7 +371,6 @@ export const FormSection: FC<Props> = ({ setIsOpen }) => {
             </div>
             <div className={styles.form_rightBlock}>
               <span />
-              <Navigation black leftButtonId="#reviews" id="#form" />
               <Typography
                 className={styles.form_vertical}
                 uppercase

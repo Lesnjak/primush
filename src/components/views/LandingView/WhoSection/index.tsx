@@ -40,6 +40,7 @@ export const WhoSection: FC<Props> = ({ setIsOpen }) => {
 
   return (
     <div id="who" className={styles.who}>
+      <Navigation black rightButtonId="#why" leftButtonId="#like" id="#who" />
       <ContentLimiter>
         <div className={styles.who_wrapper}>
           <div className={styles.who_header}>
@@ -163,12 +164,7 @@ export const WhoSection: FC<Props> = ({ setIsOpen }) => {
             </div>
             <div className={styles.who_rightBlock}>
               <span />
-              <Navigation
-                black
-                rightButtonId="#why"
-                leftButtonId="#like"
-                id="#who"
-              />
+
               <Typography
                 className={styles.who_vertical}
                 uppercase

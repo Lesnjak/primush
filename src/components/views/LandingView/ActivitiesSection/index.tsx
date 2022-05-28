@@ -42,6 +42,12 @@ export const ActivitiesSection: FC<Props> = ({ setIsOpen }) => {
 
   return (
     <div id="activities" className={styles.activities}>
+      <Navigation
+        black
+        rightButtonId="#what"
+        leftButtonId="#why"
+        id="#activities"
+      />
       <ContentLimiter>
         <div className={styles.activities_wrapper}>
           <div className={styles.activities_header}>
@@ -200,12 +206,6 @@ export const ActivitiesSection: FC<Props> = ({ setIsOpen }) => {
             </div>
             <div className={styles.activities_rightBlock}>
               <span />
-              <Navigation
-                black
-                rightButtonId="#what"
-                leftButtonId="#why"
-                id="#activities"
-              />
               <Typography
                 className={styles.activities_vertical}
                 uppercase

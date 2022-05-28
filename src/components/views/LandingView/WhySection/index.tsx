@@ -40,6 +40,12 @@ export const WhySection: FC<Props> = ({ setIsOpen }) => {
 
   return (
     <div id="why" className={styles.why}>
+      <Navigation
+        black
+        rightButtonId="#activities"
+        leftButtonId="#who"
+        id="#why"
+      />
       <ContentLimiter>
         <div className={styles.why_wrapper}>
           <div className={styles.why_header}>
@@ -126,12 +132,6 @@ export const WhySection: FC<Props> = ({ setIsOpen }) => {
               </div>
               <div className={styles.why_rightBlock}>
                 <span />
-                <Navigation
-                  black
-                  rightButtonId="#activities"
-                  leftButtonId="#who"
-                  id="#why"
-                />
                 <Typography
                   className={styles.why_vertical}
                   uppercase
