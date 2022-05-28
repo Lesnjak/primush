@@ -48,11 +48,7 @@ export const HeaderSection: FC<Props> = ({ setIsOpen }) => {
     <div id="header" className={styles.headerSection}>
       <ContentLimiter>
         <div className={styles.headerSection_wrapper}>
-          <div
-            className={cn(styles.headerSection_header, {
-              [styles.headerSection_header_red]: hideHeader,
-            })}
-          >
+          <div className={styles.headerSection_header}>
             <Header setIsOpen={setIsOpen} absolute={false} show={hideHeader} />
           </div>
           <div className={styles.headerSection_content}>

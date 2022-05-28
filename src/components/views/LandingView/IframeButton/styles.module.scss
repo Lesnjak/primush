@@ -5,7 +5,7 @@
  position: absolute;
   bottom: 0;
   left: -100px;
-  z-index: 10;
+  z-index: 5;
 
   @media (max-width: 1400px) {
     right: 20px;
@@ -71,8 +71,8 @@
     cursor: pointer;
     transition: $anim-time;
 
-    @media (max-width: 1350px) {
-      opacity: 0.7;
+    @media (max-width: 1400px) {
+      opacity: 0.5;
     }
 
     &:hover {

@@ -11,23 +11,15 @@
   z-index: 10;
   @media (max-width: 1400px) {
     scroll-snap-align: none;
+    &_header {
+      display: none;
+    }
   }
 
   @media (max-width: 1200px) {
     height: auto;
   }
 
-  &_header {
-    &_red {
-      @media (max-width: 1400px) {
-        position: fixed;
-        width: 100%;
-        z-index: 1000;
-        background-color: rgba(219,0,0, 0.9);
-      }
-    }
-
-  }
 
   &_middle {
     max-width: 1000px;
@@ -39,12 +31,7 @@
 
     @media (max-width: 1400px) {
       justify-content: center;
-      padding: 80px 0 120px;
-    }
-    &_padding {
-      @media (max-width: 1400px) {
-        padding: 150px 0 120px;
-      }
+      padding: 180px 0 150px;
     }
     @include respond($breakpoint-down-sm){
       align-items: center;
