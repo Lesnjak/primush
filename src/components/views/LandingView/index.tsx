@@ -74,11 +74,11 @@ export const LandingView: FC = () => {
       <LikeSection setIsOpen={setIsOpen} />
       <WhoSection setIsOpen={setIsOpen} />
       <WhySection setIsOpen={setIsOpen} />
-      <ActivitiesSection setIsOpen={setIsOpen} />
       <WhatSection setIsOpen={setIsOpen} />
-      <LinksSection setIsOpen={setIsOpen} />
-      <StandSection setIsOpen={setIsOpen} />
       <ReviewsSection setIsOpen={setIsOpen} />
+      <LinksSection setIsOpen={setIsOpen} />
+      <ActivitiesSection setIsOpen={setIsOpen} />
+      <StandSection setIsOpen={setIsOpen} />
       <FormSection setIsOpen={setIsOpen} />
     </div>
   );
