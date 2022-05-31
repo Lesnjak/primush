@@ -42,8 +42,8 @@ export const WhatSection: FC<Props> = ({ setIsOpen }) => {
     <div id="what" className={styles.what}>
       <Navigation
         black
-        rightButtonId="#links"
-        leftButtonId="#activities"
+        rightButtonId="#reviews"
+        leftButtonId="#why"
         id="#what"
       />
       <ContentLimiter>

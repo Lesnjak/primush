@@ -43,8 +43,8 @@ export const LinksSection: FC<Props> = ({ setIsOpen }) => {
     <div id="links" className={styles.links}>
       <Navigation
         black
-        rightButtonId="#stand"
-        leftButtonId="#what"
+        rightButtonId="#activities"
+        leftButtonId="#reviews"
         id="#links"
       />
       <ContentLimiter>

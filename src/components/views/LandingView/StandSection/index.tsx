@@ -41,8 +41,8 @@ export const StandSection: FC<Props> = ({ setIsOpen }) => {
     <div id="stand" className={styles.stand}>
       <Navigation
         black
-        rightButtonId="#reviews"
-        leftButtonId="#links"
+        rightButtonId="#form"
+        leftButtonId="#activities"
         id="#stand"
       />
       <ContentLimiter>

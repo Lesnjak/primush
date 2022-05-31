@@ -41,11 +41,11 @@ export const Navigation: FC<Props> = ({
     '#like',
     '#who',
     '#why',
-    '#activities',
     '#what',
-    '#links',
-    '#stand',
     '#reviews',
+    '#links',
+    '#activities',
+    '#stand',
     '#form',
   ];
 

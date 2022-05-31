@@ -121,8 +121,8 @@ export const ReviewsSection: FC<Props> = ({ setIsOpen }) => {
     <div id="reviews" className={styles.reviews}>
       <Navigation
         black
-        rightButtonId="#form"
-        leftButtonId="#stand"
+        rightButtonId="#links"
+        leftButtonId="#what"
         id="#reviews"
       />
       <ContentLimiter>

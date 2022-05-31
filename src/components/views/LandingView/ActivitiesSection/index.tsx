@@ -44,8 +44,8 @@ export const ActivitiesSection: FC<Props> = ({ setIsOpen }) => {
     <div id="activities" className={styles.activities}>
       <Navigation
         black
-        rightButtonId="#what"
-        leftButtonId="#why"
+        rightButtonId="#stand"
+        leftButtonId="#links"
         id="#activities"
       />
       <ContentLimiter>
