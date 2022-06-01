@@ -19,8 +19,8 @@ export default async function (
       host: 'smtp.gmail.com',
       port: 587,
       auth: {
-        user: 'some@gmail.com',
-        pass: 'some',
+        user: 'yuriiPrimush2022@gmail.com',
+        pass: 'YuriiPrimush!@2022',
       },
     })
   );
