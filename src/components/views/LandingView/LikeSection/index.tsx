@@ -14,8 +14,9 @@ import { IframeButton } from '../IframeButton';
 
 type Props = {
   setIsOpen?: any;
+  setSubject: any;
 };
-export const LikeSection: FC<Props> = ({ setIsOpen }) => {
+export const LikeSection: FC<Props> = ({ setIsOpen, setSubject }) => {
   const { t } = useTranslation('common');
   const [hideHeader, setHideHeader] = useState(true);
 
@@ -54,8 +55,9 @@ export const LikeSection: FC<Props> = ({ setIsOpen }) => {
     }
   };
 
-  const handleChange = (id: string) => () => {
+  const handleChange = (id: string, item: any) => () => {
     const element: any = document.querySelector(id);
+    setSubject(item);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
@@ -135,7 +137,7 @@ export const LikeSection: FC<Props> = ({ setIsOpen }) => {
                 <Scrollbar style={{ width: '100%', height: '62vh' }}>
                   {links.map((item: string) => (
                     <div
-                      onClick={handleChange('#form')}
+                      onClick={handleChange('#form', item)}
                       key={item}
                       className={styles.like_links_link}
                     >

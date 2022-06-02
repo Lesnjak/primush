@@ -24,9 +24,10 @@ import { IframeButton } from '../IframeButton';
 
 type Props = {
   setIsOpen?: any;
+  subject: any;
 };
 
-export const FormSection: FC<Props> = ({ setIsOpen }) => {
+export const FormSection: FC<Props> = ({ setIsOpen, subject }) => {
   const [hideHeader, setHideHeader] = useState(true);
   const { t } = useTranslation('common');
   const [menuIspen, setMenuIsOpen] = useState(false);
@@ -78,8 +79,9 @@ export const FormSection: FC<Props> = ({ setIsOpen }) => {
     }),
     validateOnChange: true,
     validateOnBlur: true,
+    enableReinitialize: true,
     initialValues: {
-      subject: '',
+      subject: subject,
       full_name: '',
       email: '',
       message: '',

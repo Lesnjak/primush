@@ -22,6 +22,7 @@ import cn from 'classnames';
 
 export const LandingView: FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [subject, setSubject] = useState('');
   const [hideHeader, setHideHeader] = useState(false);
   const handleScroll = () => {
     const element: any = document.querySelector('#header');
@@ -71,7 +72,7 @@ export const LandingView: FC = () => {
         targetScale={2.5}
       />
       <HeaderSection setIsOpen={setIsOpen} />
-      <LikeSection setIsOpen={setIsOpen} />
+      <LikeSection setSubject={setSubject} setIsOpen={setIsOpen} />
       <WhoSection setIsOpen={setIsOpen} />
       <WhySection setIsOpen={setIsOpen} />
       <WhatSection setIsOpen={setIsOpen} />
@@ -79,7 +80,7 @@ export const LandingView: FC = () => {
       <LinksSection setIsOpen={setIsOpen} />
       <ActivitiesSection setIsOpen={setIsOpen} />
       <StandSection setIsOpen={setIsOpen} />
-      <FormSection setIsOpen={setIsOpen} />
+      <FormSection subject={subject} setIsOpen={setIsOpen} />
     </div>
   );
 };
