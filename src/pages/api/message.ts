@@ -26,7 +26,7 @@ export default async function (
   );
   const mailData = {
     from: req.body.email,
-    to: 'vnachalesobaka@gmail.com',
+    to: 'welcome@primush.com',
     subject: `Message From ${req.body.full_name}`,
     html: `<html lang="en-US">
 
