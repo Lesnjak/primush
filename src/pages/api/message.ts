@@ -20,7 +20,8 @@ export default async function (
       port: 587,
       auth: {
         user: 'apikey',
-        pass: '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',
+        pass: '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',
+        // pass: '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',
       },
     })
   );
