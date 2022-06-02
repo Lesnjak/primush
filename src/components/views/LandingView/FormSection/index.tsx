@@ -128,7 +128,7 @@ export const FormSection: FC<Props> = ({ setIsOpen, subject }) => {
 
   return (
     <div id="form" className={styles.form}>
-      <Navigation black leftButtonId="#reviews" id="#form" />
+      <Navigation black leftButtonId="#stand" id="#form" />
       <ContentLimiter>
         <div className={styles.form_wrapper}>
           <div className={styles.form_header}>
