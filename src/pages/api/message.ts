@@ -15,18 +15,18 @@ export default async function (
 
   const transporter = nodemailer.createTransport(
     smtpTransport({
-      service: 'gmail',
-      host: 'smtp.gmail.com',
+      service: 'sendgrid',
+      host: 'smtp.sendgrid.net',
       port: 587,
       auth: {
-        user: 'yuriiPrimush2022@gmail.com',
-        pass: 'YuriiPrimush!@2022',
+        user: 'apikey',
+        pass: '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',
       },
     })
   );
   const mailData = {
-    from: req.body.email,
-    to: 'vnachalesobaka@gmail.com',
+    from: 'yuriiPrimush2022@gmail.com',
+    to: 'welcome@primush.com',
     subject: `Message From ${req.body.full_name}`,
     html: `<html lang="en-US">
 
