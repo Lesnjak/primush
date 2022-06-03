@@ -99,8 +99,12 @@ export const FormSection: FC<Props> = ({ setIsOpen, subject }) => {
         referrerPolicy: 'no-referrer',
         body: JSON.stringify(values),
       })
-        .then(() => {
-          notificationsService.successMsg(t('form.successMessage'));
+        .then((r) => {
+          if (r.status === 200) {
+            notificationsService.successMsg(t('form.successMessage'));
+          } else {
+            notificationsService.errorMsg(t('form.errorMessage'));
+          }
           resetForm();
         })
         .catch(() => notificationsService.errorMsg(t('form.errorMessage')));

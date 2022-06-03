@@ -15,18 +15,18 @@ export default async function (
 
   const transporter = nodemailer.createTransport(
     smtpTransport({
-      service: 'sendgrid',
-      host: 'smtp.sendgrid.net',
+      service: 'sendinblue',
+      host: 'smtp-relay.sendinblue.com',
       port: 587,
       auth: {
-        user: 'apikey',
-        pass: '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',
+        user: 'welcome@primush.com',
+        pass: 'DpJs01BIZER35CrN',
       },
     })
   );
   const mailData = {
-    from: 'yuriiPrimush2022@gmail.com',
-    to: 'welcome@primush.com',
+    from: 'welcome@primush.com',
+    to: 'vnachalesobaka@gmail.com',
     subject: `Message From ${req.body.full_name}`,
     html: `<html lang="en-US">
 
@@ -138,6 +138,11 @@ export default async function (
 
 </html>`,
   };
-  transporter.sendMail(mailData);
-  res.status(200).end(JSON.stringify({ message: 'Send Mail' }));
+
+  transporter
+    .sendMail(mailData)
+    .then(() => res.status(200).end(JSON.stringify({ message: 'Send Mail' })))
+    .catch(() =>
+      res.status(400).end(JSON.stringify({ message: 'Bad Connection' }))
+    );
 }
