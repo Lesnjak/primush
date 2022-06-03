@@ -40,8 +40,8 @@ export default async function (
       host: 'smtp-relay.sendinblue.com',
       port: 587,
       auth: {
-        user: 'yuriiprimush2022@gmail.com',
-        pass: 'QCawJfEmVx76pAjP',
+        user: 'welcome@primush.com',
+        pass: 'DpJs01BIZER35CrN',
       },
     })
   );
