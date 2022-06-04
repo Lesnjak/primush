@@ -48,6 +48,7 @@
     "nodemailer-smtp-transport": "^2.7.4",
     "prettysize": "2.0.0",
     "react": "17.0.2",
+    "react-animated-cursor": "^2.5.1",
     "react-code-input": "3.10.1",
     "react-cool-onclickoutside": "1.6.1",
     "react-cropper": "2.1.7",
