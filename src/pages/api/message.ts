@@ -37,11 +37,11 @@ export default async function (
   const transporter = nodemailer.createTransport(
     smtpTransport({
       service: 'sendinblue',
-      host: 'smtp-relay.sendinblue.com',
-      port: 587,
+      host: 'smtp.mailtrap.io',
+      port: 2525,
       auth: {
-        user: 'welcome@primush.com',
-        pass: 'DpJs01BIZER35CrN',
+        user: '890c4477a5ffca',
+        pass: '79e2bd4f4c854f',
       },
     })
   );
