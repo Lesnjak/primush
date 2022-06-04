@@ -6331,13 +6331,6 @@ raw-body@2.4.1:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
-react-animated-cursor@^2.5.1:
-  version "2.5.1"
-  resolved "https://registry.yarnpkg.com/react-animated-cursor/-/react-animated-cursor-2.5.1.tgz#81fca461edeccb9b3757040711e3ec8ebe1c02a0"
-  integrity sha512-P+rDl/2+WYvo94X97Jk8ybD5be6UOa3aEZziU6qEToLlWvgSv6mKUtYD6k5zNjTXV024sl5E+fvbyyNCmDXnLw==
-  dependencies:
-    prop-types "^15.8.1"
-
 react-code-input@3.10.1:
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/react-code-input/-/react-code-input-3.10.1.tgz#959e1504a911c69ada098d9432d00cc59d5732f3"
