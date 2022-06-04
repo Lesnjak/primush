@@ -36,12 +36,12 @@ export default async function (
 
   const transporter = nodemailer.createTransport(
     smtpTransport({
-      service: 'sendinblue',
-      host: 'smtp.mailtrap.io',
-      port: 2525,
+      service: 'gmail',
+      host: 'smtp.gmail.com',
+      port: 465,
       auth: {
-        user: '890c4477a5ffca',
-        pass: '79e2bd4f4c854f',
+        user: 'yuriiprimush2022@gmail.com',
+        pass: 'hpjpjazomlsamfnf',
       },
     })
   );
