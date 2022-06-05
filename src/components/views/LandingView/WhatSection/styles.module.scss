@@ -15,9 +15,11 @@
   }
 
   &_contentWrapper{
-    //display: flex;
+    display: flex;
+    @media (max-width: 1100px){
+      display: block;
+    }
   }
-
   &_space {
     margin-bottom: 18px;
     &:last-child {

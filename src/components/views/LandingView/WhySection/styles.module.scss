@@ -15,7 +15,10 @@
   }
 
   &_contentWrapper{
-    //display: flex;
+    display: flex;
+    @media (max-width: 900px){
+      display: block;
+    }
   }
 
   &_space {

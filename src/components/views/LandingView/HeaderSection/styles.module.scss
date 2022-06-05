@@ -11,7 +11,6 @@
   width: 100vw;
   z-index: 10;
   @media (max-width: 1400px) {
-    height: auto;
     scroll-snap-align: none;
     &_header {
       display: none;
@@ -19,24 +18,25 @@
   }
 
   @media (max-width: 1200px) {
-    height: auto;
+    //height: 100%;
   }
 
 
   &_middle {
     max-width: 1000px;
     flex-grow: 1;
-    padding: 0 33px;
+    padding: 50px 33px 0;
     margin: auto;
     display: flex;
     padding-bottom: 48px;
 
     @media (max-width: 1400px) {
       justify-content: center;
-      padding: 180px 0 150px;
+      //padding: 180px 0 150px;
     }
     @include respond($breakpoint-down-sm){
       align-items: center;
+      padding: 80px 33px 0;
     }
   }
 

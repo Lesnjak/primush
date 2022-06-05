@@ -74,99 +74,196 @@ export const WhoSection: FC<Props> = ({ setIsOpen }) => {
               </a>
             </div>
             <div className={styles.who_middle}>
+              {/*<div className={styles.who_contentWrapper}>*/}
+              {/*  <div className={styles.who_image}>*/}
+              {/*    <img src={IMAGES.who} alt="yuriy" />*/}
+              {/*  </div>*/}
+              {/*  <Typography*/}
+              {/*    className={styles.who_space}*/}
+              {/*    uppercase*/}
+              {/*    variant="body-20"*/}
+              {/*    fontWeight="bold"*/}
+              {/*  >*/}
+              {/*    {t('who.title')}*/}
+              {/*  </Typography>*/}
+              {/*  <Typography*/}
+              {/*    className={styles.who_space}*/}
+              {/*    font="sen"*/}
+              {/*    variant="body-14"*/}
+              {/*    color="greyText"*/}
+              {/*  >*/}
+              {/*    {t('who.text')}*/}
+              {/*  </Typography>*/}
+              {/*  <Typography*/}
+              {/*    className={styles.who_space}*/}
+              {/*    font="sen"*/}
+              {/*    variant="body-14"*/}
+              {/*    color="greyText"*/}
+              {/*  >*/}
+              {/*    {t('who.text1')}*/}
+              {/*  </Typography>*/}
+              {/*  <Typography*/}
+              {/*    className={styles.who_space}*/}
+              {/*    font="sen"*/}
+              {/*    variant="body-14"*/}
+              {/*    color="greyText"*/}
+              {/*  >*/}
+              {/*    {t('who.text2')}*/}
+              {/*  </Typography>*/}
+              {/*  <Typography*/}
+              {/*    className={styles.who_space}*/}
+              {/*    font="sen"*/}
+              {/*    variant="body-14"*/}
+              {/*    color="greyText"*/}
+              {/*  >*/}
+              {/*    {t('who.text3')}*/}
+              {/*  </Typography>*/}
+              {/*  <Typography*/}
+              {/*    className={styles.who_space}*/}
+              {/*    font="sen"*/}
+              {/*    variant="body-14"*/}
+              {/*    color="greyText"*/}
+              {/*  >*/}
+              {/*    {t('who.text4')}*/}
+              {/*  </Typography>*/}
+              {/*  <Typography*/}
+              {/*    className={styles.who_space}*/}
+              {/*    font="sen"*/}
+              {/*    variant="body-14"*/}
+              {/*    color="greyText"*/}
+              {/*  >*/}
+              {/*    {t('who.text5')}*/}
+              {/*  </Typography>*/}
+              {/*  <div className={styles.who_socialn}>*/}
+              {/*    <a*/}
+              {/*      target="_blank"*/}
+              {/*      className={styles.who_socialn_icon}*/}
+              {/*      href={t('socialLinks.facebook')}*/}
+              {/*      rel="noreferrer"*/}
+              {/*    >*/}
+              {/*      <ReactSVG src={ICONS.facebookIcon} />*/}
+              {/*    </a>*/}
+              {/*    <a*/}
+              {/*      target="_blank"*/}
+              {/*      className={styles.who_socialn_icon}*/}
+              {/*      href={t('socialLinks.instagram')}*/}
+              {/*      rel="noreferrer"*/}
+              {/*    >*/}
+              {/*      <ReactSVG src={ICONS.instagramIcon} />*/}
+              {/*    </a>*/}
+              {/*    <a*/}
+              {/*      target="_blank"*/}
+              {/*      className={styles.who_socialn_icon}*/}
+              {/*      href={t('socialLinks.twitter')}*/}
+              {/*      rel="noreferrer"*/}
+              {/*    >*/}
+              {/*      <ReactSVG src={ICONS.twitterIcon} />*/}
+              {/*    </a>*/}
+              {/*    <a*/}
+              {/*      target="_blank"*/}
+              {/*      className={styles.who_socialn_icon}*/}
+              {/*      href={t('socialLinks.linkedin')}*/}
+              {/*      rel="noreferrer"*/}
+              {/*    >*/}
+              {/*      <ReactSVG src={ICONS.linkedinIcon} />*/}
+              {/*    </a>*/}
+              {/*  </div>*/}
+              {/*</div>*/}
               <div className={styles.who_contentWrapper}>
                 <div className={styles.who_image}>
                   <img src={IMAGES.who} alt="yuriy" />
                 </div>
-                <Typography
-                  className={styles.who_space}
-                  uppercase
-                  variant="body-20"
-                  fontWeight="bold"
-                >
-                  {t('who.title')}
-                </Typography>
-                <Typography
-                  className={styles.who_space}
-                  font="sen"
-                  variant="body-14"
-                  color="greyText"
-                >
-                  {t('who.text')}
-                </Typography>
-                <Typography
-                  className={styles.who_space}
-                  font="sen"
-                  variant="body-14"
-                  color="greyText"
-                >
-                  {t('who.text1')}
-                </Typography>
-                <Typography
-                  className={styles.who_space}
-                  font="sen"
-                  variant="body-14"
-                  color="greyText"
-                >
-                  {t('who.text2')}
-                </Typography>
-                <Typography
-                  className={styles.who_space}
-                  font="sen"
-                  variant="body-14"
-                  color="greyText"
-                >
-                  {t('who.text3')}
-                </Typography>
-                <Typography
-                  className={styles.who_space}
-                  font="sen"
-                  variant="body-14"
-                  color="greyText"
-                >
-                  {t('who.text4')}
-                </Typography>
-                <Typography
-                  className={styles.who_space}
-                  font="sen"
-                  variant="body-14"
-                  color="greyText"
-                >
-                  {t('who.text5')}
-                </Typography>
-                <div className={styles.who_socialn}>
-                  <a
-                    target="_blank"
-                    className={styles.who_socialn_icon}
-                    href={t('socialLinks.facebook')}
-                    rel="noreferrer"
+                <div>
+                  <Typography
+                    className={styles.who_space}
+                    uppercase
+                    variant="body-20"
+                    fontWeight="bold"
                   >
-                    <ReactSVG src={ICONS.facebookIcon} />
-                  </a>
-                  <a
-                    target="_blank"
-                    className={styles.who_socialn_icon}
-                    href={t('socialLinks.instagram')}
-                    rel="noreferrer"
+                    {t('who.title')}
+                  </Typography>
+                  <Typography
+                    className={styles.who_space}
+                    font="sen"
+                    variant="body-14"
+                    color="greyText"
                   >
-                    <ReactSVG src={ICONS.instagramIcon} />
-                  </a>
-                  <a
-                    target="_blank"
-                    className={styles.who_socialn_icon}
-                    href={t('socialLinks.twitter')}
-                    rel="noreferrer"
+                    {t('who.text')}
+                  </Typography>
+                  <Typography
+                    className={styles.who_space}
+                    font="sen"
+                    variant="body-14"
+                    color="greyText"
                   >
-                    <ReactSVG src={ICONS.twitterIcon} />
-                  </a>
-                  <a
-                    target="_blank"
-                    className={styles.who_socialn_icon}
-                    href={t('socialLinks.linkedin')}
-                    rel="noreferrer"
+                    {t('who.text1')}
+                  </Typography>
+                  <Typography
+                    className={styles.who_space}
+                    font="sen"
+                    variant="body-14"
+                    color="greyText"
                   >
-                    <ReactSVG src={ICONS.linkedinIcon} />
-                  </a>
+                    {t('who.text2')}
+                  </Typography>
+                  <Typography
+                    className={styles.who_space}
+                    font="sen"
+                    variant="body-14"
+                    color="greyText"
+                  >
+                    {t('who.text3')}
+                  </Typography>
+                  <Typography
+                    className={styles.who_space}
+                    font="sen"
+                    variant="body-14"
+                    color="greyText"
+                  >
+                    {t('who.text4')}
+                  </Typography>
+                  <Typography
+                    className={styles.who_space}
+                    font="sen"
+                    variant="body-14"
+                    color="greyText"
+                  >
+                    {t('who.text5')}
+                  </Typography>
+                  <div className={styles.who_socialn}>
+                    <a
+                      target="_blank"
+                      className={styles.who_socialn_icon}
+                      href={t('socialLinks.facebook')}
+                      rel="noreferrer"
+                    >
+                      <ReactSVG src={ICONS.facebookIcon} />
+                    </a>
+                    <a
+                      target="_blank"
+                      className={styles.who_socialn_icon}
+                      href={t('socialLinks.instagram')}
+                      rel="noreferrer"
+                    >
+                      <ReactSVG src={ICONS.instagramIcon} />
+                    </a>
+                    <a
+                      target="_blank"
+                      className={styles.who_socialn_icon}
+                      href={t('socialLinks.twitter')}
+                      rel="noreferrer"
+                    >
+                      <ReactSVG src={ICONS.twitterIcon} />
+                    </a>
+                    <a
+                      target="_blank"
+                      className={styles.who_socialn_icon}
+                      href={t('socialLinks.linkedin')}
+                      rel="noreferrer"
+                    >
+                      <ReactSVG src={ICONS.linkedinIcon} />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
