@@ -11,6 +11,7 @@
   width: 100vw;
   z-index: 10;
   @media (max-width: 1400px) {
+    height: auto;
     scroll-snap-align: none;
     &_header {
       display: none;
@@ -18,7 +19,7 @@
   }
 
   @media (max-width: 1200px) {
-    height: 100%;
+    height: auto;
   }
 
 
