@@ -5,6 +5,10 @@
   height: 100vh;
   scroll-snap-align: center;
   position: relative;
+
+  &_mt {
+    margin-top: auto;
+  }
   @media (max-width: 1400px) {
     scroll-snap-align: none;
     height: auto;

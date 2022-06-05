@@ -140,6 +140,14 @@ export const LinksSection: FC<Props> = ({ setIsOpen }) => {
                         {t('links.link1.name')}
                       </Typography>
                     </a>
+                    <SpaceBlock marginBottom="s2" />
+                    <Typography
+                      className={styles.links_mt}
+                      color="greyTextLight"
+                      variant="body-14"
+                    >
+                      Forbes
+                    </Typography>
                   </div>
                   <div className={styles.links_linksWrapper_link}>
                     <div className={styles.links_linksWrapper_link_image}>
@@ -164,6 +172,14 @@ export const LinksSection: FC<Props> = ({ setIsOpen }) => {
                         {t('links.link2.name')}
                       </Typography>
                     </a>
+                    <SpaceBlock marginBottom="s2" />
+                    <Typography
+                      className={styles.links_mt}
+                      color="greyTextLight"
+                      variant="body-14"
+                    >
+                      World Economic forum
+                    </Typography>
                   </div>
                   <div className={styles.links_linksWrapper_link}>
                     <div className={styles.links_linksWrapper_link_image}>
@@ -188,6 +204,14 @@ export const LinksSection: FC<Props> = ({ setIsOpen }) => {
                         {t('links.link3.name')}
                       </Typography>
                     </a>
+                    <SpaceBlock marginBottom="s2" />
+                    <Typography
+                      className={styles.links_mt}
+                      color="greyTextLight"
+                      variant="body-14"
+                    >
+                      Youtube HeroicImaginationTV
+                    </Typography>
                   </div>
                 </div>
               </div>
