@@ -8,6 +8,9 @@
   @media (max-width: 1400px) {
     scroll-snap-type: none;
   }
+  @media (max-height: 800px) {
+    scroll-snap-type: none;
+  }
 
   &_header {
     position: fixed;
@@ -20,6 +23,12 @@
         z-index: 1000;
         background-color: rgba(219,0,0, 0.9);
       }
+      @media (max-height: 800px) {
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        background-color: rgba(219,0,0, 0.9);
+      }
     }
 
   }
@@ -27,6 +36,10 @@
   &_hide{
     display: none;
     @media (max-width: 1400px) {
+      display: block;
+    }
+
+    @media (max-height: 800px) {
       display: block;
     }
   }

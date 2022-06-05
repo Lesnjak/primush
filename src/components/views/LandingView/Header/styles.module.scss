@@ -67,6 +67,9 @@
     @media (max-width: 1400px) {
       opacity: 1;
     }
+    @media (max-height: 800px) {
+      opacity: 1;
+    }
   }
 
   &_list {
