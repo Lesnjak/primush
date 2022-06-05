@@ -146,7 +146,7 @@ export const LinksSection: FC<Props> = ({ setIsOpen }) => {
                       color="greyTextLight"
                       variant="body-14"
                     >
-                      Forbes
+                      &#8212; Forbes
                     </Typography>
                   </div>
                   <div className={styles.links_linksWrapper_link}>
@@ -178,7 +178,7 @@ export const LinksSection: FC<Props> = ({ setIsOpen }) => {
                       color="greyTextLight"
                       variant="body-14"
                     >
-                      World Economic forum
+                      &#8212; World Economic forum
                     </Typography>
                   </div>
                   <div className={styles.links_linksWrapper_link}>
@@ -210,7 +210,7 @@ export const LinksSection: FC<Props> = ({ setIsOpen }) => {
                       color="greyTextLight"
                       variant="body-14"
                     >
-                      Youtube HeroicImaginationTV
+                      &#8212; Youtube HeroicImaginationTV
                     </Typography>
                   </div>
                 </div>
