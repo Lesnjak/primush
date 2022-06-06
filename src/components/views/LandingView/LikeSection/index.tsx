@@ -21,26 +21,26 @@ export const LikeSection: FC<Props> = ({ setIsOpen, setSubject }) => {
   const [hideHeader, setHideHeader] = useState(true);
 
   const links = [
-    t('like.question1'),
-    t('like.question2'),
-    t('like.question3'),
-    t('like.question4'),
-    t('like.question5'),
-    t('like.question6'),
-    t('like.question7'),
-    t('like.question8'),
-    t('like.question9'),
-    t('like.question10'),
-    t('like.question11'),
-    t('like.question12'),
-    t('like.question13'),
-    t('like.question14'),
-    t('like.question15'),
-    t('like.question16'),
-    t('like.question17'),
-    t('like.question18'),
-    t('like.question19'),
-    t('like.question20'),
+    'like.question1',
+    'like.question2',
+    'like.question3',
+    'like.question4',
+    'like.question5',
+    'like.question6',
+    'like.question7',
+    'like.question8',
+    'like.question9',
+    'like.question10',
+    'like.question11',
+    'like.question12',
+    'like.question13',
+    'like.question14',
+    'like.question15',
+    'like.question16',
+    'like.question17',
+    'like.question18',
+    'like.question19',
+    'like.question20',
   ];
 
   const handleScroll = () => {
@@ -142,7 +142,7 @@ export const LikeSection: FC<Props> = ({ setIsOpen, setSubject }) => {
                       className={styles.like_links_link}
                     >
                       <button className={cn(styles.like_links_text, 'link')}>
-                        {item}
+                        {t(item)}
                       </button>
                     </div>
                   ))}
